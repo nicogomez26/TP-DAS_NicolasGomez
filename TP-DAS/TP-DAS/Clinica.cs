@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace TP_DAS
 {
-    internal static class Program
+    internal static class Clinica
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.

@@ -41,8 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Acceso.cs" />
+    <Compile Include="Mp_Medico.cs" />
+    <Compile Include="Mp_Especialidad.cs" />
+    <Compile Include="Mp_ObraSocial.cs" />
+    <Compile Include="Mp_Paciente.cs" />
+    <Compile Include="Mp_Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Mp_Turno.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BE\BE.csproj">
