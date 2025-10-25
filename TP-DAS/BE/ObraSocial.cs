@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    public abstract class Persona
+    public class ObraSocial
     {
-		private int id;
-
-		public int Id
-		{
-			get { return id; }
-			set { id = value; }
-		}
 
 		private int dni;
 
@@ -30,22 +23,6 @@ namespace BE
 		{
 			get { return nombre; }
 			set { nombre = value; }
-		}
-		
-		private int edad;
-
-		public int Edad
-		{
-			get { return edad; }
-			set { edad = value; }
-		}
-
-		private string sexo;
-
-		public string Sexo
-		{
-			get { return sexo; }
-			set { sexo = value; }
 		}
 
 	}

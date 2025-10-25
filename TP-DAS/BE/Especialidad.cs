@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    public abstract class Persona
+    public class Especialidad
     {
+
 		private int id;
 
 		public int Id
@@ -16,13 +17,6 @@ namespace BE
 			set { id = value; }
 		}
 
-		private int dni;
-
-		public int Dni
-		{
-			get { return dni; }
-			set { dni = value; }
-		}
 
 		private string nombre;
 
@@ -31,22 +25,7 @@ namespace BE
 			get { return nombre; }
 			set { nombre = value; }
 		}
-		
-		private int edad;
 
-		public int Edad
-		{
-			get { return edad; }
-			set { edad = value; }
-		}
-
-		private string sexo;
-
-		public string Sexo
-		{
-			get { return sexo; }
-			set { sexo = value; }
-		}
 
 	}
 }
