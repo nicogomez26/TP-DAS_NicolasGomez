@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    internal class Mp_Persona
+    public class Mp_Persona
     {
+
     }
 }

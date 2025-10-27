@@ -25,6 +25,7 @@ namespace BE
 			set { fecha = value; }
 		}
 
+
 		private int id_Medico;
 
 		public int Id_Medico

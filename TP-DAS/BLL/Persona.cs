@@ -8,5 +8,6 @@ namespace BLL
 {
     public class Persona
     {
+        Mp_Persona mapper = 
     }
 }

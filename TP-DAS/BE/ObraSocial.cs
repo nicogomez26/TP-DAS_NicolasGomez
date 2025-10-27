@@ -9,13 +9,15 @@ namespace BE
     public class ObraSocial
     {
 
-		private int dni;
+		private int id;
 
-		public int Dni
+		public int Id
 		{
-			get { return dni; }
-			set { dni = value; }
+			get { return id; }
+			set { id = value; }
 		}
+
+
 
 		private string nombre;
 
