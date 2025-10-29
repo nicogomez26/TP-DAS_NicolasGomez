@@ -1,22 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TP_DAS
 {
-    internal static class Clinica
+    public partial class Clinica : Form   // ← o UserControl si es un control
     {
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        public Clinica()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            InitializeComponent();
+        }
+
+        private void Clinica_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

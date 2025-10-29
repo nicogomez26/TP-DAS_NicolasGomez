@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TP_DAS
 {
-    public partial class Form1 : Form
+    public partial class Paciente : Form
     {
-        public Form1()
+        public Paciente()
         {
             InitializeComponent();
         }
