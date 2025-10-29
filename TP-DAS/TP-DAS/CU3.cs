@@ -1,71 +1,137 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace TP_DAS
 {
-    public partial class CU3 : CU1
+    public partial class CU3 : UserControl
     {
-        /*public CU2()
+        private SqlConnection cn = new SqlConnection();
+        private SqlCommand cmd = new SqlCommand();
+
+
+        public CU3()
         {
             InitializeComponent();
+        }
+
+        public void Conectar()
+        {
+            cn.ConnectionString = @"Data Source=.;Initial Catalog=Clinica;Integrated Security=True";
+            cn.Open();
+        }
+
+        public void Desconectar()
+        {
+            cn.Close();
+            cn.Dispose();
+        }
+
+            
+        public void cargarDatos(string sp, string displayMember, string valueMember, SqlParameter[] parametros = null)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+
+                Conectar();
+                cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = sp;
+
+                if (parametros != null)
+                {
+                    cmd.Parameters.AddRange(parametros);
+                }
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd); 
+                da.Fill(dt);
+
+                Desconectar();
+
+                cmb.DataSource = dt;
+                cmb.DisplayMember = displayMember;
+                cmb.ValueMember = valueMember;
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar la obra social: " + ex.Message);
+            }
+        }
+
+
+        public int ValorSeleccionado
+        {
+            get {
+                return (int)cmb.SelectedValue;
+            }
+        }
+
+        public string TextoSeleccionado
+        {
+            get
+            {
+                return cmb.Text;
+            }
+        }
+
+        /*public ComboBox Combo => cmb;*/
+
+        public string Etiqueta
+        {
+            get { return lblEtiqueta.Text; }
+            set { lblEtiqueta.Text = value; }
+        }
+
+
+
+        public List<string> Items
+        {
+            set
+            {
+                cmb.Items.Clear();
+                cmb.Items.AddRange(value.ToArray());
+            }
+        }
+
+       /* public string ValorSeleccionado
+        {
+            get { return cmb.SelectedItem?.ToString(); }
+            set { cmb.SelectedItem = value; }
         }*/
 
-        public override bool Validar()
+
+        // Método para validar selección
+        public virtual bool Validar()
         {
+            bool ok = cmb.SelectedIndex >= 0;
 
-            bool ok = base.Validar();
-
-            if (ok)
+            if (!ok)
             {
-                int numero;
-                ok = int.TryParse(this.Texto, out numero);
-                if (!ok)
-                {
-
-                    this.SetearColor(System.Drawing.Color.Red);
-                    base.textBox1.openTooltip("error");
-                }
-                else { this.SetearColor(System.Drawing.Color.Green); }
+                cmb.BackColor = System.Drawing.Color.LightCoral;
+                ToolTip tt = new ToolTip();
+                tt.Show("Debe seleccionar una opción", cmb, 0, cmb.Height, 2000);
+            }
+            else
+            {
+                cmb.BackColor = System.Drawing.Color.White;
             }
 
             return ok;
         }
 
-        private void InitializeComponent()
+        private void cboOpciones_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            // 
-            // CU3
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "CU3";
-            this.Load += new System.EventHandler(this.CU3_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            // Podés agregar lógica adicional si necesitás
         }
-
-        public int value()
-        {
-            return base.textBox1.GetInt();
-        }
-
 
         private void CU3_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

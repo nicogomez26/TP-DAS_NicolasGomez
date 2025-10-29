@@ -16,7 +16,8 @@ namespace DAL
         {
             int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[6];
+            SqlParameter[] parametro = new SqlParameter[7];
+            parametro[0] = new SqlParameter("@id", DBNull.Value);
             parametro[1] = new SqlParameter("@dni", paciente.Dni);
             parametro[2] = new SqlParameter("@nombre", paciente.Nombre);
             parametro[3] = new SqlParameter("@apellido", paciente.Apellido);

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace TP_DAS
 {
-    public partial class CU2:CU1
+    public class CU2:CU1
     {
         /*public CU2()
         {
@@ -44,11 +44,15 @@ namespace TP_DAS
             // 
             // textBox1
             // 
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // MiControlNumerico
+            // CU2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
-            this.Name = "MiControlNumerico";
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "CU2";
+            this.Load += new System.EventHandler(this.CU2_Load_2);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,12 +63,14 @@ namespace TP_DAS
             return base.textBox1.GetInt();
         }
 
-        private void CU2_Load(object sender, EventArgs e)
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void CU2_Load_1(object sender, EventArgs e)
+        private void CU2_Load_2(object sender, EventArgs e)
         {
 
         }

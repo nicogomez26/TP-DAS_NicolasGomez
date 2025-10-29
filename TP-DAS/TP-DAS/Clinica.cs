@@ -14,5 +14,14 @@ namespace TP_DAS
         {
 
         }
+
+        private void irPacientesBtn_Click(object sender, EventArgs e)
+        {
+            Paciente paciente = new Paciente();
+
+            paciente.Show();
+            
+            this.Hide();
+        }
     }
 }

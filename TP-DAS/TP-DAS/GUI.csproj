@@ -64,8 +64,17 @@
     <Compile Include="CU2.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="CUcmb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUcmb.Designer.cs">
+      <DependentUpon>CUcmb.cs</DependentUpon>
+    </Compile>
     <Compile Include="CU3.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CU3.Designer.cs">
+      <DependentUpon>CU3.cs</DependentUpon>
     </Compile>
     <Compile Include="Paciente.cs">
       <SubType>Form</SubType>
@@ -84,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CU2.resx">
       <DependentUpon>CU2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUcmb.resx">
+      <DependentUpon>CUcmb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CU3.resx">
       <DependentUpon>CU3.cs</DependentUpon>

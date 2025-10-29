@@ -38,6 +38,7 @@
             this.irPacientesBtn.TabIndex = 0;
             this.irPacientesBtn.Text = "Pacientes";
             this.irPacientesBtn.UseVisualStyleBackColor = true;
+            this.irPacientesBtn.Click += new System.EventHandler(this.irPacientesBtn_Click);
             // 
             // irMedicosBtn
             // 
