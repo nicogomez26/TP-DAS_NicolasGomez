@@ -9,3 +9,14 @@ C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\BLL\obj\Debug\BLL.csproj
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\BLL\obj\Debug\BLL.csproj.Up2Date
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\BLL\obj\Debug\BLL.dll
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\BLL\obj\Debug\BLL.pdb
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\bin\Debug\BLL.dll
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\bin\Debug\BLL.pdb
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\bin\Debug\BE.dll
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\bin\Debug\DAL.dll
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\bin\Debug\BE.pdb
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\bin\Debug\DAL.pdb
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\obj\Debug\BLL.dll
+C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\BLL\obj\Debug\BLL.pdb

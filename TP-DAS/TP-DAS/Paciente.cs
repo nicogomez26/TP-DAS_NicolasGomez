@@ -17,7 +17,7 @@ namespace TP_DAS
             InitializeComponent();
         }
 
-        BLL.Paciente personaBll = new BLL.Paciente();
+        BLL.Paciente pacienteBll = new BLL.Paciente();
         BE.Paciente paciente= new BE.Paciente();
         private void Paciente_Load(object sender, EventArgs e)
         {
@@ -45,7 +45,7 @@ namespace TP_DAS
             paciente.Sexo = cUcmb1.SelectedItem;
             paciente.Id_ObraSocial = cU32.ValorSeleccionado;
 
-            fa = personaBll.AgregarPaciente(paciente);
+            fa = pacienteBll.AgregarPaciente(paciente);
 
             if (fa != 0)
             {
@@ -61,8 +61,16 @@ namespace TP_DAS
         {
 
             grilla.DataSource = null;
-            grilla.DataSource = personaBll.ListarPaciente();
+            grilla.DataSource = pacienteBll.ListarPaciente();
 
+        }
+
+        private void volverBtn_Click(object sender, EventArgs e)
+        {
+            Clinica clinica = new Clinica();
+
+            clinica.Show();
+            this.Hide();
         }
     }
     }

@@ -31,7 +31,7 @@ namespace BLL
             return fa;
         }
 
-        public int EliminarPersona(BE.Paciente paciente)
+        public int EliminarPaciente(BE.Paciente paciente)
         {
             int fa = 0;
 

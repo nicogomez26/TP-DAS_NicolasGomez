@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -17,12 +18,13 @@ namespace DAL
             int fa = 0;
 
             SqlParameter[] parametro = new SqlParameter[6];
-            parametro[1] = new SqlParameter("@dni", medico.Dni);
-            parametro[2] = new SqlParameter("@nombre", medico.Nombre);
-            parametro[3] = new SqlParameter("@apellido", medico.Apellido);
-            parametro[4] = new SqlParameter("@edad", medico.Edad);
-            parametro[5] = new SqlParameter("@sexo", medico.Sexo);
-            parametro[6] = new SqlParameter("@id_Especialidad", medico.Id_Especialidad);
+            parametro[0] = new SqlParameter("@dni", medico.Dni);
+            parametro[1] = new SqlParameter("@nombre", medico.Nombre);
+            parametro[2] = new SqlParameter("@apellido", medico.Apellido);
+            parametro[3] = new SqlParameter("@edad", medico.Edad);
+            parametro[4] = new SqlParameter("@sexo", medico.Sexo);
+            parametro[5] = new SqlParameter("@id_Especialidad", medico.Id_Especialidad);
+
 
             fa = acc.Escribir("crearMedico", parametro);
 
@@ -40,6 +42,8 @@ namespace DAL
             parametro[3] = new SqlParameter("@edad", medico.Edad);
             parametro[4] = new SqlParameter("@sexo", medico.Sexo);
             parametro[5] = new SqlParameter("@id_Especialidad", medico.Id_Especialidad);
+
+
 
             fa = acc.Escribir("editarMedico", parametro);
 

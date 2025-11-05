@@ -48,6 +48,7 @@
             this.irMedicosBtn.TabIndex = 1;
             this.irMedicosBtn.Text = "Medicos";
             this.irMedicosBtn.UseVisualStyleBackColor = true;
+            this.irMedicosBtn.Click += new System.EventHandler(this.irMedicosBtn_Click);
             // 
             // irTurnosBtn
             // 

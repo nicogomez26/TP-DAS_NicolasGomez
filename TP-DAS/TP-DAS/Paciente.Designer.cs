@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.elimPacBtn = new System.Windows.Forms.Button();
+            this.editPacBtn = new System.Windows.Forms.Button();
+            this.agrPacBtn = new System.Windows.Forms.Button();
+            this.volverBtn = new System.Windows.Forms.Button();
+            this.grilla = new System.Windows.Forms.DataGridView();
             this.cUcmb1 = new TP_DAS.CUcmb();
             this.cU32 = new TP_DAS.CU3();
             this.cU22 = new TP_DAS.CU2();
             this.cU21 = new TP_DAS.CU2();
             this.cU12 = new TP_DAS.CU1();
             this.cU11 = new TP_DAS.CU1();
-            this.elimPacBtn = new System.Windows.Forms.Button();
-            this.editPacBtn = new System.Windows.Forms.Button();
-            this.agrPacBtn = new System.Windows.Forms.Button();
-            this.volverBtn = new System.Windows.Forms.Button();
-            this.grilla = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +51,52 @@
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Crear Paciente";
+            // 
+            // elimPacBtn
+            // 
+            this.elimPacBtn.Location = new System.Drawing.Point(79, 465);
+            this.elimPacBtn.Name = "elimPacBtn";
+            this.elimPacBtn.Size = new System.Drawing.Size(238, 29);
+            this.elimPacBtn.TabIndex = 47;
+            this.elimPacBtn.Text = "Eliminar";
+            this.elimPacBtn.UseVisualStyleBackColor = true;
+            // 
+            // editPacBtn
+            // 
+            this.editPacBtn.Location = new System.Drawing.Point(79, 420);
+            this.editPacBtn.Name = "editPacBtn";
+            this.editPacBtn.Size = new System.Drawing.Size(238, 29);
+            this.editPacBtn.TabIndex = 46;
+            this.editPacBtn.Text = "Editar";
+            this.editPacBtn.UseVisualStyleBackColor = true;
+            // 
+            // agrPacBtn
+            // 
+            this.agrPacBtn.Location = new System.Drawing.Point(79, 373);
+            this.agrPacBtn.Name = "agrPacBtn";
+            this.agrPacBtn.Size = new System.Drawing.Size(238, 29);
+            this.agrPacBtn.TabIndex = 45;
+            this.agrPacBtn.Text = "Agregar";
+            this.agrPacBtn.UseVisualStyleBackColor = true;
+            this.agrPacBtn.Click += new System.EventHandler(this.agrPacBtn_Click);
+            // 
+            // volverBtn
+            // 
+            this.volverBtn.Location = new System.Drawing.Point(21, 12);
+            this.volverBtn.Name = "volverBtn";
+            this.volverBtn.Size = new System.Drawing.Size(133, 44);
+            this.volverBtn.TabIndex = 54;
+            this.volverBtn.Text = "Volver";
+            this.volverBtn.UseVisualStyleBackColor = true;
+            this.volverBtn.Click += new System.EventHandler(this.volverBtn_Click);
+            // 
+            // grilla
+            // 
+            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grilla.Location = new System.Drawing.Point(372, 97);
+            this.grilla.Name = "grilla";
+            this.grilla.Size = new System.Drawing.Size(708, 272);
+            this.grilla.TabIndex = 55;
             // 
             // cUcmb1
             // 
@@ -106,56 +152,11 @@
             this.cU11.TabIndex = 2;
             this.cU11.Texto = "";
             // 
-            // elimPacBtn
-            // 
-            this.elimPacBtn.Location = new System.Drawing.Point(79, 465);
-            this.elimPacBtn.Name = "elimPacBtn";
-            this.elimPacBtn.Size = new System.Drawing.Size(238, 29);
-            this.elimPacBtn.TabIndex = 47;
-            this.elimPacBtn.Text = "Eliminar";
-            this.elimPacBtn.UseVisualStyleBackColor = true;
-            // 
-            // editPacBtn
-            // 
-            this.editPacBtn.Location = new System.Drawing.Point(79, 420);
-            this.editPacBtn.Name = "editPacBtn";
-            this.editPacBtn.Size = new System.Drawing.Size(238, 29);
-            this.editPacBtn.TabIndex = 46;
-            this.editPacBtn.Text = "Editar";
-            this.editPacBtn.UseVisualStyleBackColor = true;
-            // 
-            // agrPacBtn
-            // 
-            this.agrPacBtn.Location = new System.Drawing.Point(79, 373);
-            this.agrPacBtn.Name = "agrPacBtn";
-            this.agrPacBtn.Size = new System.Drawing.Size(238, 29);
-            this.agrPacBtn.TabIndex = 45;
-            this.agrPacBtn.Text = "Agregar";
-            this.agrPacBtn.UseVisualStyleBackColor = true;
-            this.agrPacBtn.Click += new System.EventHandler(this.agrPacBtn_Click);
-            // 
-            // volverBtn
-            // 
-            this.volverBtn.Location = new System.Drawing.Point(-7, -1);
-            this.volverBtn.Name = "volverBtn";
-            this.volverBtn.Size = new System.Drawing.Size(133, 44);
-            this.volverBtn.TabIndex = 54;
-            this.volverBtn.Text = "Volver";
-            this.volverBtn.UseVisualStyleBackColor = true;
-            // 
-            // grilla
-            // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(372, 97);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(708, 272);
-            this.grilla.TabIndex = 55;
-            // 
             // Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1092, 554);
+            this.ClientSize = new System.Drawing.Size(1106, 542);
             this.Controls.Add(this.grilla);
             this.Controls.Add(this.volverBtn);
             this.Controls.Add(this.elimPacBtn);

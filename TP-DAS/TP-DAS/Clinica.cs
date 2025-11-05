@@ -23,5 +23,14 @@ namespace TP_DAS
             
             this.Hide();
         }
+
+        private void irMedicosBtn_Click(object sender, EventArgs e)
+        {
+            Medico medico = new Medico();
+
+            medico.Show();
+
+            this.Hide();
+        }
     }
 }
