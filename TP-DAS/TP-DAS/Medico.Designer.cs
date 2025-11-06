@@ -46,9 +46,9 @@
             // grilla
             // 
             this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(370, 168);
+            this.grilla.Location = new System.Drawing.Point(381, 171);
             this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(708, 272);
+            this.grilla.Size = new System.Drawing.Size(713, 256);
             this.grilla.TabIndex = 67;
             // 
             // volverBtn

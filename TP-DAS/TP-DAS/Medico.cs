@@ -88,9 +88,9 @@ namespace TP_DAS
 
         private void volverBtn_Click_1(object sender, EventArgs e)
         {
-            Medico medico = new Medico();
+            Clinica clinica = new Clinica();
 
-            medico.Show();
+            clinica.Show();
 
             this.Hide();
         }
