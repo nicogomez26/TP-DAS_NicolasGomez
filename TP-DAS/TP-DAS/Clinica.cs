@@ -32,5 +32,32 @@ namespace TP_DAS
 
             this.Hide();
         }
+
+        private void irObSocBtn_Click(object sender, EventArgs e)
+        {
+            Obra_Social OS = new Obra_Social();
+
+            OS.Show();
+
+            this.Hide();
+        }
+
+        private void irTurnosBtn_Click(object sender, EventArgs e)
+        {
+            Turno turno = new Turno();
+
+            turno.Show();
+
+            this.Hide();
+        }
+
+        private void irEspecialidadesBtn_Click(object sender, EventArgs e)
+        {
+            Especialidad especialidad = new Especialidad();
+
+            especialidad.Show();
+
+            this.Hide();    
+        }
     }
 }

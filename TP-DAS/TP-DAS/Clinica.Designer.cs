@@ -58,6 +58,7 @@
             this.irTurnosBtn.TabIndex = 2;
             this.irTurnosBtn.Text = "Turnos";
             this.irTurnosBtn.UseVisualStyleBackColor = true;
+            this.irTurnosBtn.Click += new System.EventHandler(this.irTurnosBtn_Click);
             // 
             // irEspecialidadesBtn
             // 
@@ -67,6 +68,7 @@
             this.irEspecialidadesBtn.TabIndex = 3;
             this.irEspecialidadesBtn.Text = "Especialidades";
             this.irEspecialidadesBtn.UseVisualStyleBackColor = true;
+            this.irEspecialidadesBtn.Click += new System.EventHandler(this.irEspecialidadesBtn_Click);
             // 
             // irObSocBtn
             // 
@@ -76,6 +78,7 @@
             this.irObSocBtn.TabIndex = 4;
             this.irObSocBtn.Text = "Obras Sociales";
             this.irObSocBtn.UseVisualStyleBackColor = true;
+            this.irObSocBtn.Click += new System.EventHandler(this.irObSocBtn_Click);
             // 
             // Clinica
             // 

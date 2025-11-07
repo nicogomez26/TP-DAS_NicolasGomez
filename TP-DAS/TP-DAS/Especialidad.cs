@@ -16,5 +16,64 @@ namespace TP_DAS
         {
             InitializeComponent();
         }
+
+        private void volverBtn_Click(object sender, EventArgs e)
+        {
+            Clinica clinica = new Clinica();
+
+            clinica.Show();
+
+            this.Hide();
+        }
+
+
+        BLL.Especialidad especialidadBLL = new BLL.Especialidad();
+        BE.Especialidad especialidad = new BE.Especialidad();
+
+
+        public void VerGrilla()
+        {
+
+            grilla.DataSource = null;
+            grilla.DataSource = especialidadBLL.ListarEspecialidades();
+
+        }
+
+
+
+
+        private void agrEspBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fa = 0;
+
+                especialidad = new BE.Especialidad();
+
+                especialidad.Nombre = cU11.Texto;
+
+                fa = especialidadBLL.AgregarEspecialidad(especialidad);
+
+                if (fa != 0)
+                {
+                    MessageBox.Show("Se agregó");
+                    VerGrilla();
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Especialidad_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

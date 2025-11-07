@@ -16,5 +16,75 @@ namespace TP_DAS
         {
             InitializeComponent();
         }
+
+
+        BLL.Turno turnoBll = new BLL.Turno();
+        BE.Turno turno = new BE.Turno();
+
+        private void agrTurBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fa = 0;
+
+                if (!cuDate1.Validar())
+                {
+                    MessageBox.Show("La fecha seleccionada no es válida.");
+                    return;
+                }
+
+
+                turno = new BE.Turno();
+
+                turno.Fecha = cuDate1.Valor;
+
+                turno.Id_Paciente = int.Parse(cU32.Text);
+                turno.Id_Medico = int.Parse(cU31.Text);
+
+
+                fa = turnoBll.AgregarTurno(turno);
+
+                if (fa != 0)
+                {
+                    MessageBox.Show("Se agregó");
+                    VerGrilla();
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void VerGrilla()
+        {
+
+            grilla.DataSource = null;
+            grilla.DataSource = turnoBll.ListarTurno();
+
+        }
+        private void volverBtn_Click(object sender, EventArgs e)
+        {
+            Clinica clinica = new Clinica();
+
+            clinica.Show();
+
+            this.Hide();
+        }
+
+        private void cU32_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Turno_Load(object sender, EventArgs e)
+        {
+            cU32.cargarDatos("listarPacientes", "Nombre", "ID");
+            cU31.cargarDatos("listarMedicos", "Nombre", "ID");
+        }
     }
 }

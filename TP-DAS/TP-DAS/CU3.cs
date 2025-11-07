@@ -106,7 +106,6 @@ namespace TP_DAS
         }*/
 
 
-        // Método para validar selección
         public virtual bool Validar()
         {
             bool ok = cmb.SelectedIndex >= 0;
@@ -127,7 +126,6 @@ namespace TP_DAS
 
         private void cboOpciones_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Podés agregar lógica adicional si necesitás
         }
 
         private void CU3_Load(object sender, EventArgs e)

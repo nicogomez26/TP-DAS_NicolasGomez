@@ -64,6 +64,12 @@
     <Compile Include="CU2.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="CUDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUDate.Designer.cs">
+      <DependentUpon>CUDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="CUcmb.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     <EmbeddedResource Include="CU2.resx">
       <DependentUpon>CU2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CUDate.resx">
+      <DependentUpon>CUDate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CUcmb.resx">
       <DependentUpon>CUcmb.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +154,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Turno.resx">
+      <DependentUpon>Turno.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -17,7 +17,7 @@ namespace DAL
             int fa = 0;
 
             SqlParameter[] parametro = new SqlParameter[1];
-            parametro[1] = new SqlParameter("@Nombre", especialidad.Nombre);
+            parametro[0] = new SqlParameter("@Nombre", especialidad.Nombre);
 
             fa = acc.Escribir("crearEspecialidad", parametro);   
 
@@ -51,7 +51,7 @@ namespace DAL
         public List<BE.Especialidad> Listar()
         {
             List<BE.Especialidad> especialidades = new List<BE.Especialidad>();
-            DataTable tabla = acc.Leer("listarEspecialidad", null);
+            DataTable tabla = acc.Leer("listarEspecialidades", null);
             foreach (DataRow dr in tabla.Rows)
             {
                 BE.Especialidad especialidad = new BE.Especialidad();

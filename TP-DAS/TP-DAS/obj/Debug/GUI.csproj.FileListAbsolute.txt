@@ -45,3 +45,8 @@ C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\GUI.cspro
 C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP-DAS.exe
 C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP-DAS.pdb
 C:\Users\Navegador\Desktop\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Medico.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Especialidad.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Medico.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Obra_Social.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUDate.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Turno.resources

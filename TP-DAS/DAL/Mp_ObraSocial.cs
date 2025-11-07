@@ -17,7 +17,7 @@ namespace DAL
             int fa = 0;
 
             SqlParameter[] parametro = new SqlParameter[1];
-            parametro[1] = new SqlParameter("@Nombre", obraSocial.Nombre);
+            parametro[0] = new SqlParameter("@Nombre", obraSocial.Nombre);
 
             fa = acc.Escribir("crearObraSocial", parametro);
 
@@ -51,7 +51,7 @@ namespace DAL
         public List<BE.ObraSocial> Listar()
         {
             List<BE.ObraSocial> obrasSociales = new List<BE.ObraSocial>();
-            DataTable tabla = acc.Leer("listarObraSocial", null);
+            DataTable tabla = acc.Leer("listarObrasSociales", null);
             foreach (DataRow dr in tabla.Rows)
             {
                 BE.ObraSocial obraSocial = new BE.ObraSocial();
