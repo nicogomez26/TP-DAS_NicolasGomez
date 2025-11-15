@@ -20,7 +20,7 @@ namespace DAL
             parametro[0] = new SqlParameter("@Nombre", especialidad.Nombre);
 
             fa = acc.Escribir("crearEspecialidad", parametro);   
-
+            
             return fa;
         }
 
