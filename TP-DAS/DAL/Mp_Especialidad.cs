@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAL
 {
@@ -14,39 +15,87 @@ namespace DAL
 
         public int Agregar(BE.Especialidad especialidad)
         {
-            int fa = 0;
+            try
+            {
+                int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[1];
-            parametro[0] = new SqlParameter("@Nombre", especialidad.Nombre);
+                acc.IniciarTransaccion();
 
-            fa = acc.Escribir("crearEspecialidad", parametro);   
+                SqlParameter[] parametro = new SqlParameter[1];
+                parametro[0] = new SqlParameter("@Nombre", especialidad.Nombre);
+
+                fa = acc.Escribir("crearEspecialidad", parametro);
+
+                acc.ConfirmarTransaccion();
+
+                return fa;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return -1;
+            }
             
-            return fa;
         }
 
         public int Editar(BE.Especialidad especialidad)
         {
-            int fa = 0;
+            try
+            {
+                int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[2];
-            parametro[0] = new SqlParameter("@ID", especialidad.Id);
-            parametro[1] = new SqlParameter("@Nombre", especialidad.Nombre);
+                acc.IniciarTransaccion();
 
-            fa = acc.Escribir("editarEspecialidad", parametro);
+                SqlParameter[] parametro = new SqlParameter[2];
+                parametro[0] = new SqlParameter("@ID", especialidad.Id);
+                parametro[1] = new SqlParameter("@Nombre", especialidad.Nombre);
 
-            return fa;
+                fa = acc.Escribir("editarEspecialidad", parametro);
+
+                acc.ConfirmarTransaccion();
+
+                return fa;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return -1;
+            }
+            
         }
 
         public int Eliminar(BE.Especialidad especialidad)
         {
-            int fa = 0;
+            try
+            {
+                int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[1];
-            parametro[0] = new SqlParameter("@ID", especialidad.Id);
+                acc.IniciarTransaccion();
 
-            fa = acc.Escribir("eliminarEspecialidad", parametro);
+                SqlParameter[] parametro = new SqlParameter[1];
+                parametro[0] = new SqlParameter("@ID", especialidad.Id);
 
-            return fa;
+                fa = acc.Escribir("eliminarEspecialidad", parametro);
+
+                acc.ConfirmarTransaccion();
+
+                return fa;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return -1;
+            }
+            
         }
 
         public List<BE.Especialidad> Listar()

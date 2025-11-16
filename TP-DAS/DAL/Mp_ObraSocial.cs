@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAL
 {
@@ -14,39 +15,88 @@ namespace DAL
 
         public int Agregar(BE.ObraSocial obraSocial)
         {
-            int fa = 0;
+            try
+            {
+                int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[1];
-            parametro[0] = new SqlParameter("@Nombre", obraSocial.Nombre);
+                acc.IniciarTransaccion();
 
-            fa = acc.Escribir("crearObraSocial", parametro);
+                SqlParameter[] parametro = new SqlParameter[1];
+                parametro[0] = new SqlParameter("@Nombre", obraSocial.Nombre);
 
-            return fa;
+                fa = acc.Escribir("crearObraSocial", parametro);
+
+                acc.ConfirmarTransaccion();
+
+                return fa;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return -1;
+            }
+            
         }
 
         public int Editar(BE.ObraSocial obraSocial)
         {
-            int fa = 0;
+            try
+            {
+                int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[2];
-            parametro[0] = new SqlParameter("@ID", obraSocial.Id);
-            parametro[1] = new SqlParameter("@Nombre", obraSocial.Nombre);
+                acc.IniciarTransaccion();
 
-            fa = acc.Escribir("editarObraSocial", parametro);
+                SqlParameter[] parametro = new SqlParameter[2];
+                parametro[0] = new SqlParameter("@ID", obraSocial.Id);
+                parametro[1] = new SqlParameter("@Nombre", obraSocial.Nombre);
 
-            return fa;
+                fa = acc.Escribir("editarObraSocial", parametro);
+
+                acc.ConfirmarTransaccion();
+
+                return fa;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return -1;
+            }
+
+            
         }
 
         public int Eliminar(BE.ObraSocial obraSocial)
         {
-            int fa = 0;
+            try
+            {
+                int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[1];
-            parametro[0] = new SqlParameter("@ID", obraSocial.Id);
+                acc.IniciarTransaccion();
 
-            fa = acc.Escribir("eliminarObraSocial", parametro);
+                SqlParameter[] parametro = new SqlParameter[1];
+                parametro[0] = new SqlParameter("@ID", obraSocial.Id);
 
-            return fa;
+                fa = acc.Escribir("eliminarObraSocial", parametro);
+
+                acc.ConfirmarTransaccion();
+
+                return fa;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return -1;
+            }
+           
         }
 
         public List<BE.ObraSocial> Listar()

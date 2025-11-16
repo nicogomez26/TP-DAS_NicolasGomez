@@ -25,13 +25,32 @@ namespace DAL
             cn.Close();
             cn.Dispose();
         }
+        SqlTransaction tr;
+        public void IniciarTransaccion()
+        {
+            Conectar();
+            tr = cn.BeginTransaction();
+        }
+
+        public void ConfirmarTransaccion()
+        {
+            tr.Commit();
+            Desconectar();
+        }
+
+
+        public void CancelarTransaccion()
+        {
+            tr.Rollback();
+            Desconectar();
+        }
 
         public int Escribir(string sp, SqlParameter[] parametro) { 
         
             int fa = 0;
 
-            Conectar();
             cmd.Connection = cn;
+            cmd.Transaction = tr;
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = sp;
 
@@ -45,7 +64,6 @@ namespace DAL
                 fa = cmd.ExecuteNonQuery();
             }
             cmd.Parameters.Clear();
-            Desconectar();
 
             return fa;
         }

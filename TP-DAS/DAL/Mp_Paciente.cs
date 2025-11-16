@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAL
 {
@@ -14,49 +15,99 @@ namespace DAL
 
         public int Agregar(BE.Paciente paciente)
         {
-            int fa = 0;
+            try
+            {
+                int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[6];
-            parametro[0] = new SqlParameter("@dni", paciente.Dni);
-            parametro[1] = new SqlParameter("@nombre", paciente.Nombre);
-            parametro[2] = new SqlParameter("@apellido", paciente.Apellido);
-            parametro[3] = new SqlParameter("@edad", paciente.Edad);
-            parametro[4] = new SqlParameter("@sexo", paciente.Sexo);
-            parametro[5] = new SqlParameter("@id_ObraSocial", paciente.Id_ObraSocial);
+                acc.IniciarTransaccion();
 
-            fa = acc.Escribir("crearPaciente", parametro);
+                SqlParameter[] parametro = new SqlParameter[6];
+                parametro[0] = new SqlParameter("@dni", paciente.Dni);
+                parametro[1] = new SqlParameter("@nombre", paciente.Nombre);
+                parametro[2] = new SqlParameter("@apellido", paciente.Apellido);
+                parametro[3] = new SqlParameter("@edad", paciente.Edad);
+                parametro[4] = new SqlParameter("@sexo", paciente.Sexo);
+                parametro[5] = new SqlParameter("@id_ObraSocial", paciente.Id_ObraSocial);
 
-            return fa;
+                fa = acc.Escribir("crearPaciente", parametro);
+
+                acc.ConfirmarTransaccion();
+
+                return fa;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return -1;
+            }
+
+            
         }
 
         public int Editar(BE.Paciente paciente)
         {
-            int fa = 0;
+            try
+            {
+                int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[7];
-            parametro[0] = new SqlParameter("@ID", paciente.Id);
-            parametro[1] = new SqlParameter("@dni", paciente.Dni);
-            parametro[2] = new SqlParameter("@nombre", paciente.Nombre);
-            parametro[3] = new SqlParameter("@apellido", paciente.Apellido);
-            parametro[4] = new SqlParameter("@edad", paciente.Edad);
-            parametro[5] = new SqlParameter("@sexo", paciente.Sexo);
-            parametro[6] = new SqlParameter("@id_ObraSocial", paciente.Id_ObraSocial);
+                acc.IniciarTransaccion();
 
-            fa = acc.Escribir("editarPaciente", parametro);
+                SqlParameter[] parametro = new SqlParameter[7];
+                parametro[0] = new SqlParameter("@ID", paciente.Id);
+                parametro[1] = new SqlParameter("@dni", paciente.Dni);
+                parametro[2] = new SqlParameter("@nombre", paciente.Nombre);
+                parametro[3] = new SqlParameter("@apellido", paciente.Apellido);
+                parametro[4] = new SqlParameter("@edad", paciente.Edad);
+                parametro[5] = new SqlParameter("@sexo", paciente.Sexo);
+                parametro[6] = new SqlParameter("@id_ObraSocial", paciente.Id_ObraSocial);
 
-            return fa;
+                fa = acc.Escribir("editarPaciente", parametro);
+
+                acc.ConfirmarTransaccion();
+
+                return fa;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return -1;
+            }
+
+            
         }
 
         public int Eliminar(BE.Paciente paciente)
         {
-            int fa = 0;
+            try
+            {
+                int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[1];
-            parametro[0] = new SqlParameter("@ID", paciente.Id);
+                acc.IniciarTransaccion();
 
-            fa = acc.Escribir("eliminarPaciente", parametro);
+                SqlParameter[] parametro = new SqlParameter[1];
+                parametro[0] = new SqlParameter("@ID", paciente.Id);
 
-            return fa;
+                fa = acc.Escribir("eliminarPaciente", parametro);
+                
+                acc.ConfirmarTransaccion();
+
+                return fa;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return -1;
+            }
+            
         }
 
         public List<BE.Paciente> Listar()
