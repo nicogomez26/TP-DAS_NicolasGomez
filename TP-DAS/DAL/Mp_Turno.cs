@@ -121,5 +121,11 @@ namespace DAL
             }
             return turnos;
         }
+
+        public DataTable ExportarXML()
+        {
+            return acc.Leer("listarTurnos", null);
+
+        }
     }
 }

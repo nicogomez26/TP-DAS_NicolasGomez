@@ -1,6 +1,8 @@
 ﻿using DAL;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,7 +49,17 @@ namespace BLL
             return turnos;
         }
 
+        public void ExportarTurnosXML(string ruta)
+        {
+            DataTable dt = mapper.ExportarXML();
 
+            DataSet ds = new DataSet();
+
+            ds.Tables.Add(dt.Copy());
+
+            ds.WriteXml(ruta);
+
+        }
 
     }
 }

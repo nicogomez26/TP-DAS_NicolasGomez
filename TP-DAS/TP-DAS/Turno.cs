@@ -185,5 +185,43 @@ namespace TP_DAS
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void expXMLBtn_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog SFD = new SaveFileDialog();
+
+            SFD.Filter = "Archivo XML (*.xml)|*.xml";
+
+            SFD.FileName = "Turnos.XML";
+
+            if (SFD.ShowDialog() == DialogResult.OK)
+            {
+                txtRutaXML.Text = SFD.FileName;
+            }
+            if (string.IsNullOrWhiteSpace(txtRutaXML.Text))
+            {
+                MessageBox.Show("Debe seleccionar una ruta para guardar el archivo XML.",
+                       "Advertencia",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                string ruta = txtRutaXML.Text;
+                turnoBll.ExportarTurnosXML(ruta);
+
+                MessageBox.Show("XML generado correctamente.");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+            
+        }
     }
 }
