@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|solutionrelative:bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\bll\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|solutionrelative:bll\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\bll\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|solutionrelative:bll\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\dal\\mp_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|solutionrelative:dal\\mp_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF1BC47-E992-410F-8D9E-E636A78C7BA3}|BE\\BE.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\be\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF1BC47-E992-410F-8D9E-E636A78C7BA3}|BE\\BE.csproj|solutionrelative:be\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\dal\\mp_turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|solutionrelative:dal\\mp_turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\tp-das\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\tp-das\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\dal\\mp_turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|solutionrelative:dal\\mp_turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\dal\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -170,24 +186,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Persona.cs",
+              "RelativeDocumentMoniker": "BLL\\Persona.cs",
+              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Persona.cs",
+              "RelativeToolTip": "BLL\\Persona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T22:31:28.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mp_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Usuario.cs",
+              "RelativeDocumentMoniker": "DAL\\Mp_Usuario.cs",
+              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Usuario.cs",
+              "RelativeToolTip": "DAL\\Mp_Usuario.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowIQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T22:24:39.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Usuario.cs",
+              "RelativeDocumentMoniker": "BLL\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Usuario.cs",
+              "RelativeToolTip": "BLL\\Usuario.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T22:24:19.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BE\\Usuario.cs",
+              "RelativeDocumentMoniker": "BE\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BE\\Usuario.cs",
+              "RelativeToolTip": "BE\\Usuario.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwCwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T22:23:14.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Turno.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Turno.cs",
               "RelativeDocumentMoniker": "BLL\\Turno.cs",
               "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Turno.cs",
               "RelativeToolTip": "BLL\\Turno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T21:16:08.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Turno.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Turno.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Turno.cs",
@@ -195,12 +263,11 @@
               "RelativeToolTip": "TP-DAS\\Turno.cs",
               "ViewState": "AgIAALwAAAAAAAAAAAAAAMAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T05:41:06.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T05:41:06.671Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Paciente.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Paciente.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Paciente.cs",
@@ -212,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Medico.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Medico.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Medico.cs",
@@ -223,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Medico.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Medico.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Medico.cs",
@@ -235,32 +302,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Mp_Turno.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Turno.cs",
               "RelativeDocumentMoniker": "DAL\\Mp_Turno.cs",
               "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Turno.cs",
               "RelativeToolTip": "DAL\\Mp_Turno.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvxEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T19:50:51.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Turno.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Turno.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Turno.cs",
               "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Turno.cs [Dise\u00F1o]",
               "RelativeToolTip": "TP-DAS\\Turno.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T23:35:56.066Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-11-05T23:35:56.066Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Acceso.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Acceso.cs",
               "RelativeDocumentMoniker": "DAL\\Acceso.cs",
@@ -268,12 +334,11 @@
               "RelativeToolTip": "DAL\\Acceso.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAqwDoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:23:14.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T11:23:14.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Mp_Persona.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Persona.cs",
               "RelativeDocumentMoniker": "DAL\\Mp_Persona.cs",
@@ -285,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Mp_Paciente.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Paciente.cs",
               "RelativeDocumentMoniker": "DAL\\Mp_Paciente.cs",
@@ -297,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Mp_ObraSocial.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_ObraSocial.cs",
               "RelativeDocumentMoniker": "DAL\\Mp_ObraSocial.cs",
@@ -309,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Mp_Medico.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Medico.cs",
               "RelativeDocumentMoniker": "DAL\\Mp_Medico.cs",
@@ -317,12 +382,11 @@
               "RelativeToolTip": "DAL\\Mp_Medico.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAwwGcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:29:27.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T22:29:27.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Paciente.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BE\\Paciente.cs",
               "RelativeDocumentMoniker": "BE\\Paciente.cs",
@@ -334,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "CUcmb.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUcmb.cs",
               "RelativeDocumentMoniker": "TP-DAS\\CUcmb.cs",
@@ -345,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Obra Social.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Obra Social.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Obra Social.cs",
@@ -356,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "CU3.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CU3.cs",
               "RelativeDocumentMoniker": "TP-DAS\\CU3.cs",
@@ -367,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Paciente.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Paciente.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Paciente.cs",
@@ -378,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "CUDate.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUDate.cs",
               "RelativeDocumentMoniker": "TP-DAS\\CUDate.cs",
@@ -390,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Obra Social.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Obra Social.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Obra Social.cs",
@@ -402,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "CUDate.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUDate.cs",
               "RelativeDocumentMoniker": "TP-DAS\\CUDate.cs",
@@ -413,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Paciente.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Paciente.cs",
               "RelativeDocumentMoniker": "BLL\\Paciente.cs",
@@ -425,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Especialidad.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Especialidad.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Especialidad.cs",
@@ -437,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "Especialidad.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Especialidad.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Especialidad.cs",
@@ -448,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "CU3.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CU3.cs",
               "RelativeDocumentMoniker": "TP-DAS\\CU3.cs",
@@ -460,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "Especialidad.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Especialidad.cs",
               "RelativeDocumentMoniker": "BLL\\Especialidad.cs",
@@ -472,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "TextBoxExtension.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\TextBoxExtension.cs",
               "RelativeDocumentMoniker": "TP-DAS\\TextBoxExtension.cs",
@@ -484,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "CU2.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CU2.cs",
               "RelativeDocumentMoniker": "TP-DAS\\CU2.cs",
@@ -496,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "CUcmb.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUcmb.cs",
               "RelativeDocumentMoniker": "TP-DAS\\CUcmb.cs",
@@ -508,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "ObraSocial.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\ObraSocial.cs",
               "RelativeDocumentMoniker": "BLL\\ObraSocial.cs",
@@ -520,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "Medico.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Medico.cs",
               "RelativeDocumentMoniker": "BLL\\Medico.cs",
@@ -532,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "Medico.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BE\\Medico.cs",
               "RelativeDocumentMoniker": "BE\\Medico.cs",
@@ -544,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "Clinica.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Clinica.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Clinica.cs",
@@ -556,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Clinica.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Clinica.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Clinica.cs",
@@ -567,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Program.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Program.cs",
@@ -579,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BE\\Persona.cs",
               "RelativeDocumentMoniker": "BE\\Persona.cs",
@@ -591,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "ObraSocial.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BE\\ObraSocial.cs",
               "RelativeDocumentMoniker": "BE\\ObraSocial.cs",
@@ -603,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "CU1.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CU1.cs",
               "RelativeDocumentMoniker": "TP-DAS\\CU1.cs",
@@ -615,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "Especialidad.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BE\\Especialidad.cs",
               "RelativeDocumentMoniker": "BE\\Especialidad.cs",
@@ -627,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "CU1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CU1.cs",
               "RelativeDocumentMoniker": "TP-DAS\\CU1.cs",
@@ -638,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "CU2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CU2.cs",
               "RelativeDocumentMoniker": "TP-DAS\\CU2.cs",

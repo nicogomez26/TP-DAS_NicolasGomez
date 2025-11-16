@@ -48,6 +48,7 @@
     <Compile Include="Mp_ObraSocial.cs" />
     <Compile Include="Mp_Paciente.cs" />
     <Compile Include="Mp_Persona.cs" />
+    <Compile Include="Mp_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Mp_Turno.cs" />
   </ItemGroup>
