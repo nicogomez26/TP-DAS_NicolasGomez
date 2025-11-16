@@ -33,11 +33,12 @@
             this.elimTurBtn = new System.Windows.Forms.Button();
             this.editTurBtn = new System.Windows.Forms.Button();
             this.agrTurBtn = new System.Windows.Forms.Button();
-            this.cU11 = new TP_DAS.CU1();
             this.label1 = new System.Windows.Forms.Label();
             this.cU32 = new TP_DAS.CU3();
             this.cU31 = new TP_DAS.CU3();
             this.cuDate1 = new TP_DAS.CUDate();
+            this.label2 = new System.Windows.Forms.Label();
+            this.idTurno = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grilla.Location = new System.Drawing.Point(381, 154);
             this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(418, 272);
+            this.grilla.Size = new System.Drawing.Size(420, 285);
             this.grilla.TabIndex = 74;
             // 
             // volverBtn
@@ -61,7 +62,7 @@
             // 
             // elimTurBtn
             // 
-            this.elimTurBtn.Location = new System.Drawing.Point(89, 420);
+            this.elimTurBtn.Location = new System.Drawing.Point(89, 410);
             this.elimTurBtn.Name = "elimTurBtn";
             this.elimTurBtn.Size = new System.Drawing.Size(238, 29);
             this.elimTurBtn.TabIndex = 72;
@@ -79,22 +80,13 @@
             // 
             // agrTurBtn
             // 
-            this.agrTurBtn.Location = new System.Drawing.Point(89, 328);
+            this.agrTurBtn.Location = new System.Drawing.Point(89, 340);
             this.agrTurBtn.Name = "agrTurBtn";
             this.agrTurBtn.Size = new System.Drawing.Size(238, 29);
             this.agrTurBtn.TabIndex = 70;
             this.agrTurBtn.Text = "Agregar";
             this.agrTurBtn.UseVisualStyleBackColor = true;
             this.agrTurBtn.Click += new System.EventHandler(this.agrTurBtn_Click);
-            // 
-            // cU11
-            // 
-            this.cU11.Etiqueta = "Nombre";
-            this.cU11.Location = new System.Drawing.Point(55, 147);
-            this.cU11.Name = "cU11";
-            this.cU11.Size = new System.Drawing.Size(292, 33);
-            this.cU11.TabIndex = 69;
-            this.cU11.Texto = "";
             // 
             // label1
             // 
@@ -112,6 +104,7 @@
             this.cU32.Name = "cU32";
             this.cU32.Size = new System.Drawing.Size(305, 28);
             this.cU32.TabIndex = 75;
+            this.cU32.TextoSeleccionado = "";
             this.cU32.Load += new System.EventHandler(this.cU32_Load);
             // 
             // cU31
@@ -121,6 +114,7 @@
             this.cU31.Name = "cU31";
             this.cU31.Size = new System.Drawing.Size(305, 28);
             this.cU31.TabIndex = 76;
+            this.cU31.TextoSeleccionado = "";
             // 
             // cuDate1
             // 
@@ -133,11 +127,32 @@
             this.cuDate1.TabIndex = 77;
             this.cuDate1.Valor = new System.DateTime(2025, 11, 7, 2, 40, 40, 777);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(52, 168);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(19, 13);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "Id:";
+            // 
+            // idTurno
+            // 
+            this.idTurno.AutoSize = true;
+            this.idTurno.Location = new System.Drawing.Point(131, 168);
+            this.idTurno.Name = "idTurno";
+            this.idTurno.Size = new System.Drawing.Size(10, 13);
+            this.idTurno.TabIndex = 79;
+            this.idTurno.Text = "-";
+            this.idTurno.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Turno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(949, 500);
+            this.Controls.Add(this.idTurno);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cuDate1);
             this.Controls.Add(this.cU31);
             this.Controls.Add(this.cU32);
@@ -146,7 +161,6 @@
             this.Controls.Add(this.elimTurBtn);
             this.Controls.Add(this.editTurBtn);
             this.Controls.Add(this.agrTurBtn);
-            this.Controls.Add(this.cU11);
             this.Controls.Add(this.label1);
             this.Name = "Turno";
             this.Text = "Turno";
@@ -164,10 +178,11 @@
         private System.Windows.Forms.Button elimTurBtn;
         private System.Windows.Forms.Button editTurBtn;
         private System.Windows.Forms.Button agrTurBtn;
-        private CU1 cU11;
         private System.Windows.Forms.Label label1;
         private CU3 cU32;
         private CU3 cU31;
         private CUDate cuDate1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label idTurno;
     }
 }

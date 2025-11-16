@@ -40,6 +40,8 @@
             this.cU12 = new TP_DAS.CU1();
             this.cU11 = new TP_DAS.CU1();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.IdMedico = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,6 +52,7 @@
             this.grilla.Name = "grilla";
             this.grilla.Size = new System.Drawing.Size(713, 256);
             this.grilla.TabIndex = 67;
+            this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
             // 
             // volverBtn
             // 
@@ -69,6 +72,7 @@
             this.elimMedBtn.TabIndex = 65;
             this.elimMedBtn.Text = "Eliminar";
             this.elimMedBtn.UseVisualStyleBackColor = true;
+            this.elimMedBtn.Click += new System.EventHandler(this.elimMedBtn_Click);
             // 
             // editMedBtn
             // 
@@ -78,6 +82,7 @@
             this.editMedBtn.TabIndex = 64;
             this.editMedBtn.Text = "Editar";
             this.editMedBtn.UseVisualStyleBackColor = true;
+            this.editMedBtn.Click += new System.EventHandler(this.editMedBtn_Click);
             // 
             // agrMedBtn
             // 
@@ -146,17 +151,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 171);
+            this.label1.Location = new System.Drawing.Point(55, 153);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 13);
             this.label1.TabIndex = 56;
             this.label1.Text = "Crear Medico";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(55, 182);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(16, 13);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Id";
+            // 
+            // IdMedico
+            // 
+            this.IdMedico.AutoSize = true;
+            this.IdMedico.Location = new System.Drawing.Point(131, 182);
+            this.IdMedico.Name = "IdMedico";
+            this.IdMedico.Size = new System.Drawing.Size(10, 13);
+            this.IdMedico.TabIndex = 69;
+            this.IdMedico.Text = "-";
             // 
             // Medico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 646);
+            this.Controls.Add(this.IdMedico);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.grilla);
             this.Controls.Add(this.volverBtn);
             this.Controls.Add(this.elimMedBtn);
@@ -192,5 +217,7 @@
         private CU1 cU12;
         private CU1 cU11;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label IdMedico;
     }
 }

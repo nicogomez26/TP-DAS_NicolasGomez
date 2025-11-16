@@ -26,6 +26,7 @@ namespace TP_DAS
             {
                 cU32.cargarDatos("listarEspecialidades", "Nombre", "ID");
                 cUcmb1.Items = new string[] { "Femenino", "Masculino" };
+                VerGrilla();
             }
             catch (Exception ex)
             {
@@ -49,7 +50,40 @@ namespace TP_DAS
             clinica.Show();
             this.Hide();
         }
+        private void editMedBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fa = 0;
 
+                medico = new BE.Medico();
+
+                medico.Id = int.Parse(IdMedico.Text);
+                medico.Dni = int.Parse(cU21.Texto);
+                medico.Nombre = cU11.Texto;
+                medico.Apellido = cU12.Texto;
+                medico.Edad = int.Parse(cU22.Texto);
+                medico.Sexo = cUcmb1.SelectedItem;
+                medico.Id_Especialidad = cU32.ValorSeleccionado;
+
+                fa = medicoBll.EditarMedico(medico);
+
+                if (fa != 0)
+                {
+                    MessageBox.Show("Se editó");
+                    VerGrilla();
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void agrMedBtn_Click(object sender, EventArgs e)
         {
 
@@ -93,6 +127,65 @@ namespace TP_DAS
             clinica.Show();
 
             this.Hide();
+        }
+
+        private void elimMedBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fa = 0;
+
+                medico = new BE.Medico();
+                medico.Id = int.Parse(IdMedico.Text);
+
+                fa = medicoBll.EliminarMedico(medico);
+                    
+                if (fa != 0)
+                {
+                    MessageBox.Show("Se eliminó");
+                    VerGrilla();
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        BE.Medico tmp;
+        private void grilla_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                    return;
+
+                var fila = grilla.Rows[e.RowIndex];
+                if (fila == null || fila.DataBoundItem == null)
+                    return;
+
+                tmp = (BE.Medico)grilla.Rows[e.RowIndex].DataBoundItem;
+
+                IdMedico.Text = tmp.Id.ToString();
+
+                cU21.Texto = tmp.Dni.ToString();
+                cU11.Texto = tmp.Nombre;
+                cU12.Texto = tmp.Apellido;
+                cU22.Texto = tmp.Edad.ToString();
+                cUcmb1.SelectedItem = tmp.Sexo;
+
+                cU32.ValorSeleccionado = tmp.Id_Especialidad;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
         }
     }
 }

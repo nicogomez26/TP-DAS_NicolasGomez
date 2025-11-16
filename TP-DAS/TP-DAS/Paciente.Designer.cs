@@ -34,6 +34,8 @@
             this.agrPacBtn = new System.Windows.Forms.Button();
             this.volverBtn = new System.Windows.Forms.Button();
             this.grilla = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.idPaciente = new System.Windows.Forms.Label();
             this.cUcmb1 = new TP_DAS.CUcmb();
             this.cU32 = new TP_DAS.CU3();
             this.cU22 = new TP_DAS.CU2();
@@ -46,7 +48,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 100);
+            this.label1.Location = new System.Drawing.Point(57, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 0;
@@ -60,6 +62,7 @@
             this.elimPacBtn.TabIndex = 47;
             this.elimPacBtn.Text = "Eliminar";
             this.elimPacBtn.UseVisualStyleBackColor = true;
+            this.elimPacBtn.Click += new System.EventHandler(this.elimPacBtn_Click);
             // 
             // editPacBtn
             // 
@@ -69,6 +72,7 @@
             this.editPacBtn.TabIndex = 46;
             this.editPacBtn.Text = "Editar";
             this.editPacBtn.UseVisualStyleBackColor = true;
+            this.editPacBtn.Click += new System.EventHandler(this.editPacBtn_Click);
             // 
             // agrPacBtn
             // 
@@ -97,6 +101,25 @@
             this.grilla.Name = "grilla";
             this.grilla.Size = new System.Drawing.Size(708, 272);
             this.grilla.TabIndex = 55;
+            this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(57, 117);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 13);
+            this.label2.TabIndex = 56;
+            this.label2.Text = "ID:";
+            // 
+            // idPaciente
+            // 
+            this.idPaciente.AutoSize = true;
+            this.idPaciente.Location = new System.Drawing.Point(104, 117);
+            this.idPaciente.Name = "idPaciente";
+            this.idPaciente.Size = new System.Drawing.Size(10, 13);
+            this.idPaciente.TabIndex = 57;
+            this.idPaciente.Text = "-";
             // 
             // cUcmb1
             // 
@@ -115,6 +138,7 @@
             this.cU32.Name = "cU32";
             this.cU32.Size = new System.Drawing.Size(305, 28);
             this.cU32.TabIndex = 8;
+            this.cU32.TextoSeleccionado = "";
             // 
             // cU22
             // 
@@ -157,6 +181,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1106, 542);
+            this.Controls.Add(this.idPaciente);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.grilla);
             this.Controls.Add(this.volverBtn);
             this.Controls.Add(this.elimPacBtn);
@@ -192,5 +218,7 @@
         private System.Windows.Forms.Button agrPacBtn;
         private System.Windows.Forms.Button volverBtn;
         private System.Windows.Forms.DataGridView grilla;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label idPaciente;
     }
 }

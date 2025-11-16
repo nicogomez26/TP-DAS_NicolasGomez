@@ -50,7 +50,7 @@ namespace TP_DAS
 
         private void Obra_Social_Load(object sender, EventArgs e)
         {
-
+            VerGrilla();
         }
 
         private void agrOSBtn_Click(object sender, EventArgs e)
@@ -80,6 +80,90 @@ namespace TP_DAS
 
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void editOSBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fa = 0;
+
+                ObraSoc = new BE.ObraSocial();
+
+                ObraSoc.Id = int.Parse(idObraSocial.Text);
+                ObraSoc.Nombre = cU11.Texto;
+
+                fa = ObraSocBll.EditarObraSocial(ObraSoc);
+
+                if (fa != 0)
+                {
+                    MessageBox.Show("Se editó");
+                    VerGrilla();
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void elimOSBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fa = 0;
+
+                ObraSoc = new BE.ObraSocial();
+                ObraSoc.Id = int.Parse(idObraSocial.Text);
+
+                fa = ObraSocBll.EliminarObraSocial(ObraSoc);
+
+                if (fa != 0)
+                {
+                    MessageBox.Show("Se eliminó");
+                    VerGrilla();
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        BE.ObraSocial tmp; 
+        private void grilla_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                    return;
+
+                var fila = grilla.Rows[e.RowIndex];
+                if (fila == null || fila.DataBoundItem == null)
+                    return;
+
+                tmp = (BE.ObraSocial)grilla.Rows[e.RowIndex].DataBoundItem;
+
+                idObraSocial.Text = tmp.Id.ToString();
+
+                cU11.Texto = tmp.Nombre.ToString();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
         }
     }
 }

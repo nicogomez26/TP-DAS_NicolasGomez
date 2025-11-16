@@ -44,7 +44,7 @@ namespace DAL
         {
             int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[0];
+            SqlParameter[] parametro = new SqlParameter[1];
             parametro[0] = new SqlParameter("@ID", turno.Id);
 
             fa = acc.Escribir("eliminarTurno", parametro);

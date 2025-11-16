@@ -69,7 +69,10 @@ namespace TP_DAS
         {
             get {
                 return (int)cmb.SelectedValue;
+
             }
+            set => cmb.SelectedValue = value;
+
         }
 
         public string TextoSeleccionado
@@ -78,6 +81,8 @@ namespace TP_DAS
             {
                 return cmb.Text;
             }
+            set => cmb.SelectedValue = value;
+
         }
 
         /*public ComboBox Combo => cmb;*/

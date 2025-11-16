@@ -38,8 +38,8 @@ namespace TP_DAS
 
                 turno.Fecha = cuDate1.Valor;
 
-                turno.Id_Paciente = int.Parse(cU32.Text);
-                turno.Id_Medico = int.Parse(cU31.Text);
+                turno.Id_Paciente = cU32.ValorSeleccionado;
+                turno.Id_Medico = cU31.ValorSeleccionado;
 
 
                 fa = turnoBll.AgregarTurno(turno);
@@ -83,6 +83,7 @@ namespace TP_DAS
 
         private void Turno_Load(object sender, EventArgs e)
         {
+            VerGrilla();
             cU32.cargarDatos("listarPacientes", "Nombre", "ID");
             cU31.cargarDatos("listarMedicos", "Nombre", "ID");
         }

@@ -35,13 +35,14 @@ namespace DAL
         {
             int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[6];
-            parametro[0] = new SqlParameter("@dni", medico.Dni);
-            parametro[1] = new SqlParameter("@nombre", medico.Nombre);
-            parametro[2] = new SqlParameter("@apellido", medico.Apellido);
-            parametro[3] = new SqlParameter("@edad", medico.Edad);
-            parametro[4] = new SqlParameter("@sexo", medico.Sexo);
-            parametro[5] = new SqlParameter("@id_Especialidad", medico.Id_Especialidad);
+            SqlParameter[] parametro = new SqlParameter[7];
+            parametro[0] = new SqlParameter("@id", medico.Id);
+            parametro[1] = new SqlParameter("@dni", medico.Dni);
+            parametro[2] = new SqlParameter("@nombre", medico.Nombre);
+            parametro[3] = new SqlParameter("@apellido", medico.Apellido);
+            parametro[4] = new SqlParameter("@edad", medico.Edad);
+            parametro[5] = new SqlParameter("@sexo", medico.Sexo);
+            parametro[6] = new SqlParameter("@id_Especialidad", medico.Id_Especialidad);
 
 
 
@@ -54,7 +55,7 @@ namespace DAL
         {
             int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[0];
+            SqlParameter[] parametro = new SqlParameter[1];
             parametro[0] = new SqlParameter("@ID", medico.Id);
 
             fa = acc.Escribir("eliminarMedico", parametro);

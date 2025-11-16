@@ -24,6 +24,5 @@ namespace BE
 			set { id_ObraSocial = value; }
 		}
 
-
 	}
 }

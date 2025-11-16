@@ -35,6 +35,8 @@
             this.agrOSBtn = new System.Windows.Forms.Button();
             this.cU11 = new TP_DAS.CU1();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.idObraSocial = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,6 +47,7 @@
             this.grilla.Name = "grilla";
             this.grilla.Size = new System.Drawing.Size(708, 272);
             this.grilla.TabIndex = 67;
+            this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
             // 
             // volverBtn
             // 
@@ -64,6 +67,7 @@
             this.elimOSBtn.TabIndex = 65;
             this.elimOSBtn.Text = "Eliminar";
             this.elimOSBtn.UseVisualStyleBackColor = true;
+            this.elimOSBtn.Click += new System.EventHandler(this.elimOSBtn_Click);
             // 
             // editOSBtn
             // 
@@ -73,6 +77,7 @@
             this.editOSBtn.TabIndex = 64;
             this.editOSBtn.Text = "Editar";
             this.editOSBtn.UseVisualStyleBackColor = true;
+            this.editOSBtn.Click += new System.EventHandler(this.editOSBtn_Click);
             // 
             // agrOSBtn
             // 
@@ -96,17 +101,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 144);
+            this.label1.Location = new System.Drawing.Point(56, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 56;
             this.label1.Text = "Crear Obra Social";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(56, 141);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(16, 13);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Id";
+            // 
+            // idObraSocial
+            // 
+            this.idObraSocial.AutoSize = true;
+            this.idObraSocial.Location = new System.Drawing.Point(107, 141);
+            this.idObraSocial.Name = "idObraSocial";
+            this.idObraSocial.Size = new System.Drawing.Size(10, 13);
+            this.idObraSocial.TabIndex = 69;
+            this.idObraSocial.Text = "-";
             // 
             // Obra_Social
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 594);
+            this.Controls.Add(this.idObraSocial);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.grilla);
             this.Controls.Add(this.volverBtn);
             this.Controls.Add(this.elimOSBtn);
@@ -132,5 +157,7 @@
         private System.Windows.Forms.Button agrOSBtn;
         private CU1 cU11;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label idObraSocial;
     }
 }

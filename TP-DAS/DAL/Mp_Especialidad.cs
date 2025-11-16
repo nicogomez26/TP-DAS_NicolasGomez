@@ -28,7 +28,8 @@ namespace DAL
         {
             int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[1];
+            SqlParameter[] parametro = new SqlParameter[2];
+            parametro[0] = new SqlParameter("@ID", especialidad.Id);
             parametro[1] = new SqlParameter("@Nombre", especialidad.Nombre);
 
             fa = acc.Escribir("editarEspecialidad", parametro);
@@ -40,7 +41,7 @@ namespace DAL
         {
             int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[0];
+            SqlParameter[] parametro = new SqlParameter[1];
             parametro[0] = new SqlParameter("@ID", especialidad.Id);
 
             fa = acc.Escribir("eliminarEspecialidad", parametro);

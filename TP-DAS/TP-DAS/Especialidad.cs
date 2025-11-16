@@ -71,8 +71,91 @@ namespace TP_DAS
             }
         }
 
+        private void editEspBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fa = 0;
+
+                especialidad = new BE.Especialidad();
+
+                especialidad.Id = int.Parse(IdEsp.Text);
+                especialidad.Nombre = cU11.Texto;
+
+                fa = especialidadBLL.EditarEspecialidad(especialidad);
+
+                if (fa != 0)
+                {
+                    MessageBox.Show("Se editó");
+                    VerGrilla();
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void Especialidad_Load(object sender, EventArgs e)
         {
+            VerGrilla();
+        }
+
+        private void elimEspBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fa = 0;
+
+                especialidad = new BE.Especialidad();
+                especialidad.Id = int.Parse(IdEsp.Text);
+
+                fa = especialidadBLL.EliminarEspecialidad(especialidad);
+
+                if (fa != 0)
+                {
+                    MessageBox.Show("Se eliminó");
+                    VerGrilla();
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        BE.Especialidad tmp;
+        private void grilla_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                    return;
+
+                var fila = grilla.Rows[e.RowIndex];
+                if (fila == null || fila.DataBoundItem == null)
+                    return;
+
+                tmp = (BE.Especialidad)grilla.Rows[e.RowIndex].DataBoundItem;
+
+                IdEsp.Text = tmp.Id.ToString();
+
+                cU11.Texto = tmp.Nombre.ToString();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
 
         }
     }

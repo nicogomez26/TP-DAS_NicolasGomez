@@ -16,8 +16,7 @@ namespace TP_DAS
         {
             InitializeComponent();
 
-            dateTimePicker1.MinDate = DateTime.Now;
-            dateTimePicker1.MaxDate = DateTime.Now.AddDays(90);
+
         }
 
 
@@ -72,6 +71,8 @@ namespace TP_DAS
 
         private void CU3_Load(object sender, EventArgs e)
         {
+            dateTimePicker1.MinDate = DateTime.Now;
+            dateTimePicker1.MaxDate = DateTime.Now.AddDays(90);
         }
     }
 }
