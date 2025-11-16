@@ -30,7 +30,8 @@ namespace DAL
         {
             int fa = 0;
 
-            SqlParameter[] parametro = new SqlParameter[3];
+            SqlParameter[] parametro = new SqlParameter[4];
+            parametro[0] = new SqlParameter("@ID", turno.Id);
             parametro[1] = new SqlParameter("@fecha", turno.Fecha);
             parametro[2] = new SqlParameter("@ID_Medico", turno.Id_Medico);
             parametro[3] = new SqlParameter("@ID_Paciente", turno.Id_Paciente);

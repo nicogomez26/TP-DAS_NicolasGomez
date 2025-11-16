@@ -49,6 +49,7 @@
             this.grilla.Name = "grilla";
             this.grilla.Size = new System.Drawing.Size(420, 285);
             this.grilla.TabIndex = 74;
+            this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
             // 
             // volverBtn
             // 
@@ -68,6 +69,7 @@
             this.elimTurBtn.TabIndex = 72;
             this.elimTurBtn.Text = "Eliminar";
             this.elimTurBtn.UseVisualStyleBackColor = true;
+            this.elimTurBtn.Click += new System.EventHandler(this.elimTurBtn_Click);
             // 
             // editTurBtn
             // 
@@ -77,6 +79,7 @@
             this.editTurBtn.TabIndex = 71;
             this.editTurBtn.Text = "Editar";
             this.editTurBtn.UseVisualStyleBackColor = true;
+            this.editTurBtn.Click += new System.EventHandler(this.editTurBtn_Click);
             // 
             // agrTurBtn
             // 
@@ -120,12 +123,12 @@
             // 
             this.cuDate1.Etiqueta = "Fecha";
             this.cuDate1.Location = new System.Drawing.Point(55, 199);
-            this.cuDate1.Maximo = new System.DateTime(2026, 2, 5, 2, 40, 40, 761);
-            this.cuDate1.Minimo = new System.DateTime(2025, 11, 7, 2, 40, 40, 761);
+            this.cuDate1.Maximo = new System.DateTime(2026, 2, 14, 16, 20, 1, 750);
+            this.cuDate1.Minimo = new System.DateTime(2025, 11, 16, 16, 20, 1, 749);
             this.cuDate1.Name = "cuDate1";
             this.cuDate1.Size = new System.Drawing.Size(305, 28);
             this.cuDate1.TabIndex = 77;
-            this.cuDate1.Valor = new System.DateTime(2025, 11, 7, 2, 40, 40, 777);
+            this.cuDate1.Valor = new System.DateTime(2025, 11, 16, 16, 20, 1, 749);
             // 
             // label2
             // 
