@@ -12,8 +12,10 @@ namespace TP_DAS
 {
     public partial class Obra_Social : Form
     {
-        public Obra_Social()
+        BE.Usuario uLogueado;
+        public Obra_Social(BE.Usuario usuario)
         {
+            uLogueado = usuario;
             InitializeComponent();
         }
 
@@ -32,7 +34,7 @@ namespace TP_DAS
 
         private void volverBtn_Click(object sender, EventArgs e)
         {
-            Clinica clinica = new Clinica();
+            Clinica clinica = new Clinica(uLogueado);
 
             clinica.Show();
             this.Hide();
@@ -41,7 +43,7 @@ namespace TP_DAS
 
         private void volverBtn_Click_1(object sender, EventArgs e)
         {
-            Clinica clinica = new Clinica();
+            Clinica clinica = new Clinica(uLogueado);
 
             clinica.Show();
 

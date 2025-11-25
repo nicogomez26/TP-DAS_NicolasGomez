@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -46,8 +47,9 @@ namespace DAL
             Desconectar();
         }
 
-        public int Escribir(string sp, SqlParameter[] parametro) { 
-        
+        public int Escribir(string sp, SqlParameter[] parametro)
+        {
+
             int fa = 0;
 
             cmd.Connection = cn;
@@ -75,24 +77,44 @@ namespace DAL
 
             SqlDataAdapter adaptador = new SqlDataAdapter();
 
-            Conectar();
+            if (cn.State != ConnectionState.Open)
+                Conectar();
+
             cmd.Connection = cn;
+            if (tr != null)
+                cmd.Transaction = tr;
+            
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = sp;
 
-            if (parametro != null) {
-                cmd.ExecuteReader();
+            if (parametro != null)
+            {
+                cmd.Parameters.AddRange(parametro);
             }
-            
+
             adaptador.SelectCommand = cmd;
             adaptador.Fill(dt);
 
-            Desconectar();
-
+            if (tr == null)
+                Desconectar();
             return dt;
 
         }
 
+        public string CalcularSHA256(string texto)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = Encoding.UTF8.GetBytes(texto);
+                byte[] hash = sha256.ComputeHash(bytes);
+
+                StringBuilder sb = new StringBuilder();
+                foreach (byte b in hash)
+                    sb.Append(b.ToString("x2"));
+
+                return sb.ToString();
+            }
+        }
 
 
 

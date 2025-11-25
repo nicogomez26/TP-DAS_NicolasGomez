@@ -100,18 +100,35 @@ namespace DAL
 
         public List<BE.Especialidad> Listar()
         {
-            List<BE.Especialidad> especialidades = new List<BE.Especialidad>();
-            DataTable tabla = acc.Leer("listarEspecialidades", null);
-            foreach (DataRow dr in tabla.Rows)
+            
+
+            try
             {
-                BE.Especialidad especialidad = new BE.Especialidad();
-                especialidad.Id = int.Parse(dr["ID"].ToString());
-                especialidad.Nombre = dr["Nombre"].ToString();
+                acc.IniciarTransaccion();
 
-                especialidades.Add(especialidad);
+                List<BE.Especialidad> especialidades = new List<BE.Especialidad>();
+                DataTable tabla = acc.Leer("listarEspecialidades", null);
+                foreach (DataRow dr in tabla.Rows)
+                {
+                    BE.Especialidad especialidad = new BE.Especialidad();
+                    especialidad.Id = int.Parse(dr["ID"].ToString());
+                    especialidad.Nombre = dr["Nombre"].ToString();
 
+                    especialidades.Add(especialidad);
+
+                }
+                acc.ConfirmarTransaccion();
+
+                return especialidades;
             }
-            return especialidades;
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return null;
+            }
         }
 
     }

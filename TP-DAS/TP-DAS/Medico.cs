@@ -12,9 +12,11 @@ namespace TP_DAS
 {
     public partial class Medico : Form
     {
-        public Medico()
+        BE.Usuario uLogueado;
+        public Medico(BE.Usuario uLogueado)
         {
             InitializeComponent();
+            this.uLogueado = uLogueado;
         }
 
         BLL.Medico medicoBll = new BLL.Medico();
@@ -45,7 +47,7 @@ namespace TP_DAS
 
         private void volverBtn_Click(object sender, EventArgs e)
         {
-            Clinica clinica = new Clinica();
+            Clinica clinica = new Clinica(uLogueado);
 
             clinica.Show();
             this.Hide();
@@ -122,7 +124,7 @@ namespace TP_DAS
 
         private void volverBtn_Click_1(object sender, EventArgs e)
         {
-            Clinica clinica = new Clinica();
+            Clinica clinica = new Clinica(uLogueado);
 
             clinica.Show();
 

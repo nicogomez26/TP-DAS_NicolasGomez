@@ -25,7 +25,7 @@ namespace BLL
 
         }
 
-        public int EditarTurno(BE.Usuario usuario)
+        public int EditarUsuario(BE.Usuario usuario)
         {
             int fa = 0;
 
@@ -34,7 +34,7 @@ namespace BLL
             return fa;
         }
 
-        public int EliminarTurno(BE.Usuario usuario)
+        public int EliminarUsuario(BE.Usuario usuario)
         {
             int fa = 0;
 
@@ -43,13 +43,13 @@ namespace BLL
             return fa;
         }
 
-        public List<BE.Usuario> ListarTurno()
+        public List<BE.Usuario> ListarUsuarios()
         {
             List<BE.Usuario> usuarios = mapper.Listar();
             return usuarios;
         }
 
-        public void ExportarTurnosXML(string ruta)
+        public void ExportarUsuarioXML(string ruta)
         {
             DataTable dt = mapper.ExportarXML();
 
@@ -59,6 +59,11 @@ namespace BLL
 
             ds.WriteXml(ruta);
 
+        }
+
+        public BE.Usuario Login(string email, string pass)
+        {
+            return mapper.Login(email, pass);
         }
     }
 }

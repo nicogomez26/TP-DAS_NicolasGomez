@@ -101,19 +101,37 @@ namespace DAL
 
         public List<BE.ObraSocial> Listar()
         {
-            List<BE.ObraSocial> obrasSociales = new List<BE.ObraSocial>();
-            DataTable tabla = acc.Leer("listarObrasSociales", null);
-            foreach (DataRow dr in tabla.Rows)
+            
+
+
+            try
             {
-                BE.ObraSocial obraSocial = new BE.ObraSocial();
-                obraSocial.Id = int.Parse(dr["ID"].ToString());
-                obraSocial.Nombre = dr["nombre"].ToString();
+                acc.IniciarTransaccion();
+
+                List<BE.ObraSocial> obrasSociales = new List<BE.ObraSocial>();
+                DataTable tabla = acc.Leer("listarObrasSociales", null);
+                foreach (DataRow dr in tabla.Rows)
+                {
+                    BE.ObraSocial obraSocial = new BE.ObraSocial();
+                    obraSocial.Id = int.Parse(dr["ID"].ToString());
+                    obraSocial.Nombre = dr["nombre"].ToString();
 
 
-                obrasSociales.Add(obraSocial);
+                    obrasSociales.Add(obraSocial);
 
+                }
+                acc.ConfirmarTransaccion();
+
+                return obrasSociales;
             }
-            return obrasSociales;
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return null;
+            }
         }
     }
 }

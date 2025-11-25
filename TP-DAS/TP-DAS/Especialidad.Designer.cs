@@ -33,10 +33,10 @@
             this.elimEspBtn = new System.Windows.Forms.Button();
             this.editEspBtn = new System.Windows.Forms.Button();
             this.agrEspBtn = new System.Windows.Forms.Button();
-            this.cU11 = new TP_DAS.CU1();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.IdEsp = new System.Windows.Forms.Label();
+            this.cU11 = new TP_DAS.CU1();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,15 +89,6 @@
             this.agrEspBtn.UseVisualStyleBackColor = true;
             this.agrEspBtn.Click += new System.EventHandler(this.agrEspBtn_Click);
             // 
-            // cU11
-            // 
-            this.cU11.Etiqueta = "Nombre";
-            this.cU11.Location = new System.Drawing.Point(59, 183);
-            this.cU11.Name = "cU11";
-            this.cU11.Size = new System.Drawing.Size(292, 33);
-            this.cU11.TabIndex = 69;
-            this.cU11.Texto = "";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -124,6 +115,15 @@
             this.IdEsp.Size = new System.Drawing.Size(10, 13);
             this.IdEsp.TabIndex = 76;
             this.IdEsp.Text = "-";
+            // 
+            // cU11
+            // 
+            this.cU11.Etiqueta = "Nombre";
+            this.cU11.Location = new System.Drawing.Point(59, 183);
+            this.cU11.Name = "cU11";
+            this.cU11.Size = new System.Drawing.Size(292, 33);
+            this.cU11.TabIndex = 69;
+            this.cU11.Texto = "";
             // 
             // Especialidad
             // 

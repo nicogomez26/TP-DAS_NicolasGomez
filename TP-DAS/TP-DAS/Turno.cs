@@ -12,9 +12,11 @@ namespace TP_DAS
 {
     public partial class Turno : Form
     {
-        public Turno()
+        BE.Usuario uLogueado;
+        public Turno(BE.Usuario uLogueado)
         {
             InitializeComponent();
+            this.uLogueado = uLogueado;
         }
 
 
@@ -69,7 +71,7 @@ namespace TP_DAS
         }
         private void volverBtn_Click(object sender, EventArgs e)
         {
-            Clinica clinica = new Clinica();
+            Clinica clinica = new Clinica(uLogueado);
 
             clinica.Show();
 

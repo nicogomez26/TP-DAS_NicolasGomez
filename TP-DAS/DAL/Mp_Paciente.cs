@@ -107,28 +107,47 @@ namespace DAL
 
                 return -1;
             }
+
+
             
         }
 
         public List<BE.Paciente> Listar()
         {
-            List<BE.Paciente> pacientes = new List<BE.Paciente>();
-            DataTable tabla = acc.Leer("listarPacientes", null);
-            foreach (DataRow dr in tabla.Rows)
+
+
+            try
             {
-                BE.Paciente paciente = new BE.Paciente();
-                paciente.Id = int.Parse(dr["ID"].ToString());
-                paciente.Dni = int.Parse(dr["dni"].ToString());
-                paciente.Nombre = dr["nombre"].ToString();
-                paciente.Apellido = dr["apellido"].ToString();
-                paciente.Edad = int.Parse(dr["edad"].ToString());
-                paciente.Sexo = dr["sexo"].ToString();
-                paciente.Id_ObraSocial = int.Parse(dr["ID_ObraSocial"].ToString());
+                acc.IniciarTransaccion();
 
-                pacientes.Add(paciente);
+                List<BE.Paciente> pacientes = new List<BE.Paciente>();
+                DataTable tabla = acc.Leer("listarPacientes", null);
+                foreach (DataRow dr in tabla.Rows)
+                {
+                    BE.Paciente paciente = new BE.Paciente();
+                    paciente.Id = int.Parse(dr["ID"].ToString());
+                    paciente.Dni = int.Parse(dr["dni"].ToString());
+                    paciente.Nombre = dr["nombre"].ToString();
+                    paciente.Apellido = dr["apellido"].ToString();
+                    paciente.Edad = int.Parse(dr["edad"].ToString());
+                    paciente.Sexo = dr["sexo"].ToString();
+                    paciente.Id_ObraSocial = int.Parse(dr["ID_ObraSocial"].ToString());
 
+                    pacientes.Add(paciente);
+
+                }
+                acc.ConfirmarTransaccion();
+
+                return pacientes;
             }
-            return pacientes;
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return null;
+            }
         }
     }
 }

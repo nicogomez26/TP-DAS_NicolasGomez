@@ -48,7 +48,7 @@
             // grilla
             // 
             this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(381, 171);
+            this.grilla.Location = new System.Drawing.Point(381, 113);
             this.grilla.Name = "grilla";
             this.grilla.Size = new System.Drawing.Size(713, 256);
             this.grilla.TabIndex = 67;
@@ -56,7 +56,7 @@
             // 
             // volverBtn
             // 
-            this.volverBtn.Location = new System.Drawing.Point(19, 83);
+            this.volverBtn.Location = new System.Drawing.Point(19, 25);
             this.volverBtn.Name = "volverBtn";
             this.volverBtn.Size = new System.Drawing.Size(133, 44);
             this.volverBtn.TabIndex = 66;
@@ -66,7 +66,7 @@
             // 
             // elimMedBtn
             // 
-            this.elimMedBtn.Location = new System.Drawing.Point(77, 536);
+            this.elimMedBtn.Location = new System.Drawing.Point(77, 478);
             this.elimMedBtn.Name = "elimMedBtn";
             this.elimMedBtn.Size = new System.Drawing.Size(238, 29);
             this.elimMedBtn.TabIndex = 65;
@@ -76,7 +76,7 @@
             // 
             // editMedBtn
             // 
-            this.editMedBtn.Location = new System.Drawing.Point(77, 491);
+            this.editMedBtn.Location = new System.Drawing.Point(77, 433);
             this.editMedBtn.Name = "editMedBtn";
             this.editMedBtn.Size = new System.Drawing.Size(238, 29);
             this.editMedBtn.TabIndex = 64;
@@ -86,7 +86,7 @@
             // 
             // agrMedBtn
             // 
-            this.agrMedBtn.Location = new System.Drawing.Point(77, 444);
+            this.agrMedBtn.Location = new System.Drawing.Point(77, 386);
             this.agrMedBtn.Name = "agrMedBtn";
             this.agrMedBtn.Size = new System.Drawing.Size(238, 29);
             this.agrMedBtn.TabIndex = 63;
@@ -98,7 +98,7 @@
             // 
             this.cUcmb1.Etiqueta = "Sexo";
             this.cUcmb1.Items = new string[0];
-            this.cUcmb1.Location = new System.Drawing.Point(45, 364);
+            this.cUcmb1.Location = new System.Drawing.Point(45, 306);
             this.cUcmb1.Name = "cUcmb1";
             this.cUcmb1.SelectedItem = "";
             this.cUcmb1.Size = new System.Drawing.Size(305, 28);
@@ -107,15 +107,16 @@
             // cU32
             // 
             this.cU32.Etiqueta = "Espe.";
-            this.cU32.Location = new System.Drawing.Point(45, 399);
+            this.cU32.Location = new System.Drawing.Point(45, 341);
             this.cU32.Name = "cU32";
             this.cU32.Size = new System.Drawing.Size(305, 28);
             this.cU32.TabIndex = 61;
+            this.cU32.TextoSeleccionado = "";
             // 
             // cU22
             // 
             this.cU22.Etiqueta = "Edad";
-            this.cU22.Location = new System.Drawing.Point(45, 325);
+            this.cU22.Location = new System.Drawing.Point(45, 267);
             this.cU22.Name = "cU22";
             this.cU22.Size = new System.Drawing.Size(292, 33);
             this.cU22.TabIndex = 60;
@@ -124,7 +125,7 @@
             // cU21
             // 
             this.cU21.Etiqueta = "DNI";
-            this.cU21.Location = new System.Drawing.Point(45, 207);
+            this.cU21.Location = new System.Drawing.Point(45, 149);
             this.cU21.Name = "cU21";
             this.cU21.Size = new System.Drawing.Size(292, 33);
             this.cU21.TabIndex = 59;
@@ -133,7 +134,7 @@
             // cU12
             // 
             this.cU12.Etiqueta = "Apellido";
-            this.cU12.Location = new System.Drawing.Point(45, 285);
+            this.cU12.Location = new System.Drawing.Point(45, 227);
             this.cU12.Name = "cU12";
             this.cU12.Size = new System.Drawing.Size(292, 33);
             this.cU12.TabIndex = 58;
@@ -142,7 +143,7 @@
             // cU11
             // 
             this.cU11.Etiqueta = "Nombre";
-            this.cU11.Location = new System.Drawing.Point(45, 246);
+            this.cU11.Location = new System.Drawing.Point(45, 188);
             this.cU11.Name = "cU11";
             this.cU11.Size = new System.Drawing.Size(292, 33);
             this.cU11.TabIndex = 57;
@@ -151,7 +152,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 153);
+            this.label1.Location = new System.Drawing.Point(55, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 13);
             this.label1.TabIndex = 56;
@@ -160,7 +161,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 182);
+            this.label2.Location = new System.Drawing.Point(55, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(16, 13);
             this.label2.TabIndex = 68;
@@ -169,7 +170,7 @@
             // IdMedico
             // 
             this.IdMedico.AutoSize = true;
-            this.IdMedico.Location = new System.Drawing.Point(131, 182);
+            this.IdMedico.Location = new System.Drawing.Point(131, 124);
             this.IdMedico.Name = "IdMedico";
             this.IdMedico.Size = new System.Drawing.Size(10, 13);
             this.IdMedico.TabIndex = 69;

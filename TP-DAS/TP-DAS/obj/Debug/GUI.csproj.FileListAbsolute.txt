@@ -50,3 +50,7 @@ C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Obra_Social.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUDate.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Turno.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUEmail.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUPass.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Login.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Usuario.resources

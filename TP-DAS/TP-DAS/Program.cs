@@ -13,7 +13,7 @@ namespace GUI
             Application.SetCompatibleTextRenderingDefault(false);
 
             // 👇 Abrí el formulario principal
-            Application.Run(new Clinica());
+            Application.Run(new Login());
         }
     }
 }

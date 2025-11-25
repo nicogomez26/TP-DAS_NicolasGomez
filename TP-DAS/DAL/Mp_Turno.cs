@@ -106,20 +106,37 @@ namespace DAL
 
         public List<BE.Turno> Listar()
         {
-            List<BE.Turno> turnos = new List<BE.Turno>();
-            DataTable tabla = acc.Leer("listarTurnos", null);
-            foreach (DataRow dr in tabla.Rows)
+            
+
+            try
             {
-                BE.Turno turno = new BE.Turno();
-                turno.Id = int.Parse(dr["ID"].ToString());
-                turno.Fecha = DateTime.Parse(dr["fecha"].ToString());
-                turno.Id_Medico = int.Parse(dr["ID_Medico"].ToString());
-                turno.Id_Paciente = int.Parse(dr["ID_Paciente"].ToString());
+                acc.IniciarTransaccion();
 
-                turnos.Add(turno);
+                List<BE.Turno> turnos = new List<BE.Turno>();
+                DataTable tabla = acc.Leer("listarTurnos", null);
+                foreach (DataRow dr in tabla.Rows)
+                {
+                    BE.Turno turno = new BE.Turno();
+                    turno.Id = int.Parse(dr["ID"].ToString());
+                    turno.Fecha = DateTime.Parse(dr["fecha"].ToString());
+                    turno.Id_Medico = int.Parse(dr["ID_Medico"].ToString());
+                    turno.Id_Paciente = int.Parse(dr["ID_Paciente"].ToString());
 
+                    turnos.Add(turno);
+
+                }
+                acc.ConfirmarTransaccion();
+
+                return turnos;
             }
-            return turnos;
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return null;
+            }
         }
 
         public DataTable ExportarXML()

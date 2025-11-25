@@ -12,9 +12,11 @@ namespace TP_DAS
 {
     public partial class Paciente : Form
     {
-        public Paciente()
+        BE.Usuario uLogueado;
+        public Paciente(BE.Usuario uLogueado)
         {
             InitializeComponent();
+            this.uLogueado = uLogueado;
         }
 
         BLL.Paciente pacienteBll = new BLL.Paciente();
@@ -113,7 +115,7 @@ namespace TP_DAS
 
         private void volverBtn_Click(object sender, EventArgs e)
         {
-            Clinica clinica = new Clinica();
+            Clinica clinica = new Clinica(uLogueado);
 
             clinica.Show();
             this.Hide();

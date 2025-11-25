@@ -112,23 +112,40 @@ namespace DAL
 
         public List<BE.Medico> Listar()
         {
-            List<BE.Medico> medicos = new List<BE.Medico>();
-            DataTable tabla = acc.Leer("listarMedicos", null);
-            foreach (DataRow dr in tabla.Rows)
+            
+
+            try
             {
-                BE.Medico medico = new BE.Medico();
-                medico.Id = int.Parse(dr["ID"].ToString());
-                medico.Dni = int.Parse(dr["dni"].ToString());
-                medico.Nombre = dr["nombre"].ToString();
-                medico.Apellido = dr["apellido"].ToString();
-                medico.Edad = int.Parse(dr["edad"].ToString());
-                medico.Sexo = dr["sexo"].ToString();
-                medico.Id_Especialidad= int.Parse(dr["ID_Especialidad"].ToString());
+                acc.IniciarTransaccion();
 
-                medicos.Add(medico);
+                List<BE.Medico> medicos = new List<BE.Medico>();
+                DataTable tabla = acc.Leer("listarMedicos", null);
+                foreach (DataRow dr in tabla.Rows)
+                {
+                    BE.Medico medico = new BE.Medico();
+                    medico.Id = int.Parse(dr["ID"].ToString());
+                    medico.Dni = int.Parse(dr["dni"].ToString());
+                    medico.Nombre = dr["nombre"].ToString();
+                    medico.Apellido = dr["apellido"].ToString();
+                    medico.Edad = int.Parse(dr["edad"].ToString());
+                    medico.Sexo = dr["sexo"].ToString();
+                    medico.Id_Especialidad = int.Parse(dr["ID_Especialidad"].ToString());
 
+                    medicos.Add(medico);
+
+                }
+                acc.ConfirmarTransaccion();
+
+                return medicos;
             }
-            return medicos;
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+
+                MessageBox.Show(ex.Message.ToString());
+
+                return null;
+            }
         }
 
 

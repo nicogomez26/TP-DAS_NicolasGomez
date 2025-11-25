@@ -12,14 +12,16 @@ namespace TP_DAS
 {
     public partial class Especialidad : Form
     {
-        public Especialidad()
+        BE.Usuario uLogueado;
+        public Especialidad(BE.Usuario usuario)
         {
             InitializeComponent();
+            this.uLogueado = usuario;
         }
 
         private void volverBtn_Click(object sender, EventArgs e)
         {
-            Clinica clinica = new Clinica();
+            Clinica clinica = new Clinica(uLogueado);
 
             clinica.Show();
 
