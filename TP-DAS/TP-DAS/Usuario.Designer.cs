@@ -70,6 +70,7 @@
             this.grilla.Name = "grilla";
             this.grilla.Size = new System.Drawing.Size(708, 272);
             this.grilla.TabIndex = 69;
+            this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
             // 
             // volverBtn
             // 
@@ -118,7 +119,7 @@
             this.cUcmb1.Location = new System.Drawing.Point(56, 263);
             this.cUcmb1.Name = "cUcmb1";
             this.cUcmb1.SelectedItem = "";
-            this.cUcmb1.Size = new System.Drawing.Size(292, 28);
+            this.cUcmb1.Size = new System.Drawing.Size(303, 28);
             this.cUcmb1.TabIndex = 64;
             // 
             // cU11
@@ -135,9 +136,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(66, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 58;
-            this.label1.Text = "Crear Paciente";
+            this.label1.Text = "Usuario";
             // 
             // logueadoTxt
             // 
@@ -168,10 +169,10 @@
             // 
             // cuPass1
             // 
-            this.cuPass1.Etiqueta = " ";
+            this.cuPass1.Etiqueta = " Contraseña";
             this.cuPass1.Location = new System.Drawing.Point(56, 224);
             this.cuPass1.Name = "cuPass1";
-            this.cuPass1.Size = new System.Drawing.Size(292, 33);
+            this.cuPass1.Size = new System.Drawing.Size(303, 33);
             this.cuPass1.TabIndex = 75;
             this.cuPass1.Texto = "";
             // 

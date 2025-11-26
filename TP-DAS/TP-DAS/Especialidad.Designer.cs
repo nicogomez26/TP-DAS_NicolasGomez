@@ -33,19 +33,20 @@
             this.elimEspBtn = new System.Windows.Forms.Button();
             this.editEspBtn = new System.Windows.Forms.Button();
             this.agrEspBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.IdEsp = new System.Windows.Forms.Label();
             this.cU11 = new TP_DAS.CU1();
+            this.espGrp = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.espGrp.SuspendLayout();
             this.SuspendLayout();
             // 
             // grilla
             // 
             this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(384, 147);
+            this.grilla.Location = new System.Drawing.Point(378, 126);
             this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(708, 272);
+            this.grilla.Size = new System.Drawing.Size(714, 293);
             this.grilla.TabIndex = 74;
             this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
             // 
@@ -61,7 +62,7 @@
             // 
             // elimEspBtn
             // 
-            this.elimEspBtn.Location = new System.Drawing.Point(91, 346);
+            this.elimEspBtn.Location = new System.Drawing.Point(38, 245);
             this.elimEspBtn.Name = "elimEspBtn";
             this.elimEspBtn.Size = new System.Drawing.Size(238, 29);
             this.elimEspBtn.TabIndex = 72;
@@ -71,7 +72,7 @@
             // 
             // editEspBtn
             // 
-            this.editEspBtn.Location = new System.Drawing.Point(91, 301);
+            this.editEspBtn.Location = new System.Drawing.Point(38, 200);
             this.editEspBtn.Name = "editEspBtn";
             this.editEspBtn.Size = new System.Drawing.Size(238, 29);
             this.editEspBtn.TabIndex = 71;
@@ -81,7 +82,7 @@
             // 
             // agrEspBtn
             // 
-            this.agrEspBtn.Location = new System.Drawing.Point(91, 254);
+            this.agrEspBtn.Location = new System.Drawing.Point(38, 153);
             this.agrEspBtn.Name = "agrEspBtn";
             this.agrEspBtn.Size = new System.Drawing.Size(238, 29);
             this.agrEspBtn.TabIndex = 70;
@@ -89,19 +90,10 @@
             this.agrEspBtn.UseVisualStyleBackColor = true;
             this.agrEspBtn.Click += new System.EventHandler(this.agrEspBtn_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 13);
-            this.label1.TabIndex = 68;
-            this.label1.Text = "Crear Especialidad";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 157);
+            this.label2.Location = new System.Drawing.Point(17, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(16, 13);
             this.label2.TabIndex = 75;
@@ -110,7 +102,7 @@
             // IdEsp
             // 
             this.IdEsp.AutoSize = true;
-            this.IdEsp.Location = new System.Drawing.Point(116, 157);
+            this.IdEsp.Location = new System.Drawing.Point(63, 56);
             this.IdEsp.Name = "IdEsp";
             this.IdEsp.Size = new System.Drawing.Size(10, 13);
             this.IdEsp.TabIndex = 76;
@@ -119,32 +111,42 @@
             // cU11
             // 
             this.cU11.Etiqueta = "Nombre";
-            this.cU11.Location = new System.Drawing.Point(59, 183);
+            this.cU11.Location = new System.Drawing.Point(6, 82);
             this.cU11.Name = "cU11";
             this.cU11.Size = new System.Drawing.Size(292, 33);
             this.cU11.TabIndex = 69;
             this.cU11.Texto = "";
+            // 
+            // espGrp
+            // 
+            this.espGrp.Controls.Add(this.cU11);
+            this.espGrp.Controls.Add(this.IdEsp);
+            this.espGrp.Controls.Add(this.label2);
+            this.espGrp.Controls.Add(this.agrEspBtn);
+            this.espGrp.Controls.Add(this.editEspBtn);
+            this.espGrp.Controls.Add(this.elimEspBtn);
+            this.espGrp.Location = new System.Drawing.Point(44, 126);
+            this.espGrp.Name = "espGrp";
+            this.espGrp.Size = new System.Drawing.Size(319, 293);
+            this.espGrp.TabIndex = 77;
+            this.espGrp.TabStop = false;
+            this.espGrp.Text = "Gestionar Especialidades";
             // 
             // Especialidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 595);
-            this.Controls.Add(this.IdEsp);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.espGrp);
             this.Controls.Add(this.grilla);
             this.Controls.Add(this.volverBtn);
-            this.Controls.Add(this.elimEspBtn);
-            this.Controls.Add(this.editEspBtn);
-            this.Controls.Add(this.agrEspBtn);
-            this.Controls.Add(this.cU11);
-            this.Controls.Add(this.label1);
             this.Name = "Especialidad";
             this.Text = "Especialidad";
             this.Load += new System.EventHandler(this.Especialidad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
+            this.espGrp.ResumeLayout(false);
+            this.espGrp.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -156,8 +158,8 @@
         private System.Windows.Forms.Button editEspBtn;
         private System.Windows.Forms.Button agrEspBtn;
         private CU1 cU11;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label IdEsp;
+        private System.Windows.Forms.GroupBox espGrp;
     }
 }

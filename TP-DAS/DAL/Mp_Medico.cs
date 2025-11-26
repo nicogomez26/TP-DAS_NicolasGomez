@@ -148,7 +148,14 @@ namespace DAL
             }
         }
 
+        public DataTable ExportarXML(int id)
+        {
+            SqlParameter[] parametro = new SqlParameter[1];
+            parametro[0] = new SqlParameter("@id", id);
 
+            return acc.Leer("listarTurnosMed", parametro);
+
+        }
 
     }
 }

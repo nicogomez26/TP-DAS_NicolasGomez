@@ -1,5 +1,6 @@
 ﻿using BE;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace TP_DAS
@@ -16,6 +17,7 @@ namespace TP_DAS
         private void Clinica_Load(object sender, EventArgs e)
         {
             logueadoTxt.Text = uLogueado.Nombre;
+
         }
 
         private void irPacientesBtn_Click(object sender, EventArgs e)

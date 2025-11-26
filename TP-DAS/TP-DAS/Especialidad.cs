@@ -105,6 +105,10 @@ namespace TP_DAS
 
         private void Especialidad_Load(object sender, EventArgs e)
         {
+            if (uLogueado.Privilegios !=1)
+            {
+                espGrp.Hide();
+            }
             VerGrilla();
         }
 

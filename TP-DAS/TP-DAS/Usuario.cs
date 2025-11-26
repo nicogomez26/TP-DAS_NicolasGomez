@@ -140,5 +140,33 @@ namespace TP_DAS
                 return;
             }
         }
+
+        BE.Usuario tmp;
+        private void grilla_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                    return;
+
+                var fila = grilla.Rows[e.RowIndex];
+                if (fila == null || fila.DataBoundItem == null)
+                    return;
+
+                tmp = (BE.Usuario)grilla.Rows[e.RowIndex].DataBoundItem;
+
+                idUser.Text = tmp.Id.ToString();
+
+                cU11.Texto = tmp.Nombre;
+                cuEmail1.Texto = tmp.Email;
+                cuPass1.Texto = tmp.Pass;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+        }
     }
 }

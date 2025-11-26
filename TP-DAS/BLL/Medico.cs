@@ -1,6 +1,7 @@
 ﻿using DAL;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,6 +46,18 @@ namespace BLL
         {
             List<BE.Medico> medicos = mapper.Listar();
             return medicos;
+        }
+
+        public void ExportarTurnosXML(string ruta, int id)
+        {
+            DataTable dt = mapper.ExportarXML(id);
+
+            DataSet ds = new DataSet();
+
+            ds.Tables.Add(dt.Copy());
+
+            ds.WriteXml(ruta);
+
         }
     }
 }

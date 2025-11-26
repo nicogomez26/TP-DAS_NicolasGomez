@@ -34,13 +34,13 @@
             this.editTurBtn = new System.Windows.Forms.Button();
             this.agrTurBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.cU32 = new TP_DAS.CU3();
-            this.cU31 = new TP_DAS.CU3();
-            this.cuDate1 = new TP_DAS.CUDate();
             this.label2 = new System.Windows.Forms.Label();
             this.idTurno = new System.Windows.Forms.Label();
             this.expXMLBtn = new System.Windows.Forms.Button();
             this.txtRutaXML = new System.Windows.Forms.TextBox();
+            this.cuDate1 = new TP_DAS.CUDate();
+            this.cU31 = new TP_DAS.CU3();
+            this.cU32 = new TP_DAS.CU3();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,36 +102,6 @@
             this.label1.TabIndex = 68;
             this.label1.Text = "Crear Turno";
             // 
-            // cU32
-            // 
-            this.cU32.Etiqueta = "Paciente";
-            this.cU32.Location = new System.Drawing.Point(55, 253);
-            this.cU32.Name = "cU32";
-            this.cU32.Size = new System.Drawing.Size(305, 28);
-            this.cU32.TabIndex = 75;
-            this.cU32.TextoSeleccionado = "";
-            this.cU32.Load += new System.EventHandler(this.cU32_Load);
-            // 
-            // cU31
-            // 
-            this.cU31.Etiqueta = "Medico";
-            this.cU31.Location = new System.Drawing.Point(55, 287);
-            this.cU31.Name = "cU31";
-            this.cU31.Size = new System.Drawing.Size(305, 28);
-            this.cU31.TabIndex = 76;
-            this.cU31.TextoSeleccionado = "";
-            // 
-            // cuDate1
-            // 
-            this.cuDate1.Etiqueta = "Fecha";
-            this.cuDate1.Location = new System.Drawing.Point(55, 199);
-            this.cuDate1.Maximo = new System.DateTime(2026, 2, 14, 18, 20, 0, 456);
-            this.cuDate1.Minimo = new System.DateTime(2025, 11, 16, 18, 20, 0, 456);
-            this.cuDate1.Name = "cuDate1";
-            this.cuDate1.Size = new System.Drawing.Size(305, 28);
-            this.cuDate1.TabIndex = 77;
-            this.cuDate1.Valor = new System.DateTime(2025, 11, 16, 18, 20, 0, 456);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -157,7 +127,7 @@
             this.expXMLBtn.Name = "expXMLBtn";
             this.expXMLBtn.Size = new System.Drawing.Size(130, 29);
             this.expXMLBtn.TabIndex = 80;
-            this.expXMLBtn.Text = "Exportar a XML";
+            this.expXMLBtn.Text = "Exportar Turnos";
             this.expXMLBtn.UseVisualStyleBackColor = true;
             this.expXMLBtn.Click += new System.EventHandler(this.expXMLBtn_Click);
             // 
@@ -168,11 +138,41 @@
             this.txtRutaXML.Size = new System.Drawing.Size(129, 20);
             this.txtRutaXML.TabIndex = 81;
             // 
+            // cuDate1
+            // 
+            this.cuDate1.Etiqueta = "Fecha";
+            this.cuDate1.Location = new System.Drawing.Point(55, 199);
+            this.cuDate1.Maximo = new System.DateTime(2026, 2, 23, 22, 16, 31, 219);
+            this.cuDate1.Minimo = new System.DateTime(2025, 11, 25, 22, 16, 31, 219);
+            this.cuDate1.Name = "cuDate1";
+            this.cuDate1.Size = new System.Drawing.Size(305, 28);
+            this.cuDate1.TabIndex = 77;
+            this.cuDate1.Valor = new System.DateTime(2025, 11, 25, 22, 16, 31, 219);
+            // 
+            // cU31
+            // 
+            this.cU31.Etiqueta = "Medico";
+            this.cU31.Location = new System.Drawing.Point(55, 287);
+            this.cU31.Name = "cU31";
+            this.cU31.Size = new System.Drawing.Size(305, 28);
+            this.cU31.TabIndex = 76;
+            this.cU31.TextoSeleccionado = "";
+            // 
+            // cU32
+            // 
+            this.cU32.Etiqueta = "Paciente";
+            this.cU32.Location = new System.Drawing.Point(55, 253);
+            this.cU32.Name = "cU32";
+            this.cU32.Size = new System.Drawing.Size(305, 28);
+            this.cU32.TabIndex = 75;
+            this.cU32.TextoSeleccionado = "";
+            this.cU32.Load += new System.EventHandler(this.cU32_Load);
+            // 
             // Turno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 500);
+            this.ClientSize = new System.Drawing.Size(990, 500);
             this.Controls.Add(this.txtRutaXML);
             this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.idTurno);

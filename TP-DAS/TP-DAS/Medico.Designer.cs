@@ -42,6 +42,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.IdMedico = new System.Windows.Forms.Label();
+            this.txtRutaXML = new System.Windows.Forms.TextBox();
+            this.expXMLBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -176,11 +178,30 @@
             this.IdMedico.TabIndex = 69;
             this.IdMedico.Text = "-";
             // 
+            // txtRutaXML
+            // 
+            this.txtRutaXML.Location = new System.Drawing.Point(929, 410);
+            this.txtRutaXML.Name = "txtRutaXML";
+            this.txtRutaXML.Size = new System.Drawing.Size(165, 20);
+            this.txtRutaXML.TabIndex = 85;
+            // 
+            // expXMLBtn
+            // 
+            this.expXMLBtn.Location = new System.Drawing.Point(929, 375);
+            this.expXMLBtn.Name = "expXMLBtn";
+            this.expXMLBtn.Size = new System.Drawing.Size(165, 29);
+            this.expXMLBtn.TabIndex = 84;
+            this.expXMLBtn.Text = "Exportar Turnos del Medico";
+            this.expXMLBtn.UseVisualStyleBackColor = true;
+            this.expXMLBtn.Click += new System.EventHandler(this.expXMLBtn_Click);
+            // 
             // Medico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 646);
+            this.Controls.Add(this.txtRutaXML);
+            this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.IdMedico);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.grilla);
@@ -220,5 +241,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label IdMedico;
+        private System.Windows.Forms.TextBox txtRutaXML;
+        private System.Windows.Forms.Button expXMLBtn;
     }
 }
