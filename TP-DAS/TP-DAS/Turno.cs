@@ -190,9 +190,10 @@ namespace TP_DAS
 
         private void expXMLBtn_Click(object sender, EventArgs e)
         {
+            
             SaveFileDialog SFD = new SaveFileDialog();
 
-            SFD.Filter = "Archivo XML (*.xml)|*.xml";
+            SFD.Filter = "(*.xml)|*.xml";
 
             SFD.FileName = "Turnos.XML";
 
@@ -202,28 +203,22 @@ namespace TP_DAS
             }
             if (string.IsNullOrWhiteSpace(txtRutaXML.Text))
             {
-                MessageBox.Show("Debe seleccionar una ruta para guardar el archivo XML.",
-                       "Advertencia",
-                       MessageBoxButtons.OK,
-                       MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor seleccionar una ruta válida");
                 return;
             }
 
             try
             {
-                string ruta = txtRutaXML.Text;
-                turnoBll.ExportarTurnosXML(ruta);
+                turnoBll.ExportarTurnosXML(txtRutaXML.Text);
 
-                MessageBox.Show("XML generado correctamente.");
-
+                MessageBox.Show("Exportado con éxito");
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message.ToString());
+                return;
             }
 
-            
         }
     }
 }
