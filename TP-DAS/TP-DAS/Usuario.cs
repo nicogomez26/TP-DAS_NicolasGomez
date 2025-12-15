@@ -168,5 +168,50 @@ namespace TP_DAS
             }
 
         }
+
+        private void desbloquearBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tmp == null)
+                {
+                    MessageBox.Show("Seleccione un usuario de la grilla");
+                    return;
+                }
+
+                usuarioBll.BloquearUsuario(tmp);
+
+                MessageBox.Show($"Usuario '{tmp.Nombre}' desbloqueado correctamente.");
+
+                VerGrilla();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al desbloquear usuario: " + ex.Message);
+            }
+        }
+
+        private void grilla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void expXMLBtn_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "XML (*.xml)|*.xml";
+            sfd.FileName = "Usuarios.xml";
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                usuarioBll.ExportarUsuariosXML(sfd.FileName);
+                MessageBox.Show("Usuarios exportados correctamente");
+            }
+        }
     }
 }

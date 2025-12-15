@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,16 +48,31 @@ namespace BLL
             return pacientes;
         }
 
-        public void ExportarTurnosXML(string ruta, int id)
+        public void ExportarTurnosPacienteXML(int idPaciente, string ruta)
         {
-            DataTable dt = mapper.ExportarXML(id);
+            if (idPaciente <= 0)
+                throw new Exception("Paciente inválido");
 
-            DataSet ds = new DataSet();
+            if (string.IsNullOrWhiteSpace(ruta))
+                throw new Exception("Ruta inválida");
 
-            ds.Tables.Add(dt.Copy());
+            string xml = mapper.ExportarTurnosPacienteXML(idPaciente);
 
-            ds.WriteXml(ruta);
+            if (string.IsNullOrWhiteSpace(xml))
+                throw new Exception("No se generó el XML");
 
+            System.IO.File.WriteAllText(ruta, xml, System.Text.Encoding.UTF8);
         }
+
+        public void ExportarPacientesXML(string ruta)
+        {
+            string xml = mapper.ExportarPacientesXML();
+
+            if (string.IsNullOrWhiteSpace(xml))
+                throw new Exception("No se generó el XML de pacientes");
+
+            File.WriteAllText(ruta, xml, Encoding.UTF8);
+        }
+
     }
 }

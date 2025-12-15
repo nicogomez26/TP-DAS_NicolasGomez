@@ -1,7 +1,9 @@
-﻿using DAL;
+﻿using BE;
+using DAL;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,14 +52,26 @@ namespace BLL
 
         public void ExportarTurnosXML(string ruta, int id)
         {
-            DataTable dt = mapper.ExportarXML(id);
+            if (id <= 0)
+                throw new Exception("Médico inválido");
 
-            DataSet ds = new DataSet();
+            string xml = mapper.ExportarTurnosMedicoXML(id);
 
-            ds.Tables.Add(dt.Copy());
+            if (string.IsNullOrWhiteSpace(xml))
+                throw new Exception("El médico no posee turnos");
 
-            ds.WriteXml(ruta);
+            File.WriteAllText(ruta, xml, Encoding.UTF8);
 
+        }
+
+        public void ExportarMedicosXML(string ruta)
+        {
+            string xml = mapper.ExportarMedicosXML();
+
+            if (string.IsNullOrWhiteSpace(xml))
+                throw new Exception("No se generó el XML de médicos");
+
+            File.WriteAllText(ruta, xml, Encoding.UTF8);
         }
     }
 }

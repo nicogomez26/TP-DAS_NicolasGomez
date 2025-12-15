@@ -190,33 +190,25 @@ namespace TP_DAS
 
         private void expXMLBtn_Click(object sender, EventArgs e)
         {
-            
+
             SaveFileDialog SFD = new SaveFileDialog();
 
             SFD.Filter = "(*.xml)|*.xml";
 
-            SFD.FileName = "Turnos.XML";
+            SFD.FileName = "Turnos.xml";
 
-            if (SFD.ShowDialog() == DialogResult.OK)
-            {
-                txtRutaXML.Text = SFD.FileName;
-            }
-            if (string.IsNullOrWhiteSpace(txtRutaXML.Text))
-            {
-                MessageBox.Show("Por favor seleccionar una ruta válida");
-                return;
-            }
 
             try
             {
-                turnoBll.ExportarTurnosXML(txtRutaXML.Text);
-
-                MessageBox.Show("Exportado con éxito");
+                if (SFD.ShowDialog() == DialogResult.OK)
+                {
+                    turnoBll.ExportarTurnosXML(SFD.FileName);
+                    MessageBox.Show("XML exportado correctamente");
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString());
-                return;
+                MessageBox.Show(ex.Message);
             }
 
         }

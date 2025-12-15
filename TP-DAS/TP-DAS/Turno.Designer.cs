@@ -37,7 +37,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.idTurno = new System.Windows.Forms.Label();
             this.expXMLBtn = new System.Windows.Forms.Button();
-            this.txtRutaXML = new System.Windows.Forms.TextBox();
             this.cuDate1 = new TP_DAS.CUDate();
             this.cU31 = new TP_DAS.CU3();
             this.cU32 = new TP_DAS.CU3();
@@ -47,9 +46,9 @@
             // grilla
             // 
             this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(381, 154);
+            this.grilla.Location = new System.Drawing.Point(381, 104);
             this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(420, 285);
+            this.grilla.Size = new System.Drawing.Size(758, 285);
             this.grilla.TabIndex = 74;
             this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
             // 
@@ -123,7 +122,7 @@
             // 
             // expXMLBtn
             // 
-            this.expXMLBtn.Location = new System.Drawing.Point(807, 154);
+            this.expXMLBtn.Location = new System.Drawing.Point(1009, 395);
             this.expXMLBtn.Name = "expXMLBtn";
             this.expXMLBtn.Size = new System.Drawing.Size(130, 29);
             this.expXMLBtn.TabIndex = 80;
@@ -131,23 +130,16 @@
             this.expXMLBtn.UseVisualStyleBackColor = true;
             this.expXMLBtn.Click += new System.EventHandler(this.expXMLBtn_Click);
             // 
-            // txtRutaXML
-            // 
-            this.txtRutaXML.Location = new System.Drawing.Point(808, 189);
-            this.txtRutaXML.Name = "txtRutaXML";
-            this.txtRutaXML.Size = new System.Drawing.Size(129, 20);
-            this.txtRutaXML.TabIndex = 81;
-            // 
             // cuDate1
             // 
             this.cuDate1.Etiqueta = "Fecha";
             this.cuDate1.Location = new System.Drawing.Point(55, 199);
-            this.cuDate1.Maximo = new System.DateTime(2026, 2, 23, 22, 16, 31, 219);
-            this.cuDate1.Minimo = new System.DateTime(2025, 11, 25, 22, 16, 31, 219);
+            this.cuDate1.Maximo = new System.DateTime(2026, 3, 15, 1, 28, 10, 613);
+            this.cuDate1.Minimo = new System.DateTime(2025, 12, 15, 1, 28, 10, 613);
             this.cuDate1.Name = "cuDate1";
             this.cuDate1.Size = new System.Drawing.Size(305, 28);
             this.cuDate1.TabIndex = 77;
-            this.cuDate1.Valor = new System.DateTime(2025, 11, 25, 22, 16, 31, 219);
+            this.cuDate1.Valor = new System.DateTime(2025, 12, 15, 1, 28, 10, 613);
             // 
             // cU31
             // 
@@ -172,8 +164,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 500);
-            this.Controls.Add(this.txtRutaXML);
+            this.ClientSize = new System.Drawing.Size(1164, 527);
             this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.idTurno);
             this.Controls.Add(this.label2);
@@ -209,6 +200,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label idTurno;
         private System.Windows.Forms.Button expXMLBtn;
-        private System.Windows.Forms.TextBox txtRutaXML;
     }
 }

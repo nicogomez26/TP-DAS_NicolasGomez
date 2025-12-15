@@ -203,45 +203,50 @@ namespace TP_DAS
             
         }
 
-        private void expXMLBtn_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            SaveFileDialog SFD = new SaveFileDialog();
-
-            SFD.Filter = "Archivo XML (*.xml)|*.xml";
-
-            SFD.FileName = "Turnos de " + cU11.Texto +".XML";
-
-            if (SFD.ShowDialog() == DialogResult.OK)
-            {
-                txtRutaXML.Text = SFD.FileName;
-            }
-            if (string.IsNullOrWhiteSpace(txtRutaXML.Text))
-            {
-                MessageBox.Show("Debe seleccionar una ruta para guardar el archivo XML.",
-                       "Advertencia",
-                       MessageBoxButtons.OK,
-                       MessageBoxIcon.Warning);
-                return;
-            }
-            if (idPaciente.Text == "-")
-            {
-                MessageBox.Show("Debe seleccionar un paciente de la tabla", "Advertencia",
-                       MessageBoxButtons.OK,
-                       MessageBoxIcon.Warning);
-                return;
-            }
-
             try
             {
-                string ruta = txtRutaXML.Text;
-                pacienteBll.ExportarTurnosXML(ruta, int.Parse(idPaciente.Text));
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "Archivos XML (*.xml)|*.xml";
+                sfd.FileName = "Pacientes.xml";
 
-                MessageBox.Show("XML generado correctamente.");
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    BLL.Paciente pacienteBll = new BLL.Paciente();
+                    pacienteBll.ExportarPacientesXML(sfd.FileName);
 
+                    MessageBox.Show("Pacientes exportados correctamente");
+                }
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
+        private void expXMLBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BLL.Paciente bllPaciente = new BLL.Paciente();
+
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "XML (*.xml)|*.xml";
+                sfd.FileName = "TurnosPaciente.xml";
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    bllPaciente.ExportarTurnosPacienteXML(
+                        tmp.Id,
+                        sfd.FileName
+                    );
+
+                    MessageBox.Show("XML exportado correctamente");
+                }
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
         }

@@ -13,10 +13,10 @@ namespace TP_DAS
 {
     public partial class CUEmail : CU1
     {
-        /*public CUEmail()
+        public CUEmail()
         {
             InitializeComponent();
-        }*/
+        }
 
         public override bool Validar()
         {

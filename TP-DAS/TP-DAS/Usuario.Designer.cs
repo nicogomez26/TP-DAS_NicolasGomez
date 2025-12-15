@@ -42,6 +42,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cuEmail1 = new TP_DAS.CUEmail();
             this.cuPass1 = new TP_DAS.CUPass();
+            this.desbloquearBtn = new System.Windows.Forms.Button();
+            this.expXMLBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,6 +73,7 @@
             this.grilla.Size = new System.Drawing.Size(708, 272);
             this.grilla.TabIndex = 69;
             this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
+            this.grilla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellContentClick);
             // 
             // volverBtn
             // 
@@ -84,7 +87,7 @@
             // 
             // elimPacBtn
             // 
-            this.elimPacBtn.Location = new System.Drawing.Point(90, 398);
+            this.elimPacBtn.Location = new System.Drawing.Point(97, 399);
             this.elimPacBtn.Name = "elimPacBtn";
             this.elimPacBtn.Size = new System.Drawing.Size(238, 29);
             this.elimPacBtn.TabIndex = 67;
@@ -94,7 +97,7 @@
             // 
             // editPacBtn
             // 
-            this.editPacBtn.Location = new System.Drawing.Point(90, 353);
+            this.editPacBtn.Location = new System.Drawing.Point(97, 354);
             this.editPacBtn.Name = "editPacBtn";
             this.editPacBtn.Size = new System.Drawing.Size(238, 29);
             this.editPacBtn.TabIndex = 66;
@@ -104,7 +107,7 @@
             // 
             // agrPacBtn
             // 
-            this.agrPacBtn.Location = new System.Drawing.Point(90, 306);
+            this.agrPacBtn.Location = new System.Drawing.Point(97, 307);
             this.agrPacBtn.Name = "agrPacBtn";
             this.agrPacBtn.Size = new System.Drawing.Size(238, 29);
             this.agrPacBtn.TabIndex = 65;
@@ -119,7 +122,7 @@
             this.cUcmb1.Location = new System.Drawing.Point(56, 263);
             this.cUcmb1.Name = "cUcmb1";
             this.cUcmb1.SelectedItem = "";
-            this.cUcmb1.Size = new System.Drawing.Size(303, 28);
+            this.cUcmb1.Size = new System.Drawing.Size(298, 28);
             this.cUcmb1.TabIndex = 64;
             // 
             // cU11
@@ -157,6 +160,7 @@
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 72;
             this.label3.Text = "Bienvenido,";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // cuEmail1
             // 
@@ -170,17 +174,39 @@
             // cuPass1
             // 
             this.cuPass1.Etiqueta = " Contraseña";
-            this.cuPass1.Location = new System.Drawing.Point(56, 224);
+            this.cuPass1.Location = new System.Drawing.Point(45, 224);
             this.cuPass1.Name = "cuPass1";
             this.cuPass1.Size = new System.Drawing.Size(303, 33);
             this.cuPass1.TabIndex = 75;
             this.cuPass1.Texto = "";
+            // 
+            // desbloquearBtn
+            // 
+            this.desbloquearBtn.Location = new System.Drawing.Point(97, 442);
+            this.desbloquearBtn.Name = "desbloquearBtn";
+            this.desbloquearBtn.Size = new System.Drawing.Size(238, 29);
+            this.desbloquearBtn.TabIndex = 76;
+            this.desbloquearBtn.Text = "Desbloquear";
+            this.desbloquearBtn.UseVisualStyleBackColor = true;
+            this.desbloquearBtn.Click += new System.EventHandler(this.desbloquearBtn_Click);
+            // 
+            // expXMLBtn
+            // 
+            this.expXMLBtn.Location = new System.Drawing.Point(959, 375);
+            this.expXMLBtn.Name = "expXMLBtn";
+            this.expXMLBtn.Size = new System.Drawing.Size(130, 29);
+            this.expXMLBtn.TabIndex = 81;
+            this.expXMLBtn.Text = "Exportar Usuarios";
+            this.expXMLBtn.UseVisualStyleBackColor = true;
+            this.expXMLBtn.Click += new System.EventHandler(this.expXMLBtn_Click);
             // 
             // Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1139, 507);
+            this.Controls.Add(this.expXMLBtn);
+            this.Controls.Add(this.desbloquearBtn);
             this.Controls.Add(this.cuPass1);
             this.Controls.Add(this.cuEmail1);
             this.Controls.Add(this.logueadoTxt);
@@ -220,5 +246,7 @@
         private System.Windows.Forms.Label label3;
         private CUEmail cuEmail1;
         private CUPass cuPass1;
+        private System.Windows.Forms.Button desbloquearBtn;
+        private System.Windows.Forms.Button expXMLBtn;
     }
 }

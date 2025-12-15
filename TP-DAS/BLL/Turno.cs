@@ -1,4 +1,5 @@
 ﻿using DAL;
+using System.IO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -51,15 +52,14 @@ namespace BLL
 
         public void ExportarTurnosXML(string ruta)
         {
-            DataTable dt = mapper.ExportarXML();
+            string xml = mapper.ExportarTurnosXML();
 
-            DataSet ds = new DataSet();
+            if (string.IsNullOrWhiteSpace(xml))
+                throw new Exception("No se generó el XML");
 
-            ds.Tables.Add(dt.Copy());
-
-            ds.WriteXml(ruta);
-
+            File.WriteAllText(ruta, xml, Encoding.UTF8);
         }
+
 
     }
 }

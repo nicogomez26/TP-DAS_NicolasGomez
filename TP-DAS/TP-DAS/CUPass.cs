@@ -13,10 +13,10 @@ namespace TP_DAS
 {
     public partial class CUPass : CU1
     {
-        /*public CUPass()
+        public CUPass()
         {
             InitializeComponent();
-        }*/
+        }
 
         public override bool Validar()
         {

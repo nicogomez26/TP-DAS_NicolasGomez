@@ -13,7 +13,15 @@ namespace GUI
             Application.SetCompatibleTextRenderingDefault(false);
 
             // 👇 Abrí el formulario principal
-            Application.Run(new Login());
+            try
+            {
+                Application.Run(new Login());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al iniciar la aplicación: " + ex.Message);
+            }
+
         }
     }
 }

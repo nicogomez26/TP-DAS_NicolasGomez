@@ -148,14 +148,26 @@ namespace DAL
             }
         }
 
-        public DataTable ExportarXML(int id)
+        public string ExportarTurnosMedicoXML(int idMedico)
         {
-            SqlParameter[] parametro = new SqlParameter[1];
-            parametro[0] = new SqlParameter("@id", id);
+            SqlParameter[] parametros = new SqlParameter[]
+            {
+                new SqlParameter("@idMedico", idMedico)
+            };
 
-            return acc.Leer("listarTurnosMed", parametro);
-
+            return acc.LeerXML("listarTurnosXMedicoXML", parametros);
         }
 
+        public string ExportarMedicosXML()
+        {
+            try
+            {
+                return acc.LeerXML("listarMedicosXML");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al exportar médicos en XML", ex);
+            }
+        }
     }
 }

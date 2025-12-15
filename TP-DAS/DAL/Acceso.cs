@@ -116,7 +116,47 @@ namespace DAL
             }
         }
 
+        public string LeerXML(string sp)
+        {
+            if (cn.State != ConnectionState.Open)
+                Conectar();
 
+            cmd.Connection = cn;
+            cmd.Transaction = tr;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = sp;
+
+            object result = cmd.ExecuteScalar();
+
+            if (tr == null)
+                Desconectar();
+
+            return result != null ? result.ToString() : string.Empty;
+        }
+
+
+        public string LeerXML(string sp, SqlParameter[] parametros)
+        {
+            if (cn.State != ConnectionState.Open)
+                Conectar();
+
+            cmd.Connection = cn;
+            cmd.Transaction = tr;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = sp;
+
+            if (parametros != null)
+                cmd.Parameters.AddRange(parametros);
+
+            object result = cmd.ExecuteScalar();
+
+            cmd.Parameters.Clear();
+
+            if (tr == null)
+                Desconectar();
+
+            return result != null ? result.ToString() : string.Empty;
+        }
 
     }
 }

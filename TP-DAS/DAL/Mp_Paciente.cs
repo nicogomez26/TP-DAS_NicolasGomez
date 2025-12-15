@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -150,14 +151,25 @@ namespace DAL
             }
         }
 
-        public DataTable ExportarXML(int id)
+        public string ExportarTurnosPacienteXML(int idPaciente)
         {
+            SqlParameter[] parametros = new SqlParameter[]
+            {
+                new SqlParameter("@idPaciente", idPaciente)
+            };
 
-            SqlParameter[] parametro = new SqlParameter[1];
-            parametro[0] = new SqlParameter("@id", id);
-
-            return acc.Leer("listarTurnosPac", parametro);
-
+            return acc.LeerXML("listarTurnosXPacienteXML", parametros);
+        }
+        public string ExportarPacientesXML()
+        {
+            try
+            {
+                return acc.LeerXML("listarPacientesXML");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al exportar pacientes en XML", ex);
+            }
         }
     }
 }

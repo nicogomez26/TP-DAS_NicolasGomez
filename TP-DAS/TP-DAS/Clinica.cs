@@ -8,6 +8,7 @@ namespace TP_DAS
     public partial class Clinica : Form
     {
         BE.Usuario uLogueado;
+
         public Clinica(BE.Usuario usuarioLogueado)
         {
             InitializeComponent();
@@ -22,56 +23,129 @@ namespace TP_DAS
 
         private void irPacientesBtn_Click(object sender, EventArgs e)
         {
-            Paciente paciente = new Paciente(uLogueado);
+            if (uLogueado.Privilegios == 1)
+            {
+                Paciente paciente = new Paciente(uLogueado);
 
-            paciente.Show();
-            
-            this.Hide();
+                paciente.Show();
+
+                this.Hide();
+            }
+
+            else
+            {
+                Paciente_Lectura pacienteLectura = new Paciente_Lectura(uLogueado);
+
+                pacienteLectura.Show();
+
+                this.Hide();
+            }
+
         }
 
         private void irMedicosBtn_Click(object sender, EventArgs e)
         {
-            Medico medico = new Medico(uLogueado);
+            if (uLogueado.Privilegios == 1)
+            {
+                Medico medico = new Medico(uLogueado);
 
-            medico.Show();
+                medico.Show();
 
-            this.Hide();
+                this.Hide();
+            }
+
+            else
+            {
+                Medico_Lectura medicoLectura = new Medico_Lectura(uLogueado);
+
+                medicoLectura.Show();
+
+                this.Hide();
+            }
         }
 
         private void irObSocBtn_Click(object sender, EventArgs e)
         {
-            Obra_Social OS = new Obra_Social(uLogueado);
+            if (uLogueado.Privilegios == 1)
+            {
+                Obra_Social obraSocial = new Obra_Social(uLogueado);
 
-            OS.Show();
+                obraSocial.Show();
 
-            this.Hide();
+                this.Hide();
+            }
+
+            else
+            {
+                ObraSocial_Lectura obraSocialLectura = new ObraSocial_Lectura(uLogueado);
+
+                obraSocialLectura.Show();
+
+                this.Hide();
+            }
         }
 
         private void irTurnosBtn_Click(object sender, EventArgs e)
         {
-            Turno turno = new Turno(uLogueado);
+            if (uLogueado.Privilegios == 1)
+            {
+                Turno turno = new Turno(uLogueado);
 
-            turno.Show();
+                turno.Show();
 
-            this.Hide();
+                this.Hide();
+            }
+
+            else
+            {
+                Turno_Lectura turnoLectura = new Turno_Lectura(uLogueado);
+
+                turnoLectura.Show();
+
+                this.Hide();
+            }
         }
 
         private void irEspecialidadesBtn_Click(object sender, EventArgs e)
         {
-            Especialidad especialidad = new Especialidad(uLogueado);
+            if (uLogueado.Privilegios == 1)
+            {
+                Especialidad especialidad = new Especialidad(uLogueado);
 
-            especialidad.Show();
+                especialidad.Show();
 
-            this.Hide();    
+                this.Hide();
+            }
+
+            else
+            {
+                Especialidad_Lectura especialidadLectura = new Especialidad_Lectura(uLogueado);
+
+                especialidadLectura.Show();
+
+                this.Hide();
+            }
         }
 
         private void irUsuariosBtn_Click(object sender, EventArgs e)
         {
-            Usuario usuario = new Usuario(uLogueado);
+            if (uLogueado.Privilegios == 1)
+            {
+                Usuario usuario = new Usuario(uLogueado);
 
-            usuario.Show();
+                usuario.Show();
 
-            this.Hide();
+                this.Hide();
+            }
+
+            else
+            {
+                Usuario_Lectura usuarioLectura = new Usuario_Lectura(uLogueado);
+
+                usuarioLectura.Show();
+
+                this.Hide();
+            }
         }
     }
 }

@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cambio de Contrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cambio de Contrasena.Designer.cs">
+      <DependentUpon>Cambio de Contrasena.cs</DependentUpon>
+    </Compile>
     <Compile Include="CU1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     <Compile Include="Especialidad.Designer.cs">
       <DependentUpon>Especialidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Especialidad_Lectura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Especialidad_Lectura.Designer.cs">
+      <DependentUpon>Especialidad_Lectura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,17 +124,35 @@
     <Compile Include="Medico.Designer.cs">
       <DependentUpon>Medico.cs</DependentUpon>
     </Compile>
+    <Compile Include="Medico_Lectura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medico_Lectura.Designer.cs">
+      <DependentUpon>Medico_Lectura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Obra Social.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Obra Social.Designer.cs">
       <DependentUpon>Obra Social.cs</DependentUpon>
     </Compile>
+    <Compile Include="ObraSocial_Lectura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObraSocial_Lectura.Designer.cs">
+      <DependentUpon>ObraSocial_Lectura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Paciente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Paciente.Designer.cs">
       <DependentUpon>Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paciente_Lectura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paciente_Lectura.Designer.cs">
+      <DependentUpon>Paciente_Lectura.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,12 +163,27 @@
     <Compile Include="Turno.Designer.cs">
       <DependentUpon>Turno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Turno_Lectura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Turno_Lectura.Designer.cs">
+      <DependentUpon>Turno_Lectura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Usuario.Designer.cs">
       <DependentUpon>Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuario_Lectura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario_Lectura.Designer.cs">
+      <DependentUpon>Usuario_Lectura.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cambio de Contrasena.resx">
+      <DependentUpon>Cambio de Contrasena.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clinica.resx">
       <DependentUpon>Clinica.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,17 +211,29 @@
     <EmbeddedResource Include="Especialidad.resx">
       <DependentUpon>Especialidad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Especialidad_Lectura.resx">
+      <DependentUpon>Especialidad_Lectura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Medico.resx">
       <DependentUpon>Medico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Medico_Lectura.resx">
+      <DependentUpon>Medico_Lectura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Obra Social.resx">
       <DependentUpon>Obra Social.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ObraSocial_Lectura.resx">
+      <DependentUpon>ObraSocial_Lectura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Paciente.resx">
       <DependentUpon>Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paciente_Lectura.resx">
+      <DependentUpon>Paciente_Lectura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,8 +247,14 @@
     <EmbeddedResource Include="Turno.resx">
       <DependentUpon>Turno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Turno_Lectura.resx">
+      <DependentUpon>Turno_Lectura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usuario.resx">
       <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario_Lectura.resx">
+      <DependentUpon>Usuario_Lectura.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

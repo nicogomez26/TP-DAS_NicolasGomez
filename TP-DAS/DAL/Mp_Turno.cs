@@ -139,10 +139,23 @@ namespace DAL
             }
         }
 
-        public DataTable ExportarXML()
+        public string ExportarTurnosXML()
         {
-            return acc.Leer("listarTurnos", null);
+            try
+            {
+                acc.IniciarTransaccion();
 
+                string xml = acc.LeerXML("listarTurnosXML");
+
+                acc.ConfirmarTransaccion();
+                return xml;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+                throw new Exception("Error al exportar turnos a XML" + ex);
+            }
         }
+
     }
 }

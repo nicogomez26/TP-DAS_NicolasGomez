@@ -47,6 +47,13 @@ namespace BE
 			get { return privilegios; }
 			set { privilegios = value; }
 		}
-		
-	}
+
+        private bool bloqueado;
+        public bool Bloqueado
+        {
+            get { return bloqueado; }
+            set { bloqueado = value; }
+        }
+
+    }
 }

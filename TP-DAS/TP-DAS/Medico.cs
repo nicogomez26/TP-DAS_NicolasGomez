@@ -45,13 +45,13 @@ namespace TP_DAS
 
         }
 
-        private void volverBtn_Click(object sender, EventArgs e)
+      /*  private void volverBtn_Click(object sender, EventArgs e)
         {
             Clinica clinica = new Clinica(uLogueado);
 
             clinica.Show();
             this.Hide();
-        }
+        }*/
         private void editMedBtn_Click(object sender, EventArgs e)
         {
             try
@@ -65,7 +65,7 @@ namespace TP_DAS
                 medico.Nombre = cU11.Texto;
                 medico.Apellido = cU12.Texto;
                 medico.Edad = int.Parse(cU22.Texto);
-                medico.Sexo = cUcmb1.SelectedItem;
+                medico.Sexo = cUcmb1.SelectedItem?.ToString();
                 medico.Id_Especialidad = cU32.ValorSeleccionado;
 
                 fa = medicoBll.EditarMedico(medico);
@@ -192,43 +192,51 @@ namespace TP_DAS
 
         private void expXMLBtn_Click(object sender, EventArgs e)
         {
-            SaveFileDialog SFD = new SaveFileDialog();
-
-            SFD.Filter = "Archivo XML (*.xml)|*.xml";
-
-            SFD.FileName = "Turnos de " + cU11.Texto + ".XML";
-
-            if (SFD.ShowDialog() == DialogResult.OK)
-            {
-                txtRutaXML.Text = SFD.FileName;
-            }
-            if (string.IsNullOrWhiteSpace(txtRutaXML.Text))
-            {
-                MessageBox.Show("Debe seleccionar una ruta para guardar el archivo XML.",
-                       "Advertencia",
-                       MessageBoxButtons.OK,
-                       MessageBoxIcon.Warning);
-                return;
-            }
-            if (IdMedico.Text == "-")
-            {
-                MessageBox.Show("Debe seleccionar un medico de la tabla", "Advertencia",
-                       MessageBoxButtons.OK,
-                       MessageBoxIcon.Warning);
-                return;
-            }
-
             try
             {
-                string ruta = txtRutaXML.Text;
-                medicoBll.ExportarTurnosXML(ruta, int.Parse(IdMedico.Text));
+                int iDMedico = Convert.ToInt32(IdMedico.Text);
 
-                MessageBox.Show("XML generado correctamente.");
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "Archivos XML (*.xml)|*.xml";
+                sfd.FileName = "TurnosMedico.xml";
 
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    medicoBll.ExportarTurnosXML(sfd.FileName, iDMedico);
+                    MessageBox.Show("XML exportado correctamente", "Éxito",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
+        private void grilla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void expMedBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "Archivos XML (*.xml)|*.xml";
+                sfd.FileName = "Medicos.xml";
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    BLL.Medico medicoBll = new BLL.Medico();
+                    medicoBll.ExportarMedicosXML(sfd.FileName);
+
+                    MessageBox.Show("Médicos exportados correctamente");
+                }
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
         }

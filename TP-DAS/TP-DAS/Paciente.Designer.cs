@@ -42,8 +42,8 @@
             this.cU21 = new TP_DAS.CU2();
             this.cU12 = new TP_DAS.CU1();
             this.cU11 = new TP_DAS.CU1();
-            this.txtRutaXML = new System.Windows.Forms.TextBox();
             this.expXMLBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,13 +178,6 @@
             this.cU11.TabIndex = 2;
             this.cU11.Texto = "";
             // 
-            // txtRutaXML
-            // 
-            this.txtRutaXML.Location = new System.Drawing.Point(915, 410);
-            this.txtRutaXML.Name = "txtRutaXML";
-            this.txtRutaXML.Size = new System.Drawing.Size(165, 20);
-            this.txtRutaXML.TabIndex = 83;
-            // 
             // expXMLBtn
             // 
             this.expXMLBtn.Location = new System.Drawing.Point(915, 375);
@@ -195,12 +188,22 @@
             this.expXMLBtn.UseVisualStyleBackColor = true;
             this.expXMLBtn.Click += new System.EventHandler(this.expXMLBtn_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(744, 375);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(165, 29);
+            this.button1.TabIndex = 84;
+            this.button1.Text = "Exportar Pacientes";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1106, 542);
-            this.Controls.Add(this.txtRutaXML);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.idPaciente);
             this.Controls.Add(this.label2);
@@ -241,7 +244,7 @@
         private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label idPaciente;
-        private System.Windows.Forms.TextBox txtRutaXML;
         private System.Windows.Forms.Button expXMLBtn;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -109,10 +109,12 @@ namespace DAL
 
 
         }
-
+        public string CalcularSHA256(string texto)
+        {
+            return acc.CalcularSHA256(texto);
+        }
         public List<BE.Usuario> Listar()
         {
-
             try
             {
                 acc.IniciarTransaccion();
@@ -121,16 +123,19 @@ namespace DAL
                 DataTable tabla = acc.Leer("listarUsuario", null);
                 foreach (DataRow dr in tabla.Rows)
                 {
-                    BE.Usuario usuario = new BE.Usuario();
-                    usuario.Id = int.Parse(dr["ID"].ToString());
-                    usuario.Nombre = dr["nombre"].ToString();
-                    usuario.Email = dr["email"].ToString();
-                    usuario.Pass = dr["pass"].ToString();
-                    usuario.Privilegios = int.Parse(dr["privilegios"].ToString());
+                    BE.Usuario usuario = new BE.Usuario
+                    {
+                        Id = int.Parse(dr["ID"].ToString()),
+                        Nombre = dr["nombre"].ToString(),
+                        Email = dr["email"].ToString(),
+                        Pass = dr["pass"].ToString(),
+                        Privilegios = int.Parse(dr["privilegios"].ToString()),
+                        Bloqueado = dr["Bloqueado"] != DBNull.Value && (bool)dr["Bloqueado"]
+                    };
 
                     usuarios.Add(usuario);
-
                 }
+
                 acc.ConfirmarTransaccion();
 
                 return usuarios;
@@ -138,20 +143,16 @@ namespace DAL
             catch (Exception ex)
             {
                 acc.CancelarTransaccion();
-
                 MessageBox.Show(ex.Message.ToString());
-
                 return null;
             }
-           
-
         }
 
-        public DataTable ExportarXML()
+        /*public DataTable ExportarXML()
         {
             return acc.Leer("listarUsuarios", null);
 
-        }
+        }*/
 
         public BE.Usuario Login(string email, string pass)
         {
@@ -159,8 +160,6 @@ namespace DAL
             {
                 string passHash = acc.CalcularSHA256(pass);
 
-/*                acc.IniciarTransaccion();
-*/
                 SqlParameter[] parametro = new SqlParameter[2];
                 parametro[0] = new SqlParameter("@email", email);
                 parametro[1] = new SqlParameter("@pass", passHash);
@@ -171,17 +170,15 @@ namespace DAL
                 {
                     DataRow dr = tabla.Rows[0];
 
-
                     BE.Usuario usuario = new BE.Usuario
                     {
                         Id = int.Parse(dr["ID"].ToString()),
                         Nombre = dr["nombre"].ToString(),
                         Email = dr["email"].ToString(),
-                        Privilegios = int.Parse(dr["privilegios"].ToString())
+                        Privilegios = int.Parse(dr["privilegios"].ToString()),
+                        Bloqueado = dr["Bloqueado"] != DBNull.Value && (bool)dr["Bloqueado"]
                     };
 
-/*                    acc.ConfirmarTransaccion();
-*/
                     return usuario;
                 }
 
@@ -189,11 +186,111 @@ namespace DAL
             }
             catch (Exception ex)
             {
-/*                acc.CancelarTransaccion();
-*/
                 MessageBox.Show(ex.Message);
                 return null;
             }
+        }
+
+        /* public int BloquearUsuario(BE.Usuario usuario, bool bloquear)
+         {
+             try
+             {
+                 acc.IniciarTransaccion();
+
+                 SqlParameter[] parametro = new SqlParameter[5];
+                 parametro[0] = new SqlParameter("@ID", usuario.Id);
+                 parametro[1] = new SqlParameter("@nombre", usuario.Nombre);
+                 parametro[2] = new SqlParameter("@email", usuario.Email);
+                 parametro[3] = new SqlParameter("@pass", usuario.Pass);
+                 parametro[4] = new SqlParameter("@privilegio", usuario.Privilegios);
+                 SqlParameter pBloq = new SqlParameter("@Bloqueado", bloquear);
+                 var fa = acc.Escribir("editarUsuario", parametro.Concat(new[] { pBloq }).ToArray());
+
+                 acc.ConfirmarTransaccion();
+                 return fa;
+             }
+             catch (Exception ex)
+             {
+                 acc.CancelarTransaccion();
+                 MessageBox.Show(ex.Message);
+                 return -1;
+             }
+         }
+
+         public int DesbloquearUsuario(BE.Usuario usuario, bool bloquear)
+         {
+             try
+             {
+                 acc.IniciarTransaccion();
+
+                 SqlParameter[] parametro = new SqlParameter[5];
+                 parametro[0] = new SqlParameter("@ID", usuario.Id);
+                 parametro[1] = new SqlParameter("@nombre", usuario.Nombre);
+                 parametro[2] = new SqlParameter("@email", usuario.Email);
+                 parametro[3] = new SqlParameter("@pass", usuario.Pass);
+                 parametro[4] = new SqlParameter("@privilegio", usuario.Privilegios);
+                 // el SP ahora acepta opcional @Bloqueado, se puede pasar aquí
+                 SqlParameter pBloq = new SqlParameter("@Bloqueado", bloquear);
+                 var fa = acc.Escribir("editarUsuario", parametro.Concat(new[] { pBloq }).ToArray());
+
+                 acc.ConfirmarTransaccion();
+                 return fa;
+             }
+             catch (Exception ex)
+             {
+                 acc.CancelarTransaccion();
+                 MessageBox.Show(ex.Message);
+                 return -1;
+             }
+         }*/
+
+        public int BloquearUsuario(BE.Usuario usuario, bool bloqueado)
+        {
+            try
+            {
+                acc.IniciarTransaccion();
+
+                SqlParameter[] parametros = new SqlParameter[2];
+                parametros[0] = new SqlParameter("@id", usuario.Id);
+                parametros[1] = new SqlParameter("@bloqueado", bloqueado);
+
+                int fa = acc.Escribir("bloquearUsuario", parametros);
+
+                acc.ConfirmarTransaccion();
+
+                return fa;
+            }
+            catch (Exception ex)
+            {
+                acc.CancelarTransaccion();
+                MessageBox.Show(ex.Message);
+                return -1;
+            }
+        }
+
+        public void CambiarPassword(BE.Usuario usuario)
+        {
+            try
+            {
+                string passHash = CalcularSHA256(usuario.Pass);
+
+                SqlParameter[] parametros = new SqlParameter[2];
+                parametros[0] = new SqlParameter("@id", usuario.Id);
+                parametros[1] = new SqlParameter("@pass", passHash);
+
+                acc.Escribir("cambiarPasswordUsuario", parametros);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error DAL al cambiar contraseña: " + ex.Message);
+                throw;
+            }
+        }
+
+        public string ExportarUsuariosXML()
+        {
+            Acceso acceso = new Acceso();
+            return acceso.LeerXML("listarUsuariosXML");
         }
 
     }

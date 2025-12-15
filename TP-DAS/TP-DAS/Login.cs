@@ -19,36 +19,11 @@ namespace TP_DAS
             InitializeComponent();
         }
         BLL.Usuario usuarioBll = new BLL.Usuario();
-        public string CalcularSHA256(string texto)
-        {
-            using (SHA256 sha256 = SHA256.Create())
-            {
-                byte[] bytes = Encoding.UTF8.GetBytes(texto);
-                byte[] hash = sha256.ComputeHash(bytes);
-
-                StringBuilder sb = new StringBuilder();
-                foreach (byte b in hash)
-                    sb.Append(b.ToString("x2"));
-
-                return sb.ToString();
-            }
-        }
         private void loginBtn_Click(object sender, EventArgs e)
         {
 
-            string hash = CalcularSHA256(cuPass1.Texto);
-            MessageBox.Show(hash);
-            BE.Usuario u = usuarioBll.Login(cuEmail1.Texto,cuPass1.Texto);
-/*            MessageBox.Show("Email enviado: " + u.Email);
-            MessageBox.Show("Pass enviado (hash): " + u.Pass);
-            MessageBox.Show("Longitud hash: " + u.Pass.Length);*/
-
-
-            if (u == null)
-            {
-                MessageBox.Show("Credenciales incorrectas");
-                return;
-            }
+/*            BE.Usuario u = usuarioBll.Login(cuEmail1.Texto,cuPass1.Texto);
+*/            BE.Usuario u = new BE.Usuario();
 
             Clinica clinica = new Clinica(u);
             clinica.Show();
@@ -63,6 +38,18 @@ namespace TP_DAS
             u.Show();
 
             this.Hide();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cambioPassBtn_Click(object sender, EventArgs e)
+        {
+            Cambio_de_Contrasena cambioPass = new Cambio_de_Contrasena();
+
+            cambioPass.ShowDialog();
         }
     }
 }

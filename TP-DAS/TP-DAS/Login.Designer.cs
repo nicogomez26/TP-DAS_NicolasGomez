@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.loginBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.cuPass1 = new TP_DAS.CUPass();
             this.cuEmail1 = new TP_DAS.CUEmail();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cambioPassBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // loginBtn
@@ -43,6 +44,16 @@
             this.loginBtn.Text = "Iniciar Sesión";
             this.loginBtn.UseVisualStyleBackColor = true;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(705, 64);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(217, 39);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Iniciar Sesión";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cuPass1
             // 
@@ -62,27 +73,29 @@
             this.cuEmail1.TabIndex = 3;
             this.cuEmail1.Texto = "";
             // 
-            // button1
+            // cambioPassBtn
             // 
-            this.button1.Location = new System.Drawing.Point(705, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 39);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Iniciar Sesión";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cambioPassBtn.Location = new System.Drawing.Point(372, 298);
+            this.cambioPassBtn.Name = "cambioPassBtn";
+            this.cambioPassBtn.Size = new System.Drawing.Size(217, 39);
+            this.cambioPassBtn.TabIndex = 6;
+            this.cambioPassBtn.Text = "Olvidé mi contraseña";
+            this.cambioPassBtn.UseVisualStyleBackColor = true;
+            this.cambioPassBtn.Click += new System.EventHandler(this.cambioPassBtn_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 450);
+            this.Controls.Add(this.cambioPassBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cuPass1);
             this.Controls.Add(this.cuEmail1);
             this.Controls.Add(this.loginBtn);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
 
         }
@@ -92,5 +105,6 @@
         private CUEmail cuEmail1;
         private CUPass cuPass1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cambioPassBtn;
     }
 }

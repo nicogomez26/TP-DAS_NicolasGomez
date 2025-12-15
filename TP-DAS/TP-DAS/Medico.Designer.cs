@@ -33,17 +33,17 @@
             this.elimMedBtn = new System.Windows.Forms.Button();
             this.editMedBtn = new System.Windows.Forms.Button();
             this.agrMedBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.IdMedico = new System.Windows.Forms.Label();
             this.cUcmb1 = new TP_DAS.CUcmb();
             this.cU32 = new TP_DAS.CU3();
             this.cU22 = new TP_DAS.CU2();
             this.cU21 = new TP_DAS.CU2();
             this.cU12 = new TP_DAS.CU1();
             this.cU11 = new TP_DAS.CU1();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.IdMedico = new System.Windows.Forms.Label();
-            this.txtRutaXML = new System.Windows.Forms.TextBox();
             this.expXMLBtn = new System.Windows.Forms.Button();
+            this.expMedBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +55,7 @@
             this.grilla.Size = new System.Drawing.Size(713, 256);
             this.grilla.TabIndex = 67;
             this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
+            this.grilla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellContentClick);
             // 
             // volverBtn
             // 
@@ -95,6 +96,33 @@
             this.agrMedBtn.Text = "Agregar";
             this.agrMedBtn.UseVisualStyleBackColor = true;
             this.agrMedBtn.Click += new System.EventHandler(this.agrMedBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(55, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "Crear Medico";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(55, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(16, 13);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Id";
+            // 
+            // IdMedico
+            // 
+            this.IdMedico.AutoSize = true;
+            this.IdMedico.Location = new System.Drawing.Point(131, 124);
+            this.IdMedico.Name = "IdMedico";
+            this.IdMedico.Size = new System.Drawing.Size(10, 13);
+            this.IdMedico.TabIndex = 69;
+            this.IdMedico.Text = "-";
             // 
             // cUcmb1
             // 
@@ -151,43 +179,9 @@
             this.cU11.TabIndex = 57;
             this.cU11.Texto = "";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 95);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 56;
-            this.label1.Text = "Crear Medico";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(16, 13);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Id";
-            // 
-            // IdMedico
-            // 
-            this.IdMedico.AutoSize = true;
-            this.IdMedico.Location = new System.Drawing.Point(131, 124);
-            this.IdMedico.Name = "IdMedico";
-            this.IdMedico.Size = new System.Drawing.Size(10, 13);
-            this.IdMedico.TabIndex = 69;
-            this.IdMedico.Text = "-";
-            // 
-            // txtRutaXML
-            // 
-            this.txtRutaXML.Location = new System.Drawing.Point(929, 410);
-            this.txtRutaXML.Name = "txtRutaXML";
-            this.txtRutaXML.Size = new System.Drawing.Size(165, 20);
-            this.txtRutaXML.TabIndex = 85;
-            // 
             // expXMLBtn
             // 
-            this.expXMLBtn.Location = new System.Drawing.Point(929, 375);
+            this.expXMLBtn.Location = new System.Drawing.Point(930, 375);
             this.expXMLBtn.Name = "expXMLBtn";
             this.expXMLBtn.Size = new System.Drawing.Size(165, 29);
             this.expXMLBtn.TabIndex = 84;
@@ -195,12 +189,22 @@
             this.expXMLBtn.UseVisualStyleBackColor = true;
             this.expXMLBtn.Click += new System.EventHandler(this.expXMLBtn_Click);
             // 
+            // expMedBtn
+            // 
+            this.expMedBtn.Location = new System.Drawing.Point(759, 375);
+            this.expMedBtn.Name = "expMedBtn";
+            this.expMedBtn.Size = new System.Drawing.Size(165, 29);
+            this.expMedBtn.TabIndex = 86;
+            this.expMedBtn.Text = "Exportar Medicos";
+            this.expMedBtn.UseVisualStyleBackColor = true;
+            this.expMedBtn.Click += new System.EventHandler(this.expMedBtn_Click);
+            // 
             // Medico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 646);
-            this.Controls.Add(this.txtRutaXML);
+            this.Controls.Add(this.expMedBtn);
             this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.IdMedico);
             this.Controls.Add(this.label2);
@@ -241,7 +245,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label IdMedico;
-        private System.Windows.Forms.TextBox txtRutaXML;
         private System.Windows.Forms.Button expXMLBtn;
+        private System.Windows.Forms.Button expMedBtn;
     }
 }
