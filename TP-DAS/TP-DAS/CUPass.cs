@@ -16,7 +16,22 @@ namespace TP_DAS
         public CUPass()
         {
             InitializeComponent();
+            textBox1.UseSystemPasswordChar = true;
         }
+
+        private void verPassBtn_MouseDown(object sender, MouseEventArgs e)
+        {
+            textBox1.UseSystemPasswordChar = false;
+            verPassBtn.BackgroundImage = Properties.Resources.verPass;
+            verPassBtn.BackgroundImageLayout = ImageLayout.Zoom;
+        }
+        private void verPassBtn_MouseUp(object sender, MouseEventArgs e)
+        {
+            textBox1.UseSystemPasswordChar = true;
+            verPassBtn.BackgroundImage = Properties.Resources.ocultarPass;
+            verPassBtn.BackgroundImageLayout = ImageLayout.Zoom;
+        }
+
 
         public override bool Validar()
         {
@@ -49,18 +64,32 @@ namespace TP_DAS
 
         private void InitializeComponent()
         {
+            this.verPassBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 3);
-            this.textBox1.Size = new System.Drawing.Size(247, 20);
+            this.textBox1.Location = new System.Drawing.Point(86, 3);
+            this.textBox1.Size = new System.Drawing.Size(238, 20);
+            // 
+            // verPassBtn
+            // 
+            this.verPassBtn.BackgroundImage = global::TP_DAS.Properties.Resources.ocultarPass;
+            this.verPassBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.verPassBtn.Location = new System.Drawing.Point(339, 1);
+            this.verPassBtn.Name = "verPassBtn";
+            this.verPassBtn.Size = new System.Drawing.Size(30, 22);
+            this.verPassBtn.TabIndex = 4;
+            this.verPassBtn.UseVisualStyleBackColor = true;
             // 
             // CUPass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.Controls.Add(this.verPassBtn);
             this.Name = "CUPass";
-            this.Size = new System.Drawing.Size(362, 33);
+            this.Size = new System.Drawing.Size(402, 33);
+            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.verPassBtn, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 

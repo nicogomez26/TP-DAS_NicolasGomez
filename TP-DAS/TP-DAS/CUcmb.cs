@@ -34,6 +34,7 @@ namespace TP_DAS
             }
         }
 
+        
         public string SelectedItem
         {
             get { return cmb.SelectedItem?.ToString() ?? ""; }
@@ -77,5 +78,42 @@ namespace TP_DAS
         private void CU3_Load(object sender, EventArgs e)
         {
         }
+
+        public void CargarItems(Dictionary<int, string> items)
+        {
+            cmb.Items.Clear();
+
+            foreach (var item in items)
+            {
+                cmb.Items.Add(new ComboItem
+                {
+                    Valor = item.Key,
+                    Texto = item.Value
+                });
+            }
+        }
+        public int SelectedValue
+{
+    get
+    {
+        if (cmb.SelectedItem is ComboItem item)
+            return item.Valor;
+
+        return -1;
+    }
+}
+
+
+        public class ComboItem
+        {
+            public int Valor { get; set; }
+            public string Texto { get; set; }
+
+            public override string ToString()
+            {
+                return Texto; 
+            }
+        }
+
     }
 }

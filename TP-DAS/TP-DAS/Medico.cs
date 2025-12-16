@@ -21,12 +21,24 @@ namespace TP_DAS
 
         BLL.Medico medicoBll = new BLL.Medico();
         BE.Medico medico = new BE.Medico();
+        BLL.Especialidad bllEspecialidad = new BLL.Especialidad();
+
+        private void CargarEspecialidades()
+        {
+            List<BE.Especialidad> lista = bllEspecialidad.ListarEspecialidades();
+
+            cU32.CargarDatos(
+                lista,
+                "Nombre", // DisplayMember
+                "Id"      // ValueMember
+            );
+        }
 
         private void Medico_Load(object sender, EventArgs e)
         {
             try
             {
-                cU32.cargarDatos("listarEspecialidades", "Nombre", "ID");
+                CargarEspecialidades();
                 cUcmb1.Items = new string[] { "Femenino", "Masculino" };
                 VerGrilla();
             }
@@ -45,13 +57,6 @@ namespace TP_DAS
 
         }
 
-      /*  private void volverBtn_Click(object sender, EventArgs e)
-        {
-            Clinica clinica = new Clinica(uLogueado);
-
-            clinica.Show();
-            this.Hide();
-        }*/
         private void editMedBtn_Click(object sender, EventArgs e)
         {
             try

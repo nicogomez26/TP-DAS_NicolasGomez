@@ -11,7 +11,7 @@ namespace DAL
 {
     public class Mp_ObraSocial
     {
-        Acceso acc = new Acceso();
+        Acceso acc = Acceso.Instancia;
 
         public int Agregar(BE.ObraSocial obraSocial)
         {

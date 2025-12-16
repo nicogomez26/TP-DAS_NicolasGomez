@@ -34,7 +34,11 @@ namespace TP_DAS
         {
             VerGrilla();
             logueadoTxt.Text = uLogueado.Nombre;
-            cUcmb1.Items = new string[] { "1", "2", "3" };
+            cUcmb1.CargarItems(new Dictionary<int, string>
+                {
+                    { 0, "Lectura" },
+                    { 1, "Escritura" }
+                });
         }
 
         private void agrPacBtn_Click(object sender, EventArgs e)
@@ -48,7 +52,7 @@ namespace TP_DAS
                 usuario.Nombre = cU11.Texto;
                 usuario.Email = cuEmail1.Texto;
                 usuario.Pass = cuPass1.Texto;
-                usuario.Privilegios = int.Parse(cUcmb1.SelectedItem);
+                usuario.Privilegios = cUcmb1.SelectedValue;
 
                 fa = usuarioBll.AgregarUsuario(usuario);
 
@@ -89,7 +93,7 @@ namespace TP_DAS
                 usuario.Nombre = cU11.Texto;
                 usuario.Email = cuEmail1.Texto;
                 usuario.Pass = cuPass1.Texto;
-                usuario.Privilegios = int.Parse(cUcmb1.SelectedItem);
+                usuario.Privilegios = cUcmb1.SelectedValue;
 
                 fa = usuarioBll.EditarUsuario(usuario);
 
@@ -160,6 +164,7 @@ namespace TP_DAS
                 cU11.Texto = tmp.Nombre;
                 cuEmail1.Texto = tmp.Email;
                 cuPass1.Texto = tmp.Pass;
+                cUcmb1.SelectedItem = tmp.Privilegios.ToString(); ////REVISAR
             }
             catch (Exception ex)
             {
@@ -179,7 +184,7 @@ namespace TP_DAS
                     return;
                 }
 
-                usuarioBll.BloquearUsuario(tmp);
+                usuarioBll.DesbloquearUsuario(tmp);
 
                 MessageBox.Show($"Usuario '{tmp.Nombre}' desbloqueado correctamente.");
 
@@ -203,14 +208,21 @@ namespace TP_DAS
 
         private void expXMLBtn_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "XML (*.xml)|*.xml";
-            sfd.FileName = "Usuarios.xml";
-
-            if (sfd.ShowDialog() == DialogResult.OK)
+            try
             {
-                usuarioBll.ExportarUsuariosXML(sfd.FileName);
-                MessageBox.Show("Usuarios exportados correctamente");
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "XML (*.xml)|*.xml";
+                sfd.FileName = "Usuarios.xml";
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    usuarioBll.ExportarUsuariosXML(sfd.FileName);
+                    MessageBox.Show("Usuarios exportados correctamente");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -21,12 +21,24 @@ namespace TP_DAS
 
         BLL.Paciente pacienteBll = new BLL.Paciente();
         BE.Paciente paciente= new BE.Paciente();
+        BLL.ObraSocial bllObraSocial = new BLL.ObraSocial();
+
+        private void CargarObrasSociales()
+        {
+            List<BE.ObraSocial> lista = bllObraSocial.ListarObraSociales();
+
+            cU32.CargarDatos(
+                lista,
+                "Nombre", // DisplayMember
+                "Id"      // ValueMember
+            );
+        }
         private void Paciente_Load(object sender, EventArgs e)
         {
             try
             {
                 grilla.AllowUserToAddRows = false;
-                cU32.cargarDatos("listarObrasSociales", "Nombre", "ID");
+                CargarObrasSociales();
                 cUcmb1.Items = new string[] { "Femenino", "Masculino" };
                 VerGrilla();
             }

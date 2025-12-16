@@ -12,7 +12,7 @@ namespace DAL
 {
     public class Mp_Medico
     {
-        Acceso acc = new Acceso();
+        Acceso acc = Acceso.Instancia;
 
         public int Agregar(BE.Medico medico)
         {

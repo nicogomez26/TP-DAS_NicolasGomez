@@ -13,7 +13,7 @@ namespace DAL
 {
     public class Mp_Usuario
     {
-        Acceso acc = new Acceso();
+        Acceso acc = Acceso.Instancia;
 
         public int Agregar(BE.Usuario usuario)
         {
@@ -289,8 +289,7 @@ namespace DAL
 
         public string ExportarUsuariosXML()
         {
-            Acceso acceso = new Acceso();
-            return acceso.LeerXML("listarUsuariosXML");
+            return acc.LeerXML("listarUsuariosXML");
         }
 
     }

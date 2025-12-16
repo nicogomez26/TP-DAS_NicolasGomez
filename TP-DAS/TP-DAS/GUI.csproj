@@ -243,6 +243,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Turno.resx">
       <DependentUpon>Turno.cs</DependentUpon>
@@ -278,6 +279,12 @@
       <Project>{74b0c299-bc3e-49ac-8156-895c94dc7d6b}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocultarPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verPass.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

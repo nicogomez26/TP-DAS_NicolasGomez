@@ -12,22 +12,44 @@ namespace DAL
 {
     public class Acceso
     {
+
+        private static Acceso instancia;
+
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
+        SqlTransaction tr;
 
-
-        public void Conectar()
+        private Acceso()
         {
             cn.ConnectionString = @"Data Source=.;Initial Catalog=Clinica;Integrated Security=True";
-            cn.Open();
+        }
+
+        public static Acceso Instancia
+        {
+            get
+            {
+                if (instancia == null)
+                    instancia = new Acceso();
+
+                return instancia;
+            }
+        }
+        public void Conectar()
+        {
+            if (cn.State != ConnectionState.Open)
+            {
+                cn.Open();
+            }
         }
 
         public void Desconectar()
         {
-            cn.Close();
-            cn.Dispose();
+            if (cn.State == ConnectionState.Open)
+            {
+                cn.Close();
+                cn.Dispose();
+            }
         }
-        SqlTransaction tr;
         public void IniciarTransaccion()
         {
             Conectar();
@@ -36,14 +58,16 @@ namespace DAL
 
         public void ConfirmarTransaccion()
         {
-            tr.Commit();
+            tr?.Commit();
+            tr = null;
             Desconectar();
         }
 
 
         public void CancelarTransaccion()
         {
-            tr.Rollback();
+            tr?.Rollback();
+            tr = null;
             Desconectar();
         }
 
@@ -77,7 +101,6 @@ namespace DAL
 
             SqlDataAdapter adaptador = new SqlDataAdapter();
 
-            if (cn.State != ConnectionState.Open)
                 Conectar();
 
             cmd.Connection = cn;

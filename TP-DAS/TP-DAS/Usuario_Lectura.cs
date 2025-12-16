@@ -41,14 +41,21 @@ namespace TP_DAS
 
         private void expXMLBtn_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "XML (*.xml)|*.xml";
-            sfd.FileName = "Usuarios.xml";
-
-            if (sfd.ShowDialog() == DialogResult.OK)
+            try
             {
-                usuarioBll.ExportarUsuariosXML(sfd.FileName);
-                MessageBox.Show("Usuarios exportados correctamente");
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "XML (*.xml)|*.xml";
+                sfd.FileName = "Usuarios.xml";
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    usuarioBll.ExportarUsuariosXML(sfd.FileName);
+                    MessageBox.Show("Usuarios exportados correctamente");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

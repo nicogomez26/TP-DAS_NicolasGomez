@@ -19,11 +19,13 @@ namespace TP_DAS
             InitializeComponent();
         }
         BLL.Usuario usuarioBll = new BLL.Usuario();
+        BLL.Servicios servicios = new BLL.Servicios();
+
+
         private void loginBtn_Click(object sender, EventArgs e)
         {
 
-/*            BE.Usuario u = usuarioBll.Login(cuEmail1.Texto,cuPass1.Texto);
-*/            BE.Usuario u = new BE.Usuario();
+            BE.Usuario u = new BE.Usuario();
 
             Clinica clinica = new Clinica(u);
             clinica.Show();
@@ -40,10 +42,23 @@ namespace TP_DAS
             this.Hide();
         }
 
+
         private void Login_Load(object sender, EventArgs e)
         {
+            if (!servicios.SqlServerActivo())
+            {
+                MessageBox.Show(
+                    "El servicio de SQL Server no está iniciado.\nInícielo para continuar.",
+                    "Error de servicio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
 
+                this.Close();
+                return;
+            }
         }
+
 
         private void cambioPassBtn_Click(object sender, EventArgs e)
         {

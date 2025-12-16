@@ -82,12 +82,29 @@ namespace TP_DAS
         {
 
         }
+        BLL.Paciente bllPaciente = new BLL.Paciente();
+        BLL.Medico bllMedico = new BLL.Medico();
+        private void CargarPacYMed()
+        {
+            List<BE.Paciente> listaP = bllPaciente.ListarPaciente();
+            List<BE.Medico> listaM = bllMedico.ListarMedico();
 
+            cU32.CargarDatos(
+                listaP,
+                "Nombre", // DisplayMember
+                "Id"      // ValueMember
+            );
+
+            cU31.CargarDatos(
+               listaM,
+               "Nombre", // DisplayMember
+               "Id"      // ValueMember
+           );
+        }
         private void Turno_Load(object sender, EventArgs e)
         {
             VerGrilla();
-            cU32.cargarDatos("listarPacientes", "Nombre", "ID");
-            cU31.cargarDatos("listarMedicos", "Nombre", "ID");
+            CargarPacYMed();
         }
 
         BE.Turno tmp;

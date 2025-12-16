@@ -119,10 +119,10 @@
             // 
             this.cUcmb1.Etiqueta = "Privilegios";
             this.cUcmb1.Items = new string[0];
-            this.cUcmb1.Location = new System.Drawing.Point(56, 263);
+            this.cUcmb1.Location = new System.Drawing.Point(49, 255);
             this.cUcmb1.Name = "cUcmb1";
             this.cUcmb1.SelectedItem = "";
-            this.cUcmb1.Size = new System.Drawing.Size(298, 28);
+            this.cUcmb1.Size = new System.Drawing.Size(318, 29);
             this.cUcmb1.TabIndex = 64;
             // 
             // cU11
@@ -174,9 +174,9 @@
             // cuPass1
             // 
             this.cuPass1.Etiqueta = " Contraseña";
-            this.cuPass1.Location = new System.Drawing.Point(45, 224);
+            this.cuPass1.Location = new System.Drawing.Point(49, 224);
             this.cuPass1.Name = "cuPass1";
-            this.cuPass1.Size = new System.Drawing.Size(303, 33);
+            this.cuPass1.Size = new System.Drawing.Size(299, 33);
             this.cuPass1.TabIndex = 75;
             this.cuPass1.Texto = "";
             // 
