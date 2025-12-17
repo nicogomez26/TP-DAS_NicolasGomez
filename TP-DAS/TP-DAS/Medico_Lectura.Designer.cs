@@ -28,22 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grilla = new System.Windows.Forms.DataGridView();
             this.volverBtn = new System.Windows.Forms.Button();
             this.IdMedico = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.expMedBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.grilla = new TP_DAS.CUDataGrid();
             this.SuspendLayout();
-            // 
-            // grilla
-            // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(373, 97);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(713, 256);
-            this.grilla.TabIndex = 87;
             // 
             // volverBtn
             // 
@@ -75,7 +66,7 @@
             // 
             // expMedBtn
             // 
-            this.expMedBtn.Location = new System.Drawing.Point(751, 359);
+            this.expMedBtn.Location = new System.Drawing.Point(615, 341);
             this.expMedBtn.Name = "expMedBtn";
             this.expMedBtn.Size = new System.Drawing.Size(165, 29);
             this.expMedBtn.TabIndex = 93;
@@ -85,7 +76,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(922, 359);
+            this.button1.Location = new System.Drawing.Point(786, 341);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(165, 29);
             this.button1.TabIndex = 92;
@@ -93,32 +84,39 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // grilla
+            // 
+            this.grilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.grilla.Location = new System.Drawing.Point(262, 80);
+            this.grilla.Name = "grilla";
+            this.grilla.Size = new System.Drawing.Size(689, 255);
+            this.grilla.TabIndex = 94;
+            // 
             // Medico_Lectura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1112, 533);
+            this.Controls.Add(this.grilla);
             this.Controls.Add(this.expMedBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.IdMedico);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.grilla);
             this.Controls.Add(this.volverBtn);
             this.Name = "Medico_Lectura";
             this.Text = "Medico_Lectura";
             this.Load += new System.EventHandler(this.Medico_Lectura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Button volverBtn;
         private System.Windows.Forms.Label IdMedico;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button expMedBtn;
         private System.Windows.Forms.Button button1;
+        private CUDataGrid grilla;
     }
 }

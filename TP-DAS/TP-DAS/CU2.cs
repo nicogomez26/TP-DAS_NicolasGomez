@@ -12,10 +12,7 @@ namespace TP_DAS
 {
     public class CU2:CU1
     {
-        /*public CU2()
-        {
-            InitializeComponent();
-        }*/
+
 
         public override bool Validar()
         {
@@ -28,17 +25,17 @@ namespace TP_DAS
                 ok = int.TryParse(this.Texto, out numero);
                 if (!ok)
                 {
-
-                    this.SetearColor(System.Drawing.Color.Red);
+                    /*MarcarError();
+                    this.SetearColor(System.Drawing.Color.Red);*/
                     base.textBox1.openTooltip("error");
                 }
-                else { this.SetearColor(System.Drawing.Color.Green); }
+                else { /*this.SetearColor(System.Drawing.Color.Green);*/ }
             }
 
             return ok;
         }
 
-        private void InitializeComponent()
+        /*private void InitializeComponent()
         {
             this.SuspendLayout();
             // 
@@ -56,7 +53,7 @@ namespace TP_DAS
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }
+        }*/
 
         public int value()
         {
@@ -72,6 +69,33 @@ namespace TP_DAS
 
         private void CU2_Load_2(object sender, EventArgs e)
         {
+
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // lblEtiqueta
+            // 
+            this.lblEtiqueta.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblEtiqueta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblEtiqueta.Size = new System.Drawing.Size(38, 15);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBox1.Size = new System.Drawing.Size(290, 18);
+            // 
+            // CU2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.Name = "CU2";
+            this.Size = new System.Drawing.Size(353, 33);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
     }

@@ -35,8 +35,8 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
-            grilla.DataSource = null;
-            grilla.DataSource = ObraSocBll.ListarObraSociales();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = ObraSocBll.ListarObraSociales();
 
         }
     }

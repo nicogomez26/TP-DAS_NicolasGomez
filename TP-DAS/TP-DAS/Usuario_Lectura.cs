@@ -32,11 +32,12 @@ namespace TP_DAS
         private void Usuario_Lectura_Load(object sender, EventArgs e)
         {
             VerGrilla();
+            expXMLBtn.Click += expXMLBtn_Click;
         }
         public void VerGrilla()
         {
-            grilla.DataSource = null;
-            grilla.DataSource = usuarioBll.ListarUsuarios();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = usuarioBll.ListarUsuarios();
         }
 
         private void expXMLBtn_Click(object sender, EventArgs e)

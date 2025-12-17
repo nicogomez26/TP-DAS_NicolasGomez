@@ -28,27 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grilla = new System.Windows.Forms.DataGridView();
             this.volverBtn = new System.Windows.Forms.Button();
-            this.elimEspBtn = new System.Windows.Forms.Button();
-            this.editEspBtn = new System.Windows.Forms.Button();
-            this.agrEspBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.IdEsp = new System.Windows.Forms.Label();
-            this.cU11 = new TP_DAS.CU1();
             this.espGrp = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.grilla = new TP_DAS.CUDataGrid();
+            this.cU11 = new TP_DAS.CU1();
+            this.agrEspBtn = new TP_DAS.CUButton();
+            this.editEspBtn = new TP_DAS.CUButton();
+            this.elimEspBtn = new TP_DAS.CUButton();
             this.espGrp.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // grilla
-            // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(378, 126);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(714, 293);
-            this.grilla.TabIndex = 74;
-            this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
             // 
             // volverBtn
             // 
@@ -59,36 +49,6 @@
             this.volverBtn.Text = "Volver";
             this.volverBtn.UseVisualStyleBackColor = true;
             this.volverBtn.Click += new System.EventHandler(this.volverBtn_Click);
-            // 
-            // elimEspBtn
-            // 
-            this.elimEspBtn.Location = new System.Drawing.Point(38, 245);
-            this.elimEspBtn.Name = "elimEspBtn";
-            this.elimEspBtn.Size = new System.Drawing.Size(238, 29);
-            this.elimEspBtn.TabIndex = 72;
-            this.elimEspBtn.Text = "Eliminar";
-            this.elimEspBtn.UseVisualStyleBackColor = true;
-            this.elimEspBtn.Click += new System.EventHandler(this.elimEspBtn_Click);
-            // 
-            // editEspBtn
-            // 
-            this.editEspBtn.Location = new System.Drawing.Point(38, 200);
-            this.editEspBtn.Name = "editEspBtn";
-            this.editEspBtn.Size = new System.Drawing.Size(238, 29);
-            this.editEspBtn.TabIndex = 71;
-            this.editEspBtn.Text = "Editar";
-            this.editEspBtn.UseVisualStyleBackColor = true;
-            this.editEspBtn.Click += new System.EventHandler(this.editEspBtn_Click);
-            // 
-            // agrEspBtn
-            // 
-            this.agrEspBtn.Location = new System.Drawing.Point(38, 153);
-            this.agrEspBtn.Name = "agrEspBtn";
-            this.agrEspBtn.Size = new System.Drawing.Size(238, 29);
-            this.agrEspBtn.TabIndex = 70;
-            this.agrEspBtn.Text = "Agregar";
-            this.agrEspBtn.UseVisualStyleBackColor = true;
-            this.agrEspBtn.Click += new System.EventHandler(this.agrEspBtn_Click);
             // 
             // label2
             // 
@@ -108,23 +68,14 @@
             this.IdEsp.TabIndex = 76;
             this.IdEsp.Text = "-";
             // 
-            // cU11
-            // 
-            this.cU11.Etiqueta = "Nombre";
-            this.cU11.Location = new System.Drawing.Point(6, 82);
-            this.cU11.Name = "cU11";
-            this.cU11.Size = new System.Drawing.Size(292, 33);
-            this.cU11.TabIndex = 69;
-            this.cU11.Texto = "";
-            // 
             // espGrp
             // 
+            this.espGrp.Controls.Add(this.elimEspBtn);
             this.espGrp.Controls.Add(this.cU11);
+            this.espGrp.Controls.Add(this.editEspBtn);
+            this.espGrp.Controls.Add(this.agrEspBtn);
             this.espGrp.Controls.Add(this.IdEsp);
             this.espGrp.Controls.Add(this.label2);
-            this.espGrp.Controls.Add(this.agrEspBtn);
-            this.espGrp.Controls.Add(this.editEspBtn);
-            this.espGrp.Controls.Add(this.elimEspBtn);
             this.espGrp.Location = new System.Drawing.Point(44, 126);
             this.espGrp.Name = "espGrp";
             this.espGrp.Size = new System.Drawing.Size(319, 293);
@@ -132,18 +83,68 @@
             this.espGrp.TabStop = false;
             this.espGrp.Text = "Gestionar Especialidades";
             // 
+            // grilla
+            // 
+            this.grilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.grilla.Location = new System.Drawing.Point(385, 126);
+            this.grilla.Name = "grilla";
+            this.grilla.Size = new System.Drawing.Size(665, 293);
+            this.grilla.TabIndex = 77;
+            // 
+            // cU11
+            // 
+            this.cU11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.cU11.Etiqueta = "Nombre";
+            this.cU11.Location = new System.Drawing.Point(6, 82);
+            this.cU11.Name = "cU11";
+            this.cU11.Size = new System.Drawing.Size(292, 33);
+            this.cU11.TabIndex = 69;
+            this.cU11.Texto = "";
+            // 
+            // agrEspBtn
+            // 
+            this.agrEspBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.agrEspBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.agrEspBtn.ColorTexto = System.Drawing.Color.White;
+            this.agrEspBtn.Location = new System.Drawing.Point(38, 145);
+            this.agrEspBtn.Name = "agrEspBtn";
+            this.agrEspBtn.Size = new System.Drawing.Size(245, 38);
+            this.agrEspBtn.TabIndex = 78;
+            this.agrEspBtn.Texto = "Agregar";
+            // 
+            // editEspBtn
+            // 
+            this.editEspBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.editEspBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.editEspBtn.ColorTexto = System.Drawing.Color.White;
+            this.editEspBtn.Location = new System.Drawing.Point(38, 189);
+            this.editEspBtn.Name = "editEspBtn";
+            this.editEspBtn.Size = new System.Drawing.Size(245, 38);
+            this.editEspBtn.TabIndex = 79;
+            this.editEspBtn.Texto = "Editar";
+            // 
+            // elimEspBtn
+            // 
+            this.elimEspBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.elimEspBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.elimEspBtn.ColorTexto = System.Drawing.Color.White;
+            this.elimEspBtn.Location = new System.Drawing.Point(38, 233);
+            this.elimEspBtn.Name = "elimEspBtn";
+            this.elimEspBtn.Size = new System.Drawing.Size(245, 38);
+            this.elimEspBtn.TabIndex = 80;
+            this.elimEspBtn.Texto = "Eliminar";
+            // 
             // Especialidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 595);
-            this.Controls.Add(this.espGrp);
             this.Controls.Add(this.grilla);
+            this.Controls.Add(this.espGrp);
             this.Controls.Add(this.volverBtn);
             this.Name = "Especialidad";
             this.Text = "Especialidad";
             this.Load += new System.EventHandler(this.Especialidad_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
             this.espGrp.ResumeLayout(false);
             this.espGrp.PerformLayout();
             this.ResumeLayout(false);
@@ -151,15 +152,14 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Button volverBtn;
-        private System.Windows.Forms.Button elimEspBtn;
-        private System.Windows.Forms.Button editEspBtn;
-        private System.Windows.Forms.Button agrEspBtn;
         private CU1 cU11;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label IdEsp;
         private System.Windows.Forms.GroupBox espGrp;
+        private CUDataGrid grilla;
+        private CUButton elimEspBtn;
+        private CUButton editEspBtn;
+        private CUButton agrEspBtn;
     }
 }

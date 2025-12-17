@@ -38,8 +38,8 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
-            grilla.DataSource = null;
-            grilla.DataSource = turnoBll.ListarTurno();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = turnoBll.ListarTurno();
 
         }
 

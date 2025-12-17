@@ -39,6 +39,11 @@ namespace TP_DAS
                     { 0, "Lectura" },
                     { 1, "Escritura" }
                 });
+
+            agrPacBtn.Click +=  agrPacBtn_Click;
+            editPacBtn.Click += editPacBtn_Click;
+            elimPacBtn.Click += elimPacBtn_Click;
+            expXMLBtn.Click += expXMLBtn_Click;
         }
 
         private void agrPacBtn_Click(object sender, EventArgs e)
@@ -77,8 +82,8 @@ namespace TP_DAS
 
         public void VerGrilla()
         {
-            grilla.DataSource = null;
-            grilla.DataSource = usuarioBll.ListarUsuarios();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = usuarioBll.ListarUsuarios();
         }
 
         private void editPacBtn_Click(object sender, EventArgs e)
@@ -150,14 +155,14 @@ namespace TP_DAS
         {
             try
             {
-                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Grid.Rows.Count)
                     return;
 
-                var fila = grilla.Rows[e.RowIndex];
+                var fila = grilla.Grid.Rows[e.RowIndex];
                 if (fila == null || fila.DataBoundItem == null)
                     return;
 
-                tmp = (BE.Usuario)grilla.Rows[e.RowIndex].DataBoundItem;
+                tmp = (BE.Usuario)grilla.Grid.Rows[e.RowIndex].DataBoundItem;
 
                 idUser.Text = tmp.Id.ToString();
 
@@ -224,6 +229,16 @@ namespace TP_DAS
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void desbloquearBtn_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void expXMLBtn_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

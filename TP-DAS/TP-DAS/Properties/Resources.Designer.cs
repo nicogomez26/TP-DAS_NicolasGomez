@@ -73,9 +73,39 @@ namespace TP_DAS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ocultarPass1 {
+            get {
+                object obj = ResourceManager.GetObject("ocultarPass1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ocultarPass2 {
+            get {
+                object obj = ResourceManager.GetObject("ocultarPass2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap verPass {
             get {
                 object obj = ResourceManager.GetObject("verPass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verPass1 {
+            get {
+                object obj = ResourceManager.GetObject("verPass1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

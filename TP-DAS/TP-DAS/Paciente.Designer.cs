@@ -29,11 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.elimPacBtn = new System.Windows.Forms.Button();
-            this.editPacBtn = new System.Windows.Forms.Button();
-            this.agrPacBtn = new System.Windows.Forms.Button();
             this.volverBtn = new System.Windows.Forms.Button();
-            this.grilla = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.idPaciente = new System.Windows.Forms.Label();
             this.cUcmb1 = new TP_DAS.CUcmb();
@@ -44,7 +40,10 @@
             this.cU11 = new TP_DAS.CU1();
             this.expXMLBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.grilla = new TP_DAS.CUDataGrid();
+            this.elimPacBtn = new TP_DAS.CUButton();
+            this.editPacBtn = new TP_DAS.CUButton();
+            this.agrPacBtn = new TP_DAS.CUButton();
             this.SuspendLayout();
             // 
             // label1
@@ -56,36 +55,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Crear Paciente";
             // 
-            // elimPacBtn
-            // 
-            this.elimPacBtn.Location = new System.Drawing.Point(79, 465);
-            this.elimPacBtn.Name = "elimPacBtn";
-            this.elimPacBtn.Size = new System.Drawing.Size(238, 29);
-            this.elimPacBtn.TabIndex = 47;
-            this.elimPacBtn.Text = "Eliminar";
-            this.elimPacBtn.UseVisualStyleBackColor = true;
-            this.elimPacBtn.Click += new System.EventHandler(this.elimPacBtn_Click);
-            // 
-            // editPacBtn
-            // 
-            this.editPacBtn.Location = new System.Drawing.Point(79, 420);
-            this.editPacBtn.Name = "editPacBtn";
-            this.editPacBtn.Size = new System.Drawing.Size(238, 29);
-            this.editPacBtn.TabIndex = 46;
-            this.editPacBtn.Text = "Editar";
-            this.editPacBtn.UseVisualStyleBackColor = true;
-            this.editPacBtn.Click += new System.EventHandler(this.editPacBtn_Click);
-            // 
-            // agrPacBtn
-            // 
-            this.agrPacBtn.Location = new System.Drawing.Point(79, 373);
-            this.agrPacBtn.Name = "agrPacBtn";
-            this.agrPacBtn.Size = new System.Drawing.Size(238, 29);
-            this.agrPacBtn.TabIndex = 45;
-            this.agrPacBtn.Text = "Agregar";
-            this.agrPacBtn.UseVisualStyleBackColor = true;
-            this.agrPacBtn.Click += new System.EventHandler(this.agrPacBtn_Click);
-            // 
             // volverBtn
             // 
             this.volverBtn.Location = new System.Drawing.Point(21, 12);
@@ -95,15 +64,6 @@
             this.volverBtn.Text = "Volver";
             this.volverBtn.UseVisualStyleBackColor = true;
             this.volverBtn.Click += new System.EventHandler(this.volverBtn_Click);
-            // 
-            // grilla
-            // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(372, 97);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(708, 272);
-            this.grilla.TabIndex = 55;
-            this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
             // 
             // label2
             // 
@@ -125,6 +85,7 @@
             // 
             // cUcmb1
             // 
+            this.cUcmb1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cUcmb1.Etiqueta = "Sexo";
             this.cUcmb1.Items = new string[0];
             this.cUcmb1.Location = new System.Drawing.Point(47, 293);
@@ -135,6 +96,7 @@
             // 
             // cU32
             // 
+            this.cU32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cU32.Etiqueta = "Obra Soc.";
             this.cU32.Location = new System.Drawing.Point(47, 328);
             this.cU32.Name = "cU32";
@@ -144,6 +106,7 @@
             // 
             // cU22
             // 
+            this.cU22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cU22.Etiqueta = "Edad";
             this.cU22.Location = new System.Drawing.Point(47, 254);
             this.cU22.Name = "cU22";
@@ -153,6 +116,7 @@
             // 
             // cU21
             // 
+            this.cU21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cU21.Etiqueta = "DNI";
             this.cU21.Location = new System.Drawing.Point(47, 136);
             this.cU21.Name = "cU21";
@@ -162,6 +126,7 @@
             // 
             // cU12
             // 
+            this.cU12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cU12.Etiqueta = "Apellido";
             this.cU12.Location = new System.Drawing.Point(47, 214);
             this.cU12.Name = "cU12";
@@ -171,6 +136,7 @@
             // 
             // cU11
             // 
+            this.cU11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cU11.Etiqueta = "Nombre";
             this.cU11.Location = new System.Drawing.Point(47, 175);
             this.cU11.Name = "cU11";
@@ -198,20 +164,61 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // grilla
+            // 
+            this.grilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.grilla.Location = new System.Drawing.Point(391, 114);
+            this.grilla.Name = "grilla";
+            this.grilla.Size = new System.Drawing.Size(689, 255);
+            this.grilla.TabIndex = 95;
+            // 
+            // elimPacBtn
+            // 
+            this.elimPacBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.elimPacBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.elimPacBtn.ColorTexto = System.Drawing.Color.White;
+            this.elimPacBtn.Location = new System.Drawing.Point(79, 463);
+            this.elimPacBtn.Name = "elimPacBtn";
+            this.elimPacBtn.Size = new System.Drawing.Size(245, 38);
+            this.elimPacBtn.TabIndex = 101;
+            this.elimPacBtn.Texto = "Eliminar";
+            // 
+            // editPacBtn
+            // 
+            this.editPacBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.editPacBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.editPacBtn.ColorTexto = System.Drawing.Color.White;
+            this.editPacBtn.Location = new System.Drawing.Point(79, 419);
+            this.editPacBtn.Name = "editPacBtn";
+            this.editPacBtn.Size = new System.Drawing.Size(245, 38);
+            this.editPacBtn.TabIndex = 100;
+            this.editPacBtn.Texto = "Editar";
+            // 
+            // agrPacBtn
+            // 
+            this.agrPacBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.agrPacBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.agrPacBtn.ColorTexto = System.Drawing.Color.White;
+            this.agrPacBtn.Location = new System.Drawing.Point(79, 375);
+            this.agrPacBtn.Name = "agrPacBtn";
+            this.agrPacBtn.Size = new System.Drawing.Size(245, 38);
+            this.agrPacBtn.TabIndex = 99;
+            this.agrPacBtn.Texto = "Agregar";
+            // 
             // Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1106, 542);
+            this.Controls.Add(this.elimPacBtn);
+            this.Controls.Add(this.editPacBtn);
+            this.Controls.Add(this.agrPacBtn);
+            this.Controls.Add(this.grilla);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.idPaciente);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.grilla);
             this.Controls.Add(this.volverBtn);
-            this.Controls.Add(this.elimPacBtn);
-            this.Controls.Add(this.editPacBtn);
-            this.Controls.Add(this.agrPacBtn);
             this.Controls.Add(this.cUcmb1);
             this.Controls.Add(this.cU32);
             this.Controls.Add(this.cU22);
@@ -222,7 +229,6 @@
             this.Name = "Paciente";
             this.Text = "Paciente";
             this.Load += new System.EventHandler(this.Paciente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,14 +243,14 @@
         private CU2 cU22;
         private CU3 cU32;
         private CUcmb cUcmb1;
-        private System.Windows.Forms.Button elimPacBtn;
-        private System.Windows.Forms.Button editPacBtn;
-        private System.Windows.Forms.Button agrPacBtn;
         private System.Windows.Forms.Button volverBtn;
-        private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label idPaciente;
         private System.Windows.Forms.Button expXMLBtn;
         private System.Windows.Forms.Button button1;
+        private CUDataGrid grilla;
+        private CUButton elimPacBtn;
+        private CUButton editPacBtn;
+        private CUButton agrPacBtn;
     }
 }

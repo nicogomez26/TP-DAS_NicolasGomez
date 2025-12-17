@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grilla = new System.Windows.Forms.DataGridView();
             this.volverBtn = new System.Windows.Forms.Button();
             this.expPacientesBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.idPaciente = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.grilla = new TP_DAS.CUDataGrid();
             this.SuspendLayout();
-            // 
-            // grilla
-            // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(280, 76);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(708, 272);
-            this.grilla.TabIndex = 85;
-            this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
             // 
             // volverBtn
             // 
@@ -94,32 +84,39 @@
             this.label2.TabIndex = 89;
             this.label2.Text = "ID:";
             // 
+            // grilla
+            // 
+            this.grilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.grilla.Location = new System.Drawing.Point(301, 93);
+            this.grilla.Name = "grilla";
+            this.grilla.Size = new System.Drawing.Size(689, 255);
+            this.grilla.TabIndex = 95;
+            // 
             // Paciente_Lectura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1065, 465);
+            this.Controls.Add(this.grilla);
             this.Controls.Add(this.idPaciente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.expPacientesBtn);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.grilla);
             this.Controls.Add(this.volverBtn);
             this.Name = "Paciente_Lectura";
             this.Text = "Paciente_Lectura";
             this.Load += new System.EventHandler(this.Paciente_Lectura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Button volverBtn;
         private System.Windows.Forms.Button expPacientesBtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label idPaciente;
         private System.Windows.Forms.Label label2;
+        private CUDataGrid grilla;
     }
 }

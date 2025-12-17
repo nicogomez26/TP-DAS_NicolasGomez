@@ -65,5 +65,11 @@ namespace TP_DAS
         {
 
         }
+
+        private void Cambio_de_Contrasena_Load(object sender, EventArgs e)
+        {
+            cambiarPassBtn.Click += cambiarPassBtn_Click;
+            cancelarBtn.Click += cancelarBtn_Click;
+        }
     }
 }

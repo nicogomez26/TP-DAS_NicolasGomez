@@ -21,7 +21,6 @@ namespace TP_DAS
         BLL.Usuario usuarioBll = new BLL.Usuario();
         BLL.Servicios servicios = new BLL.Servicios();
 
-
         private void loginBtn_Click(object sender, EventArgs e)
         {
 
@@ -57,6 +56,9 @@ namespace TP_DAS
                 this.Close();
                 return;
             }
+            loginBtn.Click += loginBtn_Click;
+            cambioPassBtn.Click += cambioPassBtn_Click;
+
         }
 
 
@@ -65,6 +67,16 @@ namespace TP_DAS
             Cambio_de_Contrasena cambioPass = new Cambio_de_Contrasena();
 
             cambioPass.ShowDialog();
+        }
+
+        private void cambioPassBtn_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginBtn_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

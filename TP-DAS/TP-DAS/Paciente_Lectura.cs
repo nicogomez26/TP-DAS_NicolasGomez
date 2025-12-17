@@ -29,9 +29,9 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
-            grilla.DataSource = null;
-            grilla.DataSource = pacienteBll.ListarPaciente();
-            grilla.ClearSelection();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = pacienteBll.ListarPaciente();
+            grilla.Grid.ClearSelection();
 
         }
 
@@ -75,14 +75,14 @@ namespace TP_DAS
         {
             try
             {
-                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Grid.Rows.Count)
                     return;
 
-                var fila = grilla.Rows[e.RowIndex];
+                var fila = grilla.Grid.Rows[e.RowIndex];
                 if (fila == null || fila.DataBoundItem == null)
                     return;
 
-                tmp = (BE.Paciente)grilla.Rows[e.RowIndex].DataBoundItem;
+                tmp = (BE.Paciente)grilla.Grid.Rows[e.RowIndex].DataBoundItem;
 
                 idPaciente.Text = tmp.Id.ToString();
 

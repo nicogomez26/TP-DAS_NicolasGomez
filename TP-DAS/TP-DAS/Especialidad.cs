@@ -36,8 +36,8 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
-            grilla.DataSource = null;
-            grilla.DataSource = especialidadBLL.ListarEspecialidades();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = especialidadBLL.ListarEspecialidades();
 
         }
 
@@ -106,6 +106,10 @@ namespace TP_DAS
         private void Especialidad_Load(object sender, EventArgs e)
         {
             VerGrilla();
+
+            agrEspBtn.Click += agrEspBtn_Click;
+            editEspBtn.Click += editEspBtn_Click;
+            elimEspBtn.Click += elimEspBtn_Click;
         }
 
         private void elimEspBtn_Click(object sender, EventArgs e)
@@ -140,14 +144,14 @@ namespace TP_DAS
         {
             try
             {
-                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Grid.Rows.Count)
                     return;
 
-                var fila = grilla.Rows[e.RowIndex];
+                var fila = grilla.Grid.Rows[e.RowIndex];
                 if (fila == null || fila.DataBoundItem == null)
                     return;
 
-                tmp = (BE.Especialidad)grilla.Rows[e.RowIndex].DataBoundItem;
+                tmp = (BE.Especialidad)grilla.Grid.Rows[e.RowIndex].DataBoundItem;
 
                 IdEsp.Text = tmp.Id.ToString();
 

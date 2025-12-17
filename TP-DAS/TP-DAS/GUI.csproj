@@ -70,6 +70,18 @@
     <Compile Include="CU2.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="CUBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUButton.Designer.cs">
+      <DependentUpon>CUButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CUDate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,14 +103,8 @@
     <Compile Include="CUEmail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CUEmail.Designer.cs">
-      <DependentUpon>CUEmail.cs</DependentUpon>
-    </Compile>
     <Compile Include="CUPass.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CUPass.Designer.cs">
-      <DependentUpon>CUPass.cs</DependentUpon>
     </Compile>
     <Compile Include="Especialidad.cs">
       <SubType>Form</SubType>
@@ -190,8 +196,14 @@
     <EmbeddedResource Include="CU1.resx">
       <DependentUpon>CU1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CU2.resx">
-      <DependentUpon>CU2.cs</DependentUpon>
+    <EmbeddedResource Include="CUBase.resx">
+      <DependentUpon>CUBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUButton.resx">
+      <DependentUpon>CUButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUDataGrid.resx">
+      <DependentUpon>CUDataGrid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CUDate.resx">
       <DependentUpon>CUDate.cs</DependentUpon>
@@ -201,9 +213,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CU3.resx">
       <DependentUpon>CU3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CUEmail.resx">
-      <DependentUpon>CUEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CUPass.resx">
       <DependentUpon>CUPass.cs</DependentUpon>
@@ -285,6 +294,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\verPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocultarPass1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocultarPass2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verPass1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

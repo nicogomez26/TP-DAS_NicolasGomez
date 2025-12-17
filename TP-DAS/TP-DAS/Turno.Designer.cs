@@ -28,11 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grilla = new System.Windows.Forms.DataGridView();
             this.volverBtn = new System.Windows.Forms.Button();
-            this.elimTurBtn = new System.Windows.Forms.Button();
-            this.editTurBtn = new System.Windows.Forms.Button();
-            this.agrTurBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.idTurno = new System.Windows.Forms.Label();
@@ -40,17 +36,11 @@
             this.cuDate1 = new TP_DAS.CUDate();
             this.cU31 = new TP_DAS.CU3();
             this.cU32 = new TP_DAS.CU3();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.grilla = new TP_DAS.CUDataGrid();
+            this.elimTurBtn = new TP_DAS.CUButton();
+            this.editTurBtn = new TP_DAS.CUButton();
+            this.agrTurBtn = new TP_DAS.CUButton();
             this.SuspendLayout();
-            // 
-            // grilla
-            // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(381, 104);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(758, 285);
-            this.grilla.TabIndex = 74;
-            this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
             // 
             // volverBtn
             // 
@@ -61,36 +51,6 @@
             this.volverBtn.Text = "Volver";
             this.volverBtn.UseVisualStyleBackColor = true;
             this.volverBtn.Click += new System.EventHandler(this.volverBtn_Click);
-            // 
-            // elimTurBtn
-            // 
-            this.elimTurBtn.Location = new System.Drawing.Point(89, 410);
-            this.elimTurBtn.Name = "elimTurBtn";
-            this.elimTurBtn.Size = new System.Drawing.Size(238, 29);
-            this.elimTurBtn.TabIndex = 72;
-            this.elimTurBtn.Text = "Eliminar";
-            this.elimTurBtn.UseVisualStyleBackColor = true;
-            this.elimTurBtn.Click += new System.EventHandler(this.elimTurBtn_Click);
-            // 
-            // editTurBtn
-            // 
-            this.editTurBtn.Location = new System.Drawing.Point(89, 375);
-            this.editTurBtn.Name = "editTurBtn";
-            this.editTurBtn.Size = new System.Drawing.Size(238, 29);
-            this.editTurBtn.TabIndex = 71;
-            this.editTurBtn.Text = "Editar";
-            this.editTurBtn.UseVisualStyleBackColor = true;
-            this.editTurBtn.Click += new System.EventHandler(this.editTurBtn_Click);
-            // 
-            // agrTurBtn
-            // 
-            this.agrTurBtn.Location = new System.Drawing.Point(89, 340);
-            this.agrTurBtn.Name = "agrTurBtn";
-            this.agrTurBtn.Size = new System.Drawing.Size(238, 29);
-            this.agrTurBtn.TabIndex = 70;
-            this.agrTurBtn.Text = "Agregar";
-            this.agrTurBtn.UseVisualStyleBackColor = true;
-            this.agrTurBtn.Click += new System.EventHandler(this.agrTurBtn_Click);
             // 
             // label1
             // 
@@ -132,17 +92,19 @@
             // 
             // cuDate1
             // 
+            this.cuDate1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cuDate1.Etiqueta = "Fecha";
             this.cuDate1.Location = new System.Drawing.Point(55, 199);
-            this.cuDate1.Maximo = new System.DateTime(2026, 3, 15, 1, 28, 10, 613);
-            this.cuDate1.Minimo = new System.DateTime(2025, 12, 15, 1, 28, 10, 613);
+            this.cuDate1.Maximo = new System.DateTime(2026, 3, 16, 21, 19, 46, 811);
+            this.cuDate1.Minimo = new System.DateTime(2025, 12, 16, 21, 19, 46, 811);
             this.cuDate1.Name = "cuDate1";
             this.cuDate1.Size = new System.Drawing.Size(305, 28);
             this.cuDate1.TabIndex = 77;
-            this.cuDate1.Valor = new System.DateTime(2025, 12, 15, 1, 28, 10, 613);
+            this.cuDate1.Valor = new System.DateTime(2025, 12, 16, 21, 19, 46, 811);
             // 
             // cU31
             // 
+            this.cU31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cU31.Etiqueta = "Medico";
             this.cU31.Location = new System.Drawing.Point(55, 287);
             this.cU31.Name = "cU31";
@@ -152,6 +114,7 @@
             // 
             // cU32
             // 
+            this.cU32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cU32.Etiqueta = "Paciente";
             this.cU32.Location = new System.Drawing.Point(55, 253);
             this.cU32.Name = "cU32";
@@ -160,39 +123,74 @@
             this.cU32.TextoSeleccionado = "";
             this.cU32.Load += new System.EventHandler(this.cU32_Load);
             // 
+            // grilla
+            // 
+            this.grilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.grilla.Location = new System.Drawing.Point(403, 125);
+            this.grilla.Name = "grilla";
+            this.grilla.Size = new System.Drawing.Size(736, 264);
+            this.grilla.TabIndex = 95;
+            // 
+            // elimTurBtn
+            // 
+            this.elimTurBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.elimTurBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.elimTurBtn.ColorTexto = System.Drawing.Color.White;
+            this.elimTurBtn.Location = new System.Drawing.Point(89, 427);
+            this.elimTurBtn.Name = "elimTurBtn";
+            this.elimTurBtn.Size = new System.Drawing.Size(245, 38);
+            this.elimTurBtn.TabIndex = 104;
+            this.elimTurBtn.Texto = "Eliminar";
+            // 
+            // editTurBtn
+            // 
+            this.editTurBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.editTurBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.editTurBtn.ColorTexto = System.Drawing.Color.White;
+            this.editTurBtn.Location = new System.Drawing.Point(89, 383);
+            this.editTurBtn.Name = "editTurBtn";
+            this.editTurBtn.Size = new System.Drawing.Size(245, 38);
+            this.editTurBtn.TabIndex = 103;
+            this.editTurBtn.Texto = "Editar";
+            // 
+            // agrTurBtn
+            // 
+            this.agrTurBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.agrTurBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.agrTurBtn.ColorTexto = System.Drawing.Color.White;
+            this.agrTurBtn.Location = new System.Drawing.Point(89, 339);
+            this.agrTurBtn.Name = "agrTurBtn";
+            this.agrTurBtn.Size = new System.Drawing.Size(245, 38);
+            this.agrTurBtn.TabIndex = 102;
+            this.agrTurBtn.Texto = "Agregar";
+            // 
             // Turno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1164, 527);
+            this.Controls.Add(this.elimTurBtn);
+            this.Controls.Add(this.editTurBtn);
+            this.Controls.Add(this.agrTurBtn);
+            this.Controls.Add(this.grilla);
             this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.idTurno);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cuDate1);
             this.Controls.Add(this.cU31);
             this.Controls.Add(this.cU32);
-            this.Controls.Add(this.grilla);
             this.Controls.Add(this.volverBtn);
-            this.Controls.Add(this.elimTurBtn);
-            this.Controls.Add(this.editTurBtn);
-            this.Controls.Add(this.agrTurBtn);
             this.Controls.Add(this.label1);
             this.Name = "Turno";
             this.Text = "Turno";
             this.Load += new System.EventHandler(this.Turno_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Button volverBtn;
-        private System.Windows.Forms.Button elimTurBtn;
-        private System.Windows.Forms.Button editTurBtn;
-        private System.Windows.Forms.Button agrTurBtn;
         private System.Windows.Forms.Label label1;
         private CU3 cU32;
         private CU3 cU31;
@@ -200,5 +198,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label idTurno;
         private System.Windows.Forms.Button expXMLBtn;
+        private CUDataGrid grilla;
+        private CUButton elimTurBtn;
+        private CUButton editTurBtn;
+        private CUButton agrTurBtn;
     }
 }

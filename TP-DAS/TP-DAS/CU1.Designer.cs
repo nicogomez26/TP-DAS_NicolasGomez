@@ -28,19 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblEtiqueta = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(50, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 20);
-            this.textBox1.TabIndex = 3;
             // 
             // lblEtiqueta
             // 
@@ -51,9 +41,14 @@
             this.lblEtiqueta.TabIndex = 2;
             this.lblEtiqueta.Text = "label1";
             // 
-            // backgroundWorker1
+            // textBox1
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(50, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(239, 20);
+            this.textBox1.TabIndex = 3;
             // 
             // CU1
             // 
@@ -70,9 +65,7 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblEtiqueta;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        protected System.Windows.Forms.Label lblEtiqueta;
+        protected System.Windows.Forms.TextBox textBox1;
     }
 }

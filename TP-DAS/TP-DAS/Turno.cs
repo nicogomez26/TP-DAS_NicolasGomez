@@ -65,8 +65,8 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
-            grilla.DataSource = null;
-            grilla.DataSource = turnoBll.ListarTurno();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = turnoBll.ListarTurno();
 
         }
         private void volverBtn_Click(object sender, EventArgs e)
@@ -105,6 +105,11 @@ namespace TP_DAS
         {
             VerGrilla();
             CargarPacYMed();
+
+
+            agrTurBtn.Click += agrTurBtn_Click;
+            editTurBtn.Click += editTurBtn_Click;
+            elimTurBtn.Click += elimTurBtn_Click;
         }
 
         BE.Turno tmp;
@@ -112,14 +117,14 @@ namespace TP_DAS
         {
             try
             {
-                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Grid.Rows.Count)
                     return;
 
-                var fila = grilla.Rows[e.RowIndex];
+                var fila = grilla.Grid.Rows[e.RowIndex];
                 if (fila == null || fila.DataBoundItem == null)
                     return;
 
-                tmp = (BE.Turno)grilla.Rows[e.RowIndex].DataBoundItem;
+                tmp = (BE.Turno)grilla.Grid.Rows[e.RowIndex].DataBoundItem;
 
                 idTurno.Text = tmp.Id.ToString();
 

@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.grilla = new System.Windows.Forms.DataGridView();
             this.volverBtn = new System.Windows.Forms.Button();
-            this.expXMLBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.grilla = new TP_DAS.CUDataGrid();
+            this.expXMLBtn = new TP_DAS.CUButton();
             this.SuspendLayout();
             // 
             // label3
@@ -44,14 +43,6 @@
             this.label3.TabIndex = 75;
             this.label3.Text = "Bienvenido,";
             // 
-            // grilla
-            // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(367, 100);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(708, 272);
-            this.grilla.TabIndex = 74;
-            // 
             // volverBtn
             // 
             this.volverBtn.Location = new System.Drawing.Point(16, 15);
@@ -62,15 +53,25 @@
             this.volverBtn.UseVisualStyleBackColor = true;
             this.volverBtn.Click += new System.EventHandler(this.volverBtn_Click);
             // 
+            // grilla
+            // 
+            this.grilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.grilla.Location = new System.Drawing.Point(386, 117);
+            this.grilla.Name = "grilla";
+            this.grilla.Size = new System.Drawing.Size(689, 255);
+            this.grilla.TabIndex = 95;
+            // 
             // expXMLBtn
             // 
-            this.expXMLBtn.Location = new System.Drawing.Point(945, 378);
+            this.expXMLBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.expXMLBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.expXMLBtn.ColorTexto = System.Drawing.Color.White;
+            this.expXMLBtn.Location = new System.Drawing.Point(830, 378);
             this.expXMLBtn.Name = "expXMLBtn";
-            this.expXMLBtn.Size = new System.Drawing.Size(130, 29);
-            this.expXMLBtn.TabIndex = 82;
-            this.expXMLBtn.Text = "Exportar Usuarios";
-            this.expXMLBtn.UseVisualStyleBackColor = true;
-            this.expXMLBtn.Click += new System.EventHandler(this.expXMLBtn_Click);
+            this.expXMLBtn.NombreBoton = null;
+            this.expXMLBtn.Size = new System.Drawing.Size(245, 38);
+            this.expXMLBtn.TabIndex = 110;
+            this.expXMLBtn.Texto = "Exportar Usuarios";
             // 
             // Usuario_Lectura
             // 
@@ -78,13 +79,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 556);
             this.Controls.Add(this.expXMLBtn);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.grilla);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.volverBtn);
             this.Name = "Usuario_Lectura";
             this.Text = "Usuario_Lectura";
             this.Load += new System.EventHandler(this.Usuario_Lectura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,8 +93,8 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Button volverBtn;
-        private System.Windows.Forms.Button expXMLBtn;
+        private CUDataGrid grilla;
+        private CUButton expXMLBtn;
     }
 }

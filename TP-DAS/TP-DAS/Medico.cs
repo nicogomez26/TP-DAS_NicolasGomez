@@ -41,6 +41,13 @@ namespace TP_DAS
                 CargarEspecialidades();
                 cUcmb1.Items = new string[] { "Femenino", "Masculino" };
                 VerGrilla();
+
+
+                agrMedBtn.Click += agrMedBtn_Click;
+                editMedBtn.Click += editMedBtn_Click;
+                elimMedBtn.Click += elimMedBtn_Click;
+                expMedBtn.Click += expMedBtn_Click;
+                expXMLBtn.Click += expXMLBtn_Click;
             }
             catch (Exception ex)
             {
@@ -52,8 +59,8 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
-            grilla.DataSource = null;
-            grilla.DataSource = medicoBll.ListarMedico();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = medicoBll.ListarMedico();
 
         }
 
@@ -168,14 +175,14 @@ namespace TP_DAS
         {
             try
             {
-                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Grid.Rows.Count)
                     return;
 
-                var fila = grilla.Rows[e.RowIndex];
+                var fila = grilla.Grid.Rows[e.RowIndex];
                 if (fila == null || fila.DataBoundItem == null)
                     return;
 
-                tmp = (BE.Medico)grilla.Rows[e.RowIndex].DataBoundItem;
+                tmp = (BE.Medico)grilla.Grid.Rows[e.RowIndex].DataBoundItem;
 
                 IdMedico.Text = tmp.Id.ToString();
 

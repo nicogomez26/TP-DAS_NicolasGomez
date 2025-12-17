@@ -27,8 +27,8 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
-            grilla.DataSource = null;
-            grilla.DataSource = ObraSocBll.ListarObraSociales();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = ObraSocBll.ListarObraSociales();
 
         }
 
@@ -53,6 +53,10 @@ namespace TP_DAS
         private void Obra_Social_Load(object sender, EventArgs e)
         {
             VerGrilla();
+
+            agrOSBtn.Click += agrOSBtn_Click;
+            editOSBtn.Click += editOSBtn_Click;
+            elimOSBtn.Click += elimOSBtn_Click;
         }
 
         private void agrOSBtn_Click(object sender, EventArgs e)
@@ -147,14 +151,14 @@ namespace TP_DAS
         {
             try
             {
-                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Grid.Rows.Count)
                     return;
 
-                var fila = grilla.Rows[e.RowIndex];
+                var fila = grilla.Grid.Rows[e.RowIndex];
                 if (fila == null || fila.DataBoundItem == null)
                     return;
 
-                tmp = (BE.ObraSocial)grilla.Rows[e.RowIndex].DataBoundItem;
+                tmp = (BE.ObraSocial)grilla.Grid.Rows[e.RowIndex].DataBoundItem;
 
                 idObraSocial.Text = tmp.Id.ToString();
 

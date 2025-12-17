@@ -37,10 +37,14 @@ namespace TP_DAS
         {
             try
             {
-                grilla.AllowUserToAddRows = false;
+                grilla.Grid.AllowUserToAddRows = false;
                 CargarObrasSociales();
                 cUcmb1.Items = new string[] { "Femenino", "Masculino" };
                 VerGrilla();
+
+                agrPacBtn.Click += agrPacBtn_Click;
+                editPacBtn.Click += editPacBtn_Click;
+                elimPacBtn.Click += elimPacBtn_Click;
             }
             catch (Exception ex)
             {
@@ -119,9 +123,9 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
-            grilla.DataSource = null;
-            grilla.DataSource = pacienteBll.ListarPaciente();
-            grilla.ClearSelection();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = pacienteBll.ListarPaciente();
+            grilla.Grid.ClearSelection();
 
         }
 
@@ -138,13 +142,13 @@ namespace TP_DAS
             try
             {
 
-                if (grilla.SelectedRows.Count == 0)
+                if (grilla.Grid.SelectedRows.Count == 0)
                 {
                     MessageBox.Show("Seleccione un paciente para eliminar.");
                     return;
                 }
 
-                int id = Convert.ToInt32(grilla.SelectedRows[0].Cells["Id"].Value);
+                int id = Convert.ToInt32(grilla.Grid.SelectedRows[0].Cells["Id"].Value);
 
                 BE.Paciente pac = new BE.Paciente();
                 pac.Id = id;
@@ -188,14 +192,14 @@ namespace TP_DAS
         {
             try
             {
-                if (e.RowIndex < 0 || e.RowIndex >= grilla.Rows.Count)
+                if (e.RowIndex < 0 || e.RowIndex >= grilla.Grid.Rows.Count)
                     return;
 
-                var fila = grilla.Rows[e.RowIndex];
+                var fila = grilla.Grid.Rows[e.RowIndex];
                 if (fila == null || fila.DataBoundItem == null)
                     return;
 
-                tmp = (BE.Paciente)grilla.Rows[e.RowIndex].DataBoundItem;
+                tmp = (BE.Paciente)grilla.Grid.Rows[e.RowIndex].DataBoundItem;
 
                 idPaciente.Text = tmp.Id.ToString();
 

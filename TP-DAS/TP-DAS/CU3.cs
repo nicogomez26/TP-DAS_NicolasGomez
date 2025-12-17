@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace TP_DAS
 {
-    public partial class CU3 : UserControl
+    public partial class CU3 : CUBase
     {
 
         public CU3()

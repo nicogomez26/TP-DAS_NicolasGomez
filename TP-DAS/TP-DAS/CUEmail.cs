@@ -30,13 +30,13 @@ namespace TP_DAS
                 if (!re.IsMatch(this.Texto))
                 {
                     ok = false;
-                    SetearColor(Color.Red);
-                    MessageBox.Show("Ingresar un correo válido");
+/*                    SetearColor(Color.Red);
+*/                    MessageBox.Show("Ingresar un correo válido");
                 }
                 else
                 {
-                    SetearColor(Color.Green);
-                }
+/*                    SetearColor(Color.Green);
+*/                }
             }
 
             return ok;

@@ -8,7 +8,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TP_DAS
 {
-    public partial class CUDate : UserControl
+    public partial class CUDate : CUBase
     {
 
 

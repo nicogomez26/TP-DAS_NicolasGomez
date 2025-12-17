@@ -28,8 +28,8 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
-            grilla.DataSource = null;
-            grilla.DataSource = especialidadBll.ListarEspecialidades();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = especialidadBll.ListarEspecialidades();
 
         }
 

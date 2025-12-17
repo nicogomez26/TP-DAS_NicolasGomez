@@ -19,6 +19,12 @@ namespace TP_DAS
         {
             logueadoTxt.Text = uLogueado.Nombre;
 
+            irPacientesBtn.Click += irPacientesBtn_Click;
+            irMedicosBtn.Click += irMedicosBtn_Click;
+            irTurnosBtn.Click += irTurnosBtn_Click;
+            irEspecialidadesBtn.Click += irEspecialidadesBtn_Click;
+            irObSocBtn.Click += irObSocBtn_Click;
+            irUsuariosBtn.Click += irUsuariosBtn_Click;
         }
 
         private void irPacientesBtn_Click(object sender, EventArgs e)

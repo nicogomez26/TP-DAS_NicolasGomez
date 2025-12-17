@@ -37,8 +37,8 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
-            grilla.DataSource = null;
-            grilla.DataSource = medicoBll.ListarMedico();
+            grilla.Grid.DataSource = null;
+            grilla.Grid.DataSource = medicoBll.ListarMedico();
 
         }
 

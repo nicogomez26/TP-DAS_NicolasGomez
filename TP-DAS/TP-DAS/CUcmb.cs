@@ -8,7 +8,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TP_DAS
 {
-    public partial class CUcmb : UserControl
+    public partial class CUcmb : CUBase
     {
 
 
@@ -16,6 +16,7 @@ namespace TP_DAS
         {
             InitializeComponent();
             cmb.DropDownStyle = ComboBoxStyle.DropDownList;
+            AplicarEstilo();
         }
 
         public string[] Items
@@ -34,7 +35,16 @@ namespace TP_DAS
             }
         }
 
-        
+        private void AplicarEstilo()
+        {
+            cmb.FlatStyle = FlatStyle.Flat;
+            cmb.BackColor = Color.WhiteSmoke;
+            cmb.ForeColor = Color.FromArgb(50, 50, 50);
+            cmb.Font = new Font("Segoe UI", 10F);
+            cmb.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            cmb.Height = 28;
+        }
         public string SelectedItem
         {
             get { return cmb.SelectedItem?.ToString() ?? ""; }

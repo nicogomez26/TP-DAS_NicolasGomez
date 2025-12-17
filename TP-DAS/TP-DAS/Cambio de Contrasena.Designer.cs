@@ -28,25 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancelarBtn = new System.Windows.Forms.Button();
             this.cuPassNew1 = new TP_DAS.CUPass();
-            this.cambiarPassBtn = new System.Windows.Forms.Button();
             this.cuPassAct = new TP_DAS.CUPass();
             this.cuPassNew2 = new TP_DAS.CUPass();
             this.cuEmail1 = new TP_DAS.CUEmail();
+            this.cambiarPassBtn = new TP_DAS.CUButton();
+            this.cancelarBtn = new TP_DAS.CUButton();
             this.SuspendLayout();
-            // 
-            // cancelarBtn
-            // 
-            this.cancelarBtn.Location = new System.Drawing.Point(479, 364);
-            this.cancelarBtn.Name = "cancelarBtn";
-            this.cancelarBtn.Size = new System.Drawing.Size(217, 39);
-            this.cancelarBtn.TabIndex = 10;
-            this.cancelarBtn.Text = "Cancelar";
-            this.cancelarBtn.UseVisualStyleBackColor = true;
             // 
             // cuPassNew1
             // 
+            this.cuPassNew1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cuPassNew1.Etiqueta = "Contraseña Nueva";
             this.cuPassNew1.Location = new System.Drawing.Point(479, 223);
             this.cuPassNew1.Name = "cuPassNew1";
@@ -54,18 +46,9 @@
             this.cuPassNew1.TabIndex = 9;
             this.cuPassNew1.Texto = "";
             // 
-            // cambiarPassBtn
-            // 
-            this.cambiarPassBtn.Location = new System.Drawing.Point(479, 319);
-            this.cambiarPassBtn.Name = "cambiarPassBtn";
-            this.cambiarPassBtn.Size = new System.Drawing.Size(217, 39);
-            this.cambiarPassBtn.TabIndex = 7;
-            this.cambiarPassBtn.Text = "Cambiar Contraseña";
-            this.cambiarPassBtn.UseVisualStyleBackColor = true;
-            this.cambiarPassBtn.Click += new System.EventHandler(this.cambiarPassBtn_Click_1);
-            // 
             // cuPassAct
             // 
+            this.cuPassAct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cuPassAct.Etiqueta = "Contraseña Actual";
             this.cuPassAct.Location = new System.Drawing.Point(479, 184);
             this.cuPassAct.Name = "cuPassAct";
@@ -75,6 +58,7 @@
             // 
             // cuPassNew2
             // 
+            this.cuPassNew2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cuPassNew2.Etiqueta = "Repetir Contraseña";
             this.cuPassNew2.Location = new System.Drawing.Point(479, 262);
             this.cuPassNew2.Name = "cuPassNew2";
@@ -84,6 +68,7 @@
             // 
             // cuEmail1
             // 
+            this.cuEmail1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cuEmail1.Etiqueta = "Email";
             this.cuEmail1.Location = new System.Drawing.Point(479, 145);
             this.cuEmail1.Name = "cuEmail1";
@@ -91,30 +76,52 @@
             this.cuEmail1.TabIndex = 13;
             this.cuEmail1.Texto = "";
             // 
+            // cambiarPassBtn
+            // 
+            this.cambiarPassBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.cambiarPassBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.cambiarPassBtn.ColorTexto = System.Drawing.Color.White;
+            this.cambiarPassBtn.Location = new System.Drawing.Point(460, 321);
+            this.cambiarPassBtn.Name = "cambiarPassBtn";
+            this.cambiarPassBtn.Size = new System.Drawing.Size(248, 37);
+            this.cambiarPassBtn.TabIndex = 14;
+            this.cambiarPassBtn.Texto = "Cambiar Contraseña";
+            // 
+            // cancelarBtn
+            // 
+            this.cancelarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.cancelarBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.cancelarBtn.ColorTexto = System.Drawing.Color.White;
+            this.cancelarBtn.Location = new System.Drawing.Point(460, 364);
+            this.cancelarBtn.Name = "cancelarBtn";
+            this.cancelarBtn.Size = new System.Drawing.Size(248, 37);
+            this.cancelarBtn.TabIndex = 15;
+            this.cancelarBtn.Texto = "Cancelar";
+            // 
             // Cambio_de_Contrasena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1174, 547);
+            this.Controls.Add(this.cancelarBtn);
+            this.Controls.Add(this.cambiarPassBtn);
             this.Controls.Add(this.cuEmail1);
             this.Controls.Add(this.cuPassNew2);
             this.Controls.Add(this.cuPassAct);
-            this.Controls.Add(this.cancelarBtn);
             this.Controls.Add(this.cuPassNew1);
-            this.Controls.Add(this.cambiarPassBtn);
             this.Name = "Cambio_de_Contrasena";
             this.Text = "Cambio_de_Contrasena";
+            this.Load += new System.EventHandler(this.Cambio_de_Contrasena_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button cancelarBtn;
         private CUPass cuPassNew1;
-        private System.Windows.Forms.Button cambiarPassBtn;
         private CUPass cuPassAct;
         private CUPass cuPassNew2;
         private CUEmail cuEmail1;
+        private CUButton cambiarPassBtn;
+        private CUButton cancelarBtn;
     }
 }

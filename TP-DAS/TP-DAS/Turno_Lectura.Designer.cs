@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.expXMLBtn = new System.Windows.Forms.Button();
-            this.grilla = new System.Windows.Forms.DataGridView();
             this.volverBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.grilla = new TP_DAS.CUDataGrid();
             this.SuspendLayout();
             // 
             // expXMLBtn
@@ -44,14 +43,6 @@
             this.expXMLBtn.UseVisualStyleBackColor = true;
             this.expXMLBtn.Click += new System.EventHandler(this.expXMLBtn_Click);
             // 
-            // grilla
-            // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(283, 93);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(758, 285);
-            this.grilla.TabIndex = 83;
-            // 
             // volverBtn
             // 
             this.volverBtn.Location = new System.Drawing.Point(12, 12);
@@ -62,25 +53,32 @@
             this.volverBtn.UseVisualStyleBackColor = true;
             this.volverBtn.Click += new System.EventHandler(this.volverBtn_Click);
             // 
+            // grilla
+            // 
+            this.grilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.grilla.Location = new System.Drawing.Point(256, 93);
+            this.grilla.Name = "grilla";
+            this.grilla.Size = new System.Drawing.Size(785, 285);
+            this.grilla.TabIndex = 95;
+            // 
             // Turno_Lectura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 524);
-            this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.grilla);
+            this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.volverBtn);
             this.Name = "Turno_Lectura";
             this.Text = "Turno_Lectura";
             this.Load += new System.EventHandler(this.Turno_Lectura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Button expXMLBtn;
-        private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Button volverBtn;
+        private CUDataGrid grilla;
     }
 }

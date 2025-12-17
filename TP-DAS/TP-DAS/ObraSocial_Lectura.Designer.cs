@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grilla = new System.Windows.Forms.DataGridView();
             this.volverBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.grilla = new TP_DAS.CUDataGrid();
             this.SuspendLayout();
-            // 
-            // grilla
-            // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(247, 78);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(708, 272);
-            this.grilla.TabIndex = 69;
             // 
             // volverBtn
             // 
@@ -51,6 +42,14 @@
             this.volverBtn.UseVisualStyleBackColor = true;
             this.volverBtn.Click += new System.EventHandler(this.volverBtn_Click);
             // 
+            // grilla
+            // 
+            this.grilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.grilla.Location = new System.Drawing.Point(221, 85);
+            this.grilla.Name = "grilla";
+            this.grilla.Size = new System.Drawing.Size(689, 255);
+            this.grilla.TabIndex = 95;
+            // 
             // ObraSocial_Lectura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -61,14 +60,12 @@
             this.Name = "ObraSocial_Lectura";
             this.Text = "ObraSocial_Lectura";
             this.Load += new System.EventHandler(this.ObraSocial_Lectura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Button volverBtn;
+        private CUDataGrid grilla;
     }
 }

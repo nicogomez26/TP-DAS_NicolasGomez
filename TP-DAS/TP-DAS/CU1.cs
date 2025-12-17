@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace TP_DAS
 {
-    public partial class CU1 : UserControl
+    public partial class CU1 : CUBase
     {
         public CU1()
         {
@@ -28,10 +28,6 @@ namespace TP_DAS
             set { textBox1.Text = value; }
         }
 
-        protected void SetearColor(Color color)
-        {
-            lblEtiqueta.ForeColor = color;
-        }
 
         public virtual bool Validar()
         {
@@ -39,12 +35,11 @@ namespace TP_DAS
             if (string.IsNullOrWhiteSpace(this.textBox1.Text))
             {
                 ok = false;
-                SetearColor(Color.Red);
-                //textBox1.openTooltip(".......");
+                MarcarOk(lblEtiqueta);
             }
             else
             {
-                SetearColor(Color.Green);
+                MarcarError(lblEtiqueta);
             }
             return ok;
         }
@@ -57,5 +52,6 @@ namespace TP_DAS
         {
 
         }
+
     }
 }

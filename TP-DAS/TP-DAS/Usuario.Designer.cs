@@ -30,11 +30,7 @@
         {
             this.idUser = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.grilla = new System.Windows.Forms.DataGridView();
             this.volverBtn = new System.Windows.Forms.Button();
-            this.elimPacBtn = new System.Windows.Forms.Button();
-            this.editPacBtn = new System.Windows.Forms.Button();
-            this.agrPacBtn = new System.Windows.Forms.Button();
             this.cUcmb1 = new TP_DAS.CUcmb();
             this.cU11 = new TP_DAS.CU1();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,9 +38,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cuEmail1 = new TP_DAS.CUEmail();
             this.cuPass1 = new TP_DAS.CUPass();
-            this.desbloquearBtn = new System.Windows.Forms.Button();
-            this.expXMLBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.grilla = new TP_DAS.CUDataGrid();
+            this.elimPacBtn = new TP_DAS.CUButton();
+            this.editPacBtn = new TP_DAS.CUButton();
+            this.agrPacBtn = new TP_DAS.CUButton();
+            this.desbloquearBtn = new TP_DAS.CUButton();
+            this.expXMLBtn = new TP_DAS.CUButton();
             this.SuspendLayout();
             // 
             // idUser
@@ -65,16 +64,6 @@
             this.label2.TabIndex = 70;
             this.label2.Text = "ID:";
             // 
-            // grilla
-            // 
-            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla.Location = new System.Drawing.Point(381, 97);
-            this.grilla.Name = "grilla";
-            this.grilla.Size = new System.Drawing.Size(708, 272);
-            this.grilla.TabIndex = 69;
-            this.grilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellClick);
-            this.grilla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellContentClick);
-            // 
             // volverBtn
             // 
             this.volverBtn.Location = new System.Drawing.Point(30, 12);
@@ -85,41 +74,12 @@
             this.volverBtn.UseVisualStyleBackColor = true;
             this.volverBtn.Click += new System.EventHandler(this.volverBtn_Click);
             // 
-            // elimPacBtn
-            // 
-            this.elimPacBtn.Location = new System.Drawing.Point(97, 399);
-            this.elimPacBtn.Name = "elimPacBtn";
-            this.elimPacBtn.Size = new System.Drawing.Size(238, 29);
-            this.elimPacBtn.TabIndex = 67;
-            this.elimPacBtn.Text = "Eliminar";
-            this.elimPacBtn.UseVisualStyleBackColor = true;
-            this.elimPacBtn.Click += new System.EventHandler(this.elimPacBtn_Click);
-            // 
-            // editPacBtn
-            // 
-            this.editPacBtn.Location = new System.Drawing.Point(97, 354);
-            this.editPacBtn.Name = "editPacBtn";
-            this.editPacBtn.Size = new System.Drawing.Size(238, 29);
-            this.editPacBtn.TabIndex = 66;
-            this.editPacBtn.Text = "Editar";
-            this.editPacBtn.UseVisualStyleBackColor = true;
-            this.editPacBtn.Click += new System.EventHandler(this.editPacBtn_Click);
-            // 
-            // agrPacBtn
-            // 
-            this.agrPacBtn.Location = new System.Drawing.Point(97, 307);
-            this.agrPacBtn.Name = "agrPacBtn";
-            this.agrPacBtn.Size = new System.Drawing.Size(238, 29);
-            this.agrPacBtn.TabIndex = 65;
-            this.agrPacBtn.Text = "Agregar";
-            this.agrPacBtn.UseVisualStyleBackColor = true;
-            this.agrPacBtn.Click += new System.EventHandler(this.agrPacBtn_Click);
-            // 
             // cUcmb1
             // 
+            this.cUcmb1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cUcmb1.Etiqueta = "Privilegios";
             this.cUcmb1.Items = new string[0];
-            this.cUcmb1.Location = new System.Drawing.Point(49, 255);
+            this.cUcmb1.Location = new System.Drawing.Point(49, 263);
             this.cUcmb1.Name = "cUcmb1";
             this.cUcmb1.SelectedItem = "";
             this.cUcmb1.Size = new System.Drawing.Size(318, 29);
@@ -127,6 +87,7 @@
             // 
             // cU11
             // 
+            this.cU11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cU11.Etiqueta = "Nombre";
             this.cU11.Location = new System.Drawing.Point(56, 146);
             this.cU11.Name = "cU11";
@@ -164,6 +125,7 @@
             // 
             // cuEmail1
             // 
+            this.cuEmail1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cuEmail1.Etiqueta = "Email";
             this.cuEmail1.Location = new System.Drawing.Point(56, 185);
             this.cuEmail1.Name = "cuEmail1";
@@ -173,6 +135,7 @@
             // 
             // cuPass1
             // 
+            this.cuPass1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
             this.cuPass1.Etiqueta = " Contraseña";
             this.cuPass1.Location = new System.Drawing.Point(49, 224);
             this.cuPass1.Name = "cuPass1";
@@ -180,25 +143,71 @@
             this.cuPass1.TabIndex = 75;
             this.cuPass1.Texto = "";
             // 
+            // grilla
+            // 
+            this.grilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.grilla.Location = new System.Drawing.Point(400, 114);
+            this.grilla.Name = "grilla";
+            this.grilla.Size = new System.Drawing.Size(689, 255);
+            this.grilla.TabIndex = 95;
+            // 
+            // elimPacBtn
+            // 
+            this.elimPacBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.elimPacBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.elimPacBtn.ColorTexto = System.Drawing.Color.White;
+            this.elimPacBtn.Location = new System.Drawing.Point(97, 403);
+            this.elimPacBtn.Name = "elimPacBtn";
+            this.elimPacBtn.Size = new System.Drawing.Size(245, 38);
+            this.elimPacBtn.TabIndex = 107;
+            this.elimPacBtn.Texto = "Eliminar";
+            // 
+            // editPacBtn
+            // 
+            this.editPacBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.editPacBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.editPacBtn.ColorTexto = System.Drawing.Color.White;
+            this.editPacBtn.Location = new System.Drawing.Point(97, 359);
+            this.editPacBtn.Name = "editPacBtn";
+            this.editPacBtn.Size = new System.Drawing.Size(245, 38);
+            this.editPacBtn.TabIndex = 106;
+            this.editPacBtn.Texto = "Editar";
+            // 
+            // agrPacBtn
+            // 
+            this.agrPacBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.agrPacBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.agrPacBtn.ColorTexto = System.Drawing.Color.White;
+            this.agrPacBtn.Location = new System.Drawing.Point(97, 315);
+            this.agrPacBtn.Name = "agrPacBtn";
+            this.agrPacBtn.Size = new System.Drawing.Size(245, 38);
+            this.agrPacBtn.TabIndex = 105;
+            this.agrPacBtn.Texto = "Agregar";
+            // 
             // desbloquearBtn
             // 
-            this.desbloquearBtn.Location = new System.Drawing.Point(97, 442);
+            this.desbloquearBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.desbloquearBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.desbloquearBtn.ColorTexto = System.Drawing.Color.White;
+            this.desbloquearBtn.Location = new System.Drawing.Point(97, 447);
             this.desbloquearBtn.Name = "desbloquearBtn";
-            this.desbloquearBtn.Size = new System.Drawing.Size(238, 29);
-            this.desbloquearBtn.TabIndex = 76;
-            this.desbloquearBtn.Text = "Desbloquear";
-            this.desbloquearBtn.UseVisualStyleBackColor = true;
-            this.desbloquearBtn.Click += new System.EventHandler(this.desbloquearBtn_Click);
+            this.desbloquearBtn.Size = new System.Drawing.Size(245, 38);
+            this.desbloquearBtn.TabIndex = 108;
+            this.desbloquearBtn.Texto = "Desbloquear";
+            this.desbloquearBtn.Load += new System.EventHandler(this.desbloquearBtn_Load);
             // 
             // expXMLBtn
             // 
-            this.expXMLBtn.Location = new System.Drawing.Point(959, 375);
+            this.expXMLBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.expXMLBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.expXMLBtn.ColorTexto = System.Drawing.Color.White;
+            this.expXMLBtn.Location = new System.Drawing.Point(844, 375);
             this.expXMLBtn.Name = "expXMLBtn";
-            this.expXMLBtn.Size = new System.Drawing.Size(130, 29);
-            this.expXMLBtn.TabIndex = 81;
-            this.expXMLBtn.Text = "Exportar Usuarios";
-            this.expXMLBtn.UseVisualStyleBackColor = true;
-            this.expXMLBtn.Click += new System.EventHandler(this.expXMLBtn_Click);
+            this.expXMLBtn.NombreBoton = null;
+            this.expXMLBtn.Size = new System.Drawing.Size(245, 38);
+            this.expXMLBtn.TabIndex = 109;
+            this.expXMLBtn.Texto = "Exportar Usuarios";
+            this.expXMLBtn.Load += new System.EventHandler(this.expXMLBtn_Load);
             // 
             // Usuario
             // 
@@ -207,24 +216,23 @@
             this.ClientSize = new System.Drawing.Size(1139, 507);
             this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.desbloquearBtn);
+            this.Controls.Add(this.elimPacBtn);
+            this.Controls.Add(this.editPacBtn);
+            this.Controls.Add(this.agrPacBtn);
+            this.Controls.Add(this.grilla);
             this.Controls.Add(this.cuPass1);
             this.Controls.Add(this.cuEmail1);
             this.Controls.Add(this.logueadoTxt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.idUser);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.grilla);
             this.Controls.Add(this.volverBtn);
-            this.Controls.Add(this.elimPacBtn);
-            this.Controls.Add(this.editPacBtn);
-            this.Controls.Add(this.agrPacBtn);
             this.Controls.Add(this.cUcmb1);
             this.Controls.Add(this.cU11);
             this.Controls.Add(this.label1);
             this.Name = "Usuario";
             this.Text = "Usuario";
             this.Load += new System.EventHandler(this.Usuario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,11 +242,7 @@
 
         private System.Windows.Forms.Label idUser;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.Button volverBtn;
-        private System.Windows.Forms.Button elimPacBtn;
-        private System.Windows.Forms.Button editPacBtn;
-        private System.Windows.Forms.Button agrPacBtn;
         private CUcmb cUcmb1;
         private CU1 cU11;
         private System.Windows.Forms.Label label1;
@@ -246,7 +250,11 @@
         private System.Windows.Forms.Label label3;
         private CUEmail cuEmail1;
         private CUPass cuPass1;
-        private System.Windows.Forms.Button desbloquearBtn;
-        private System.Windows.Forms.Button expXMLBtn;
+        private CUDataGrid grilla;
+        private CUButton elimPacBtn;
+        private CUButton editPacBtn;
+        private CUButton agrPacBtn;
+        private CUButton desbloquearBtn;
+        private CUButton expXMLBtn;
     }
 }
