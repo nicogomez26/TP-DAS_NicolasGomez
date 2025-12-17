@@ -196,6 +196,9 @@
     <EmbeddedResource Include="CU1.resx">
       <DependentUpon>CU1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CU2.resx">
+      <DependentUpon>CU2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CUBase.resx">
       <DependentUpon>CUBase.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CU3.resx">
       <DependentUpon>CU3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUEmail.resx">
+      <DependentUpon>CUEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CUPass.resx">
       <DependentUpon>CUPass.cs</DependentUpon>

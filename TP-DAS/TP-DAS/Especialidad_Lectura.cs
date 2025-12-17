@@ -24,6 +24,7 @@ namespace TP_DAS
         private void Especialidad_Lectura_Load(object sender, EventArgs e)
         {
             VerGrilla();
+            volverBtn.Click += volverBtn_Click;
         }
         public void VerGrilla()
         {

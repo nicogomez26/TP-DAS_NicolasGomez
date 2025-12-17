@@ -51,6 +51,9 @@ namespace TP_DAS
                     txt.BorderStyle = BorderStyle.None;
                     txt.BackColor = CelesteInput;
                     txt.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+                    /*txt.Margin = new Padding(2); // espacio exterior
+                    txt.Padding = new Padding(5, 3, 5, 3); // espacio interior*/
+
                 }
 
                 // COMBOBOX

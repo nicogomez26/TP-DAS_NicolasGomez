@@ -21,8 +21,13 @@ namespace DAL
 
         private Acceso()
         {
-            cn.ConnectionString = @"Data Source=.;Initial Catalog=Clinica;Integrated Security=True";
+            if (cn == null)
+                cn = new SqlConnection();
+
+            if (string.IsNullOrEmpty(cn.ConnectionString))
+                cn.ConnectionString = @"Data Source=.;Initial Catalog=Clinica;Integrated Security=True";
         }
+
 
         public static Acceso Instancia
         {
@@ -47,7 +52,7 @@ namespace DAL
             if (cn.State == ConnectionState.Open)
             {
                 cn.Close();
-                cn.Dispose();
+                /*cn.Dispose();*/
             }
         }
         public void IniciarTransaccion()

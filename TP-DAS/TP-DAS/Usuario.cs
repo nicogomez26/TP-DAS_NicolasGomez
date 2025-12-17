@@ -44,6 +44,7 @@ namespace TP_DAS
             editPacBtn.Click += editPacBtn_Click;
             elimPacBtn.Click += elimPacBtn_Click;
             expXMLBtn.Click += expXMLBtn_Click;
+            volverBtn.Click += volverBtn_Click;
         }
 
         private void agrPacBtn_Click(object sender, EventArgs e)

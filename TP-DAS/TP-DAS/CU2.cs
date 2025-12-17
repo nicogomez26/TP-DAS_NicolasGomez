@@ -87,13 +87,14 @@ namespace TP_DAS
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox1.Size = new System.Drawing.Size(290, 18);
+            this.textBox1.Location = new System.Drawing.Point(50, 22);
+            this.textBox1.Size = new System.Drawing.Size(247, 18);
             // 
             // CU2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.Name = "CU2";
-            this.Size = new System.Drawing.Size(353, 33);
+            this.Size = new System.Drawing.Size(310, 60);
             this.ResumeLayout(false);
             this.PerformLayout();
 

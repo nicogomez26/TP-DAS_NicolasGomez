@@ -46,16 +46,25 @@ namespace TP_DAS
         {
             this.SuspendLayout();
             // 
+            // lblEtiqueta
+            // 
+            this.lblEtiqueta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblEtiqueta.ForeColor = System.Drawing.Color.Black;
+            this.lblEtiqueta.Size = new System.Drawing.Size(40, 15);
+            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(88, 3);
-            this.textBox1.Size = new System.Drawing.Size(247, 20);
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(197)))), ((int)(((byte)(222)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(48, 24);
+            this.textBox1.Size = new System.Drawing.Size(215, 18);
             // 
             // CUEmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.Name = "CUEmail";
-            this.Size = new System.Drawing.Size(338, 33);
+            this.Size = new System.Drawing.Size(310, 50);
             this.ResumeLayout(false);
             this.PerformLayout();
 

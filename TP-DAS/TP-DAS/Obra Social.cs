@@ -57,6 +57,7 @@ namespace TP_DAS
             agrOSBtn.Click += agrOSBtn_Click;
             editOSBtn.Click += editOSBtn_Click;
             elimOSBtn.Click += elimOSBtn_Click;
+            volverBtn.Click += volverBtn_Click;
         }
 
         private void agrOSBtn_Click(object sender, EventArgs e)

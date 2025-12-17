@@ -61,6 +61,8 @@ namespace TP_DAS
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(600, 250);
             this.dgv.TabIndex = 0;
+            this.dgv.BorderStyle = BorderStyle.FixedSingle;
+
             // 
             // CUDataGrid
             // 

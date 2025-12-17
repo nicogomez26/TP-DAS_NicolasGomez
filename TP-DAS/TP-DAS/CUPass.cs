@@ -79,7 +79,9 @@ namespace TP_DAS
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(197)))), ((int)(((byte)(222)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Size = new System.Drawing.Size(239, 18);
+            this.textBox1.Location = new System.Drawing.Point(50, 32);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Size = new System.Drawing.Size(215, 18);
             // 
             // verPassBtn
             // 
@@ -88,9 +90,9 @@ namespace TP_DAS
             this.verPassBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.verPassBtn.FlatAppearance.BorderSize = 0;
             this.verPassBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.verPassBtn.Location = new System.Drawing.Point(317, 3);
+            this.verPassBtn.Location = new System.Drawing.Point(269, 30);
             this.verPassBtn.Name = "verPassBtn";
-            this.verPassBtn.Size = new System.Drawing.Size(38, 27);
+            this.verPassBtn.Size = new System.Drawing.Size(26, 23);
             this.verPassBtn.TabIndex = 4;
             this.verPassBtn.UseVisualStyleBackColor = false;
             this.verPassBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.verPassBtn_MouseDown);
@@ -101,7 +103,7 @@ namespace TP_DAS
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.Controls.Add(this.verPassBtn);
             this.Name = "CUPass";
-            this.Size = new System.Drawing.Size(402, 33);
+            this.Size = new System.Drawing.Size(310, 61);
             this.Controls.SetChildIndex(this.verPassBtn, 0);
             this.Controls.SetChildIndex(this.lblEtiqueta, 0);
             this.Controls.SetChildIndex(this.textBox1, 0);

@@ -45,9 +45,9 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(50, 3);
+            this.textBox1.Location = new System.Drawing.Point(50, 20);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 20);
+            this.textBox1.Size = new System.Drawing.Size(257, 20);
             this.textBox1.TabIndex = 3;
             // 
             // CU1
@@ -57,7 +57,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblEtiqueta);
             this.Name = "CU1";
-            this.Size = new System.Drawing.Size(292, 33);
+            this.Size = new System.Drawing.Size(310, 60);
             this.Load += new System.EventHandler(this.CU1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

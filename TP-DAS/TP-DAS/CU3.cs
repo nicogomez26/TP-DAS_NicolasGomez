@@ -26,7 +26,7 @@ namespace TP_DAS
 
         public int ValorSeleccionado
         {
-            get { return (int)cmb.SelectedValue; }
+            get { return cmb.SelectedValue != null ? (int)cmb.SelectedValue : -1; }
             set { cmb.SelectedValue = value; }
         }
 

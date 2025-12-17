@@ -32,7 +32,7 @@
             // 
             this.cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb.FormattingEnabled = true;
-            this.cmb.Location = new System.Drawing.Point(55, 3);
+            this.cmb.Location = new System.Drawing.Point(51, 23);
             this.cmb.Name = "cmb";
             this.cmb.Size = new System.Drawing.Size(239, 21);
             this.cmb.TabIndex = 1;
@@ -47,14 +47,14 @@
             this.lblEtiqueta.TabIndex = 0;
             this.lblEtiqueta.Text = "Etiqueta";
             // 
-            // CU3
+            // CUcmb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cmb);
             this.Controls.Add(this.lblEtiqueta);
-            this.Name = "CU3";
-            this.Size = new System.Drawing.Size(305, 28);
+            this.Name = "CUcmb";
+            this.Size = new System.Drawing.Size(310, 60);
             this.Load += new System.EventHandler(this.CU3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

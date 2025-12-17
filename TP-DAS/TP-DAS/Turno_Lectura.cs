@@ -23,6 +23,8 @@ namespace TP_DAS
         private void Turno_Lectura_Load(object sender, EventArgs e)
         {
             VerGrilla();
+            expXMLBtn.Click += expXMLBtn_Click;
+            volverBtn.Click += volverBtn_Click;
 
         }
 

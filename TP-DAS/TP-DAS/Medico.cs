@@ -48,6 +48,7 @@ namespace TP_DAS
                 elimMedBtn.Click += elimMedBtn_Click;
                 expMedBtn.Click += expMedBtn_Click;
                 expXMLBtn.Click += expXMLBtn_Click;
+                volverBtn.Click += volverBtn_Click_1;
             }
             catch (Exception ex)
             {

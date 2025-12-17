@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.volverBtn = new System.Windows.Forms.Button();
             this.grilla = new TP_DAS.CUDataGrid();
             this.expXMLBtn = new TP_DAS.CUButton();
+            this.volverBtn = new TP_DAS.CUButton();
             this.SuspendLayout();
             // 
             // label3
@@ -42,16 +42,6 @@
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 75;
             this.label3.Text = "Bienvenido,";
-            // 
-            // volverBtn
-            // 
-            this.volverBtn.Location = new System.Drawing.Point(16, 15);
-            this.volverBtn.Name = "volverBtn";
-            this.volverBtn.Size = new System.Drawing.Size(133, 44);
-            this.volverBtn.TabIndex = 73;
-            this.volverBtn.Text = "Volver";
-            this.volverBtn.UseVisualStyleBackColor = true;
-            this.volverBtn.Click += new System.EventHandler(this.volverBtn_Click);
             // 
             // grilla
             // 
@@ -73,17 +63,30 @@
             this.expXMLBtn.TabIndex = 110;
             this.expXMLBtn.Texto = "Exportar Usuarios";
             // 
+            // volverBtn
+            // 
+            this.volverBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.volverBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.volverBtn.ColorTexto = System.Drawing.Color.White;
+            this.volverBtn.Location = new System.Drawing.Point(12, 12);
+            this.volverBtn.Name = "volverBtn";
+            this.volverBtn.NombreBoton = null;
+            this.volverBtn.Size = new System.Drawing.Size(133, 44);
+            this.volverBtn.TabIndex = 111;
+            this.volverBtn.Texto = "Volver";
+            // 
             // Usuario_Lectura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 556);
+            this.Controls.Add(this.volverBtn);
             this.Controls.Add(this.expXMLBtn);
             this.Controls.Add(this.grilla);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.volverBtn);
             this.Name = "Usuario_Lectura";
-            this.Text = "Usuario_Lectura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Usuario";
             this.Load += new System.EventHandler(this.Usuario_Lectura_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -93,8 +96,8 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button volverBtn;
         private CUDataGrid grilla;
         private CUButton expXMLBtn;
+        private CUButton volverBtn;
     }
 }

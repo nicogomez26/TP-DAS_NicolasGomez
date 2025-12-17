@@ -32,6 +32,10 @@ namespace TP_DAS
         private void Medico_Lectura_Load(object sender, EventArgs e)
         {
             VerGrilla();
+
+            button1.Click += button1_Click;
+            volverBtn.Click += volverBtn_Click;
+            expMedBtn.Click += expMedBtn_Click;
         }
 
         public void VerGrilla()

@@ -31,6 +31,7 @@ namespace TP_DAS
         private void ObraSocial_Lectura_Load(object sender, EventArgs e)
         {
             VerGrilla();
+            volverBtn.Click += volverBtn_Click;
         }
         public void VerGrilla()
         {

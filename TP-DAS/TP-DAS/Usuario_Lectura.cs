@@ -33,6 +33,7 @@ namespace TP_DAS
         {
             VerGrilla();
             expXMLBtn.Click += expXMLBtn_Click;
+            volverBtn.Click += volverBtn_Click;
         }
         public void VerGrilla()
         {

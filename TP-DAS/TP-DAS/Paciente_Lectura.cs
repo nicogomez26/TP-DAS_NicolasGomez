@@ -24,6 +24,9 @@ namespace TP_DAS
         private void Paciente_Lectura_Load(object sender, EventArgs e)
         {
             VerGrilla();
+            button2.Click += button2_Click;
+            expPacientesBtn.Click += expPacientesBtn_Click;
+            volverBtn.Click += volverBtn_Click;
         }
 
         public void VerGrilla()

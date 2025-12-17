@@ -110,6 +110,7 @@ namespace TP_DAS
             agrEspBtn.Click += agrEspBtn_Click;
             editEspBtn.Click += editEspBtn_Click;
             elimEspBtn.Click += elimEspBtn_Click;
+            volverBtn.Click += volverBtn_Click;
         }
 
         private void elimEspBtn_Click(object sender, EventArgs e)
@@ -162,6 +163,11 @@ namespace TP_DAS
 
                 MessageBox.Show(ex.ToString());
             }
+
+        }
+
+        private void espGrp_Enter(object sender, EventArgs e)
+        {
 
         }
     }

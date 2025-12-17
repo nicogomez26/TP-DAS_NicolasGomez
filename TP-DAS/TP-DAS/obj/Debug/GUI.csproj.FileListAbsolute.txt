@@ -35,10 +35,15 @@ C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\GUI.csp
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Cambio_de_Contrasena.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Clinica.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CU1.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CU2.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUBase.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUButton.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUDataGrid.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUDate.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUcmb.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CU3.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUEmail.resources
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUPass.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Especialidad.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Especialidad_Lectura.resources
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.Login.resources
@@ -58,7 +63,3 @@ C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\GUI.csp
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\GUI.csproj.Up2Date
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP-DAS.exe
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP-DAS.pdb
-C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP-DAS.exe.config
-C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUDataGrid.resources
-C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUButton.resources
-C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP_DAS.CUPass.resources

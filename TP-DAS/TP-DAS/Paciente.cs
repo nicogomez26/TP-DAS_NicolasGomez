@@ -45,6 +45,9 @@ namespace TP_DAS
                 agrPacBtn.Click += agrPacBtn_Click;
                 editPacBtn.Click += editPacBtn_Click;
                 elimPacBtn.Click += elimPacBtn_Click;
+                cuButton1.Click += button1_Click;
+                cuButton1.Click += expXMLBtn_Click;
+                volverBtn.Click += volverBtn_Click;
             }
             catch (Exception ex)
             {
@@ -265,6 +268,16 @@ namespace TP_DAS
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void cuButton2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cuButton1_Load(object sender, EventArgs e)
+        {
+
         }
     }
     }

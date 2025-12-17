@@ -110,6 +110,8 @@ namespace TP_DAS
             agrTurBtn.Click += agrTurBtn_Click;
             editTurBtn.Click += editTurBtn_Click;
             elimTurBtn.Click += elimTurBtn_Click;
+            expXMLBtn.Click += expXMLBtn_Click;
+            volverBtn.Click += volverBtn_Click;
         }
 
         BE.Turno tmp;

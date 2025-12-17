@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.volverBtn = new System.Windows.Forms.Button();
             this.cU11 = new TP_DAS.CU1();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,17 +36,8 @@
             this.elimOSBtn = new TP_DAS.CUButton();
             this.editOSBtn = new TP_DAS.CUButton();
             this.agrOSBtn = new TP_DAS.CUButton();
+            this.volverBtn = new TP_DAS.CUButton();
             this.SuspendLayout();
-            // 
-            // volverBtn
-            // 
-            this.volverBtn.Location = new System.Drawing.Point(12, 12);
-            this.volverBtn.Name = "volverBtn";
-            this.volverBtn.Size = new System.Drawing.Size(133, 44);
-            this.volverBtn.TabIndex = 66;
-            this.volverBtn.Text = "Volver";
-            this.volverBtn.UseVisualStyleBackColor = true;
-            this.volverBtn.Click += new System.EventHandler(this.volverBtn_Click);
             // 
             // cU11
             // 
@@ -55,7 +45,7 @@
             this.cU11.Etiqueta = "Nombre";
             this.cU11.Location = new System.Drawing.Point(48, 177);
             this.cU11.Name = "cU11";
-            this.cU11.Size = new System.Drawing.Size(292, 33);
+            this.cU11.Size = new System.Drawing.Size(292, 50);
             this.cU11.TabIndex = 57;
             this.cU11.Texto = "";
             // 
@@ -101,6 +91,7 @@
             this.elimOSBtn.ColorTexto = System.Drawing.Color.White;
             this.elimOSBtn.Location = new System.Drawing.Point(80, 321);
             this.elimOSBtn.Name = "elimOSBtn";
+            this.elimOSBtn.NombreBoton = null;
             this.elimOSBtn.Size = new System.Drawing.Size(245, 38);
             this.elimOSBtn.TabIndex = 98;
             this.elimOSBtn.Texto = "Eliminar";
@@ -112,6 +103,7 @@
             this.editOSBtn.ColorTexto = System.Drawing.Color.White;
             this.editOSBtn.Location = new System.Drawing.Point(80, 277);
             this.editOSBtn.Name = "editOSBtn";
+            this.editOSBtn.NombreBoton = null;
             this.editOSBtn.Size = new System.Drawing.Size(245, 38);
             this.editOSBtn.TabIndex = 97;
             this.editOSBtn.Texto = "Editar";
@@ -123,26 +115,39 @@
             this.agrOSBtn.ColorTexto = System.Drawing.Color.White;
             this.agrOSBtn.Location = new System.Drawing.Point(80, 233);
             this.agrOSBtn.Name = "agrOSBtn";
+            this.agrOSBtn.NombreBoton = null;
             this.agrOSBtn.Size = new System.Drawing.Size(245, 38);
             this.agrOSBtn.TabIndex = 96;
             this.agrOSBtn.Texto = "Agregar";
+            // 
+            // volverBtn
+            // 
+            this.volverBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.volverBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.volverBtn.ColorTexto = System.Drawing.Color.White;
+            this.volverBtn.Location = new System.Drawing.Point(12, 12);
+            this.volverBtn.Name = "volverBtn";
+            this.volverBtn.NombreBoton = null;
+            this.volverBtn.Size = new System.Drawing.Size(133, 44);
+            this.volverBtn.TabIndex = 106;
+            this.volverBtn.Texto = "Volver";
             // 
             // Obra_Social
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 594);
+            this.Controls.Add(this.volverBtn);
             this.Controls.Add(this.elimOSBtn);
             this.Controls.Add(this.editOSBtn);
             this.Controls.Add(this.agrOSBtn);
             this.Controls.Add(this.grilla);
             this.Controls.Add(this.idObraSocial);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.volverBtn);
             this.Controls.Add(this.cU11);
             this.Controls.Add(this.label1);
             this.Name = "Obra_Social";
-            this.Text = "Obra_Social";
+            this.Text = "Obra Social";
             this.Load += new System.EventHandler(this.Obra_Social_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,7 +155,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button volverBtn;
         private CU1 cU11;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -159,5 +163,6 @@
         private CUButton elimOSBtn;
         private CUButton editOSBtn;
         private CUButton agrOSBtn;
+        private CUButton volverBtn;
     }
 }
