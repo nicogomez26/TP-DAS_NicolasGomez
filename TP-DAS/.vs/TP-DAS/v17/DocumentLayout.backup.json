@@ -3,124 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\tp-das\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\tp-das\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\dal\\mp_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|solutionrelative:dal\\mp_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|solutionrelative:bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\tp-das\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|solutionrelative:bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\dal\\mp_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|solutionrelative:dal\\mp_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\cubase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\cubase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\cubase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\cubase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\cudatagrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\cudatagrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\cudatagrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\cudatagrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\clinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\clinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\clinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\clinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\obra social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\obra social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\obra social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\obra social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\usuario_lectura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\usuario_lectura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\usuario_lectura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\usuario_lectura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\dal\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\dal\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|solutionrelative:dal\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\tp-das\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F37E72B7-7C47-4E5E-BD27-401A60B0AD32}|TP-DAS\\GUI.csproj|solutionrelative:tp-das\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\dal\\mp_turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|solutionrelative:dal\\mp_turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\dal\\mp_medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A29C18A-BDD9-4839-863F-442C4D500034}|DAL\\DAL.csproj|solutionrelative:dal\\mp_medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\bll\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|solutionrelative:bll\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|c:\\users\\nico\\desktop\\tp-das\\tp-das_nicolasgomez\\tp-das\\bll\\servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74B0C299-BC3E-49AC-8156-895C94DC7D6B}|BLL\\BLL.csproj|solutionrelative:bll\\servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,276 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 28,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CUBase.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUBase.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\CUBase.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUBase.cs",
-              "RelativeToolTip": "TP-DAS\\CUBase.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAUwEsAAAApAAAAAAAAAA==",
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Login.cs",
+              "RelativeDocumentMoniker": "TP-DAS\\Login.cs",
+              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Login.cs",
+              "RelativeToolTip": "TP-DAS\\Login.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAuwGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:46:39.584Z",
+              "WhenOpened": "2025-12-17T12:15:00.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CUBase.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUBase.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\CUBase.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUBase.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TP-DAS\\CUBase.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:46:38.096Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Especialidad.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Especialidad.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Especialidad.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Especialidad.cs",
-              "RelativeToolTip": "TP-DAS\\Especialidad.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAIA6wCUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:41:12.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Obra Social.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Obra Social.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Obra Social.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Obra Social.cs",
-              "RelativeToolTip": "TP-DAS\\Obra Social.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAjwBwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:40:58.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Obra Social.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Obra Social.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Obra Social.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Obra Social.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TP-DAS\\Obra Social.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:40:57.892Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Paciente.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Paciente.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Paciente.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Paciente.cs",
-              "RelativeToolTip": "TP-DAS\\Paciente.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAQwIAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:40:51.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Paciente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Paciente.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Paciente.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Paciente.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TP-DAS\\Paciente.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:40:50.404Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Turno.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Turno.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Turno.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Turno.cs",
-              "RelativeToolTip": "TP-DAS\\Turno.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwEIAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:40:45.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Turno.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Turno.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Turno.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Turno.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TP-DAS\\Turno.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:40:45.311Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Usuario_Lectura.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Usuario_Lectura.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Usuario_Lectura.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Usuario_Lectura.cs",
-              "RelativeToolTip": "TP-DAS\\Usuario_Lectura.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:39:04.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Usuario_Lectura.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Usuario_Lectura.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Usuario_Lectura.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Usuario_Lectura.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TP-DAS\\Usuario_Lectura.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:39:04.029Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CUDataGrid.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUDataGrid.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\CUDataGrid.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUDataGrid.cs",
-              "RelativeToolTip": "TP-DAS\\CUDataGrid.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:35:50.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CUDataGrid.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUDataGrid.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\CUDataGrid.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\CUDataGrid.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TP-DAS\\CUDataGrid.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:35:49.396Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Especialidad.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Especialidad.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Especialidad.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Especialidad.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TP-DAS\\Especialidad.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:34:37.09Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "TP-DAS\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Properties\\Resources.resx",
-              "RelativeToolTip": "TP-DAS\\Properties\\Resources.resx",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAWwHoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-12-17T06:23:35.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Mp_Turno.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Turno.cs",
-              "RelativeDocumentMoniker": "DAL\\Mp_Turno.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Turno.cs",
-              "RelativeToolTip": "DAL\\Mp_Turno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:18:15.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Medico.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Medico.cs",
-              "RelativeDocumentMoniker": "BLL\\Medico.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Medico.cs",
-              "RelativeToolTip": "BLL\\Medico.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAiwE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:06:40.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Mp_Medico.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Medico.cs",
-              "RelativeDocumentMoniker": "DAL\\Mp_Medico.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Medico.cs",
-              "RelativeToolTip": "DAL\\Mp_Medico.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAqwHMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T04:52:04.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Medico.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Medico.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Medico.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Medico.cs",
-              "RelativeToolTip": "TP-DAS\\Medico.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAADgvz0AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T06:05:58.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 0,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Usuario.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Usuario.cs",
               "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Usuario.cs",
               "RelativeToolTip": "TP-DAS\\Usuario.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAcwFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAA2wC8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T06:02:50.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Medico.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Medico.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Medico.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Medico.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TP-DAS\\Medico.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T05:01:52.723Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 1,
               "Title": "Usuario.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Usuario.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Usuario.cs",
@@ -411,45 +80,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Clinica.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Clinica.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Clinica.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Clinica.cs",
-              "RelativeToolTip": "TP-DAS\\Clinica.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T04:35:24.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Clinica.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Clinica.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Clinica.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Clinica.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TP-DAS\\Clinica.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T04:48:37.733Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 6,
               "Title": "Acceso.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Acceso.cs",
               "RelativeDocumentMoniker": "DAL\\Acceso.cs",
               "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Acceso.cs",
               "RelativeToolTip": "DAL\\Acceso.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAswIYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAJcAAAAAAAAAAADwv6IAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T04:46:50.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Login.cs",
               "RelativeDocumentMoniker": "TP-DAS\\Login.cs",
@@ -461,54 +105,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Mp_Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Usuario.cs",
               "RelativeDocumentMoniker": "DAL\\Mp_Usuario.cs",
               "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\DAL\\Mp_Usuario.cs",
               "RelativeToolTip": "DAL\\Mp_Usuario.cs",
-              "ViewState": "AgIAALoAAAAAAAAAAAAswAcBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAYwOYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T04:40:02.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Usuario.cs",
               "RelativeDocumentMoniker": "BLL\\Usuario.cs",
               "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Usuario.cs",
               "RelativeToolTip": "BLL\\Usuario.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAuwGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T04:39:53.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Login.cs",
-              "RelativeDocumentMoniker": "TP-DAS\\Login.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\TP-DAS\\Login.cs",
-              "RelativeToolTip": "TP-DAS\\Login.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T04:29:58.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Servicios.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Servicios.cs",
-              "RelativeDocumentMoniker": "BLL\\Servicios.cs",
-              "ToolTip": "C:\\Users\\Nico\\Desktop\\TP-DAS\\TP-DAS_NicolasGomez\\TP-DAS\\BLL\\Servicios.cs",
-              "RelativeToolTip": "BLL\\Servicios.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwCQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T04:24:36.456Z",
               "EditorCaption": ""
             }
           ]

@@ -187,59 +187,6 @@ namespace DAL
             }
         }
 
-        /* public int BloquearUsuario(BE.Usuario usuario, bool bloquear)
-         {
-             try
-             {
-                 acc.IniciarTransaccion();
-
-                 SqlParameter[] parametro = new SqlParameter[5];
-                 parametro[0] = new SqlParameter("@ID", usuario.Id);
-                 parametro[1] = new SqlParameter("@nombre", usuario.Nombre);
-                 parametro[2] = new SqlParameter("@email", usuario.Email);
-                 parametro[3] = new SqlParameter("@pass", usuario.Pass);
-                 parametro[4] = new SqlParameter("@privilegio", usuario.Privilegios);
-                 SqlParameter pBloq = new SqlParameter("@Bloqueado", bloquear);
-                 var fa = acc.Escribir("editarUsuario", parametro.Concat(new[] { pBloq }).ToArray());
-
-                 acc.ConfirmarTransaccion();
-                 return fa;
-             }
-             catch (Exception ex)
-             {
-                 acc.CancelarTransaccion();
-                 MessageBox.Show(ex.Message);
-                 return -1;
-             }
-         }
-
-         public int DesbloquearUsuario(BE.Usuario usuario, bool bloquear)
-         {
-             try
-             {
-                 acc.IniciarTransaccion();
-
-                 SqlParameter[] parametro = new SqlParameter[5];
-                 parametro[0] = new SqlParameter("@ID", usuario.Id);
-                 parametro[1] = new SqlParameter("@nombre", usuario.Nombre);
-                 parametro[2] = new SqlParameter("@email", usuario.Email);
-                 parametro[3] = new SqlParameter("@pass", usuario.Pass);
-                 parametro[4] = new SqlParameter("@privilegio", usuario.Privilegios);
-                 // el SP ahora acepta opcional @Bloqueado, se puede pasar aquí
-                 SqlParameter pBloq = new SqlParameter("@Bloqueado", bloquear);
-                 var fa = acc.Escribir("editarUsuario", parametro.Concat(new[] { pBloq }).ToArray());
-
-                 acc.ConfirmarTransaccion();
-                 return fa;
-             }
-             catch (Exception ex)
-             {
-                 acc.CancelarTransaccion();
-                 MessageBox.Show(ex.Message);
-                 return -1;
-             }
-         }*/
-
         public int BloquearUsuario(BE.Usuario usuario, bool bloqueado)
         {
             try

@@ -45,6 +45,7 @@ namespace TP_DAS
             elimPacBtn.Click += elimPacBtn_Click;
             expXMLBtn.Click += expXMLBtn_Click;
             volverBtn.Click += volverBtn_Click;
+            desbloquearBtn.Click += desbloquearBtn_Click;
         }
 
         private void agrPacBtn_Click(object sender, EventArgs e)
@@ -192,6 +193,8 @@ namespace TP_DAS
                 }
 
                 usuarioBll.DesbloquearUsuario(tmp);
+                MessageBox.Show(tmp.Id.ToString());
+
 
                 MessageBox.Show($"Usuario '{tmp.Nombre}' desbloqueado correctamente.");
 
