@@ -25,6 +25,7 @@ namespace TP_DAS
             irEspecialidadesBtn.Click += irEspecialidadesBtn_Click;
             irObSocBtn.Click += irObSocBtn_Click;
             irUsuariosBtn.Click += irUsuariosBtn_Click;
+            cerrarSesionBtn.Click += cerrarSesionBtn_Click;
         }
 
         private void irPacientesBtn_Click(object sender, EventArgs e)
@@ -48,7 +49,15 @@ namespace TP_DAS
             }
 
         }
+        private void cerrarSesionBtn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
 
+            this.Close();
+
+
+        }
         private void irMedicosBtn_Click(object sender, EventArgs e)
         {
             if (uLogueado.Privilegios == 1)
@@ -151,6 +160,11 @@ namespace TP_DAS
                 usuarioLectura.Show();
 
                 this.Hide();
+                /*Usuario usuario = new Usuario(uLogueado);
+
+                usuario.Show();
+
+                this.Hide();*/
             }
         }
     }

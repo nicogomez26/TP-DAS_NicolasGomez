@@ -25,12 +25,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.logueadoTxt = new System.Windows.Forms.Label();
-            this.irPacientesBtn = new TP_DAS.CUButton();
-            this.irMedicosBtn = new TP_DAS.CUButton();
-            this.irTurnosBtn = new TP_DAS.CUButton();
-            this.irEspecialidadesBtn = new TP_DAS.CUButton();
-            this.irObSocBtn = new TP_DAS.CUButton();
             this.irUsuariosBtn = new TP_DAS.CUButton();
+            this.irObSocBtn = new TP_DAS.CUButton();
+            this.irEspecialidadesBtn = new TP_DAS.CUButton();
+            this.irTurnosBtn = new TP_DAS.CUButton();
+            this.irMedicosBtn = new TP_DAS.CUButton();
+            this.irPacientesBtn = new TP_DAS.CUButton();
+            this.cerrarSesionBtn = new TP_DAS.CUButton();
             this.SuspendLayout();
             // 
             // label1
@@ -51,53 +52,17 @@
             this.logueadoTxt.TabIndex = 6;
             this.logueadoTxt.Text = "-";
             // 
-            // irPacientesBtn
+            // irUsuariosBtn
             // 
-            this.irPacientesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
-            this.irPacientesBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.irPacientesBtn.ColorTexto = System.Drawing.Color.White;
-            this.irPacientesBtn.Location = new System.Drawing.Point(104, 156);
-            this.irPacientesBtn.Name = "irPacientesBtn";
-            this.irPacientesBtn.NombreBoton = null;
-            this.irPacientesBtn.Size = new System.Drawing.Size(245, 50);
-            this.irPacientesBtn.TabIndex = 15;
-            this.irPacientesBtn.Texto = "Pacientes";
-            // 
-            // irMedicosBtn
-            // 
-            this.irMedicosBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
-            this.irMedicosBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.irMedicosBtn.ColorTexto = System.Drawing.Color.White;
-            this.irMedicosBtn.Location = new System.Drawing.Point(355, 156);
-            this.irMedicosBtn.Name = "irMedicosBtn";
-            this.irMedicosBtn.NombreBoton = null;
-            this.irMedicosBtn.Size = new System.Drawing.Size(245, 50);
-            this.irMedicosBtn.TabIndex = 16;
-            this.irMedicosBtn.Texto = "Medicos";
-            // 
-            // irTurnosBtn
-            // 
-            this.irTurnosBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
-            this.irTurnosBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.irTurnosBtn.ColorTexto = System.Drawing.Color.White;
-            this.irTurnosBtn.Location = new System.Drawing.Point(615, 156);
-            this.irTurnosBtn.Name = "irTurnosBtn";
-            this.irTurnosBtn.NombreBoton = null;
-            this.irTurnosBtn.Size = new System.Drawing.Size(245, 50);
-            this.irTurnosBtn.TabIndex = 17;
-            this.irTurnosBtn.Texto = "Turnos";
-            // 
-            // irEspecialidadesBtn
-            // 
-            this.irEspecialidadesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
-            this.irEspecialidadesBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.irEspecialidadesBtn.ColorTexto = System.Drawing.Color.White;
-            this.irEspecialidadesBtn.Location = new System.Drawing.Point(104, 213);
-            this.irEspecialidadesBtn.Name = "irEspecialidadesBtn";
-            this.irEspecialidadesBtn.NombreBoton = null;
-            this.irEspecialidadesBtn.Size = new System.Drawing.Size(245, 50);
-            this.irEspecialidadesBtn.TabIndex = 18;
-            this.irEspecialidadesBtn.Texto = "Especialidades";
+            this.irUsuariosBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.irUsuariosBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.irUsuariosBtn.ColorTexto = System.Drawing.Color.White;
+            this.irUsuariosBtn.Location = new System.Drawing.Point(615, 213);
+            this.irUsuariosBtn.Name = "irUsuariosBtn";
+            this.irUsuariosBtn.NombreBoton = null;
+            this.irUsuariosBtn.Size = new System.Drawing.Size(245, 50);
+            this.irUsuariosBtn.TabIndex = 20;
+            this.irUsuariosBtn.Texto = "Usuarios";
             // 
             // irObSocBtn
             // 
@@ -111,23 +76,72 @@
             this.irObSocBtn.TabIndex = 19;
             this.irObSocBtn.Texto = "Obras Sociales";
             // 
-            // irUsuariosBtn
+            // irEspecialidadesBtn
             // 
-            this.irUsuariosBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
-            this.irUsuariosBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.irUsuariosBtn.ColorTexto = System.Drawing.Color.White;
-            this.irUsuariosBtn.Location = new System.Drawing.Point(615, 213);
-            this.irUsuariosBtn.Name = "irUsuariosBtn";
-            this.irUsuariosBtn.NombreBoton = null;
-            this.irUsuariosBtn.Size = new System.Drawing.Size(245, 50);
-            this.irUsuariosBtn.TabIndex = 20;
-            this.irUsuariosBtn.Texto = "Usuarios";
+            this.irEspecialidadesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.irEspecialidadesBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.irEspecialidadesBtn.ColorTexto = System.Drawing.Color.White;
+            this.irEspecialidadesBtn.Location = new System.Drawing.Point(104, 213);
+            this.irEspecialidadesBtn.Name = "irEspecialidadesBtn";
+            this.irEspecialidadesBtn.NombreBoton = null;
+            this.irEspecialidadesBtn.Size = new System.Drawing.Size(245, 50);
+            this.irEspecialidadesBtn.TabIndex = 18;
+            this.irEspecialidadesBtn.Texto = "Especialidades";
+            // 
+            // irTurnosBtn
+            // 
+            this.irTurnosBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.irTurnosBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.irTurnosBtn.ColorTexto = System.Drawing.Color.White;
+            this.irTurnosBtn.Location = new System.Drawing.Point(615, 156);
+            this.irTurnosBtn.Name = "irTurnosBtn";
+            this.irTurnosBtn.NombreBoton = null;
+            this.irTurnosBtn.Size = new System.Drawing.Size(245, 50);
+            this.irTurnosBtn.TabIndex = 17;
+            this.irTurnosBtn.Texto = "Turnos";
+            // 
+            // irMedicosBtn
+            // 
+            this.irMedicosBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.irMedicosBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.irMedicosBtn.ColorTexto = System.Drawing.Color.White;
+            this.irMedicosBtn.Location = new System.Drawing.Point(355, 156);
+            this.irMedicosBtn.Name = "irMedicosBtn";
+            this.irMedicosBtn.NombreBoton = null;
+            this.irMedicosBtn.Size = new System.Drawing.Size(245, 50);
+            this.irMedicosBtn.TabIndex = 16;
+            this.irMedicosBtn.Texto = "Medicos";
+            // 
+            // irPacientesBtn
+            // 
+            this.irPacientesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.irPacientesBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.irPacientesBtn.ColorTexto = System.Drawing.Color.White;
+            this.irPacientesBtn.Location = new System.Drawing.Point(104, 156);
+            this.irPacientesBtn.Name = "irPacientesBtn";
+            this.irPacientesBtn.NombreBoton = null;
+            this.irPacientesBtn.Size = new System.Drawing.Size(245, 50);
+            this.irPacientesBtn.TabIndex = 15;
+            this.irPacientesBtn.Texto = "Pacientes";
+            // 
+            // cerrarSesionBtn
+            // 
+            this.cerrarSesionBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(226)))), ((int)(((byte)(232)))));
+            this.cerrarSesionBtn.ColorFondo = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.cerrarSesionBtn.ColorTexto = System.Drawing.Color.White;
+            this.cerrarSesionBtn.Location = new System.Drawing.Point(12, 12);
+            this.cerrarSesionBtn.Name = "cerrarSesionBtn";
+            this.cerrarSesionBtn.NombreBoton = null;
+            this.cerrarSesionBtn.Size = new System.Drawing.Size(158, 39);
+            this.cerrarSesionBtn.TabIndex = 21;
+            this.cerrarSesionBtn.Texto = "Cerrar Sesión";
             // 
             // Clinica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 417);
+            this.Controls.Add(this.cerrarSesionBtn);
             this.Controls.Add(this.irUsuariosBtn);
             this.Controls.Add(this.irObSocBtn);
             this.Controls.Add(this.irEspecialidadesBtn);
@@ -155,5 +169,6 @@
         private CUButton irEspecialidadesBtn;
         private CUButton irObSocBtn;
         private CUButton irUsuariosBtn;
+        private CUButton cerrarSesionBtn;
     }
 }

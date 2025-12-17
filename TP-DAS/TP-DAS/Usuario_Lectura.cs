@@ -37,6 +37,7 @@ namespace TP_DAS
         }
         public void VerGrilla()
         {
+
             grilla.Grid.DataSource = null;
             grilla.Grid.DataSource = usuarioBll.ListarUsuarios();
         }

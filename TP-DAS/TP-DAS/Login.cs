@@ -24,38 +24,60 @@ namespace TP_DAS
         private void loginBtn_Click(object sender, EventArgs e)
         {
 
-            BE.Usuario u = new BE.Usuario();
 
-            Clinica clinica = new Clinica(u);
-            clinica.Show();
-            this.Hide();
+            try
+            {
+                BE.Usuario u = usuarioBll.Login(cuEmail1.Texto, cuPass1.Texto);
+
+                if (u != null && u.Bloqueado)
+                {
+                    MessageBox.Show(
+                        "El usuario fue bloqueado por 3 intentos fallidos. Contactese con el Administrador",
+                        "Usuario bloqueado",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Stop
+                    );
+                    return;
+                }
+                if (u == null)
+                {
+                    MessageBox.Show("Email o contraseña incorrectos", "Login fallido",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                
+
+
+                Clinica clinica = new Clinica(u);
+                clinica.Show();
+                this.Hide();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(e.ToString());
+                return;
+            }
+        
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        public string CalcularSHA256(string texto)
         {
-            BE.Usuario Usuario = new BE.Usuario();
-            Usuario u = new Usuario(Usuario);
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = Encoding.UTF8.GetBytes(texto);
+                byte[] hash = sha256.ComputeHash(bytes);
 
-            u.Show();
+                StringBuilder sb = new StringBuilder();
+                foreach (byte b in hash)
+                    sb.Append(b.ToString("x2"));
 
-            this.Hide();
+                return sb.ToString();
+            }
         }
-
 
         private void Login_Load(object sender, EventArgs e)
         {
-            if (!servicios.SqlServerActivo())
-            {
-                MessageBox.Show(
-                    "El servicio de SQL Server no está iniciado.\nInícielo para continuar.",
-                    "Error de servicio",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
-
-                this.Close();
-                return;
-            }
+            servicios.verificarEstado(this);
             loginBtn.Click += loginBtn_Click;
             cambioPassBtn.Click += cambioPassBtn_Click;
 

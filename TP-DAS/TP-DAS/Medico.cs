@@ -59,7 +59,7 @@ namespace TP_DAS
 
         public void VerGrilla()
         {
-
+            grilla.CellClick += grilla_CellClick;
             grilla.Grid.DataSource = null;
             grilla.Grid.DataSource = medicoBll.ListarMedico();
 

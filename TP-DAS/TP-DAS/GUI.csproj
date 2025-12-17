@@ -296,15 +296,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ocultarPass.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verPass.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ocultarPass1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\ocultarPass2.png" />
   </ItemGroup>
   <ItemGroup>

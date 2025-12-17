@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.ServiceProcess;
+using System.Windows.Forms;
 
 namespace BLL
 {
@@ -20,6 +21,21 @@ namespace BLL
             catch
             {
                 return false;
+            }
+        }
+        public void verificarEstado(Form f)
+        {
+            if (!SqlServerActivo())
+            {
+                MessageBox.Show(
+                    "El servicio de SQL Server no está iniciado.\nInícielo para continuar.",
+                    "Error de servicio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+
+                f.Close();
+                return;
             }
         }
     }

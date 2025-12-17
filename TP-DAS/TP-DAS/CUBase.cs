@@ -97,6 +97,8 @@ namespace TP_DAS
                     dgv.DefaultCellStyle.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
                     dgv.RowHeadersVisible = false;
                     dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                    dgv.BorderStyle = BorderStyle.FixedSingle;
+
                 }
 
                 if (c.HasChildren)

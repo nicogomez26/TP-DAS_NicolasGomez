@@ -63,3 +63,4 @@ C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\GUI.csp
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\GUI.csproj.Up2Date
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP-DAS.exe
 C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP-DAS.pdb
+C:\Users\Nico\Desktop\TP-DAS\TP-DAS_NicolasGomez\TP-DAS\TP-DAS\obj\Debug\TP-DAS.exe.config

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -71,9 +72,19 @@ namespace DAL
 
         public void CancelarTransaccion()
         {
-            tr?.Rollback();
-            tr = null;
-            Desconectar();
+            try
+            {
+                if (tr != null)
+                    tr.Rollback();
+            }
+            catch
+            {
+            }
+            finally
+            {
+                tr = null;
+                Desconectar();
+            }
         }
 
         public int Escribir(string sp, SqlParameter[] parametro)
@@ -86,7 +97,7 @@ namespace DAL
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = sp;
 
-            if (parametro != null)
+            if (parametro != null && parametro.Length > 0)
             {
                 cmd.Parameters.AddRange(parametro);
                 fa = cmd.ExecuteNonQuery();
@@ -109,9 +120,6 @@ namespace DAL
                 Conectar();
 
             cmd.Connection = cn;
-            if (tr != null)
-                cmd.Transaction = tr;
-            
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = sp;
 
@@ -123,8 +131,8 @@ namespace DAL
             adaptador.SelectCommand = cmd;
             adaptador.Fill(dt);
 
-            if (tr == null)
-                Desconectar();
+            cmd.Parameters.Clear();
+            Desconectar();
             return dt;
 
         }

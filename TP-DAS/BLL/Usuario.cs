@@ -43,10 +43,10 @@ namespace BLL
                 return null;
             }
 
-            string passHash = mapper.CalcularSHA256(pass);
             string key = email;
 
             BE.Usuario usuario = mapper.Login(email, pass);
+
 
             if (usuario == null)
             {
@@ -66,7 +66,7 @@ namespace BLL
 
             if (usuario.Bloqueado)
             {
-                return null; 
+                return new BE.Usuario { Bloqueado = true };
             }
 
             if (intentosLogin.ContainsKey(key))

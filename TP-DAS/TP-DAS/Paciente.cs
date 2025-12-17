@@ -126,6 +126,7 @@ namespace TP_DAS
         public void VerGrilla()
         {
 
+            grilla.CellClick += grilla_CellClick;
             grilla.Grid.DataSource = null;
             grilla.Grid.DataSource = pacienteBll.ListarPaciente();
             grilla.Grid.ClearSelection();

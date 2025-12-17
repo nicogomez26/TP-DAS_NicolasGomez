@@ -117,32 +117,28 @@ namespace DAL
         {
             try
             {
-                acc.IniciarTransaccion();
 
                 List<BE.Usuario> usuarios = new List<BE.Usuario>();
+
                 DataTable tabla = acc.Leer("listarUsuario", null);
                 foreach (DataRow dr in tabla.Rows)
                 {
-                    BE.Usuario usuario = new BE.Usuario
-                    {
-                        Id = int.Parse(dr["ID"].ToString()),
-                        Nombre = dr["nombre"].ToString(),
-                        Email = dr["email"].ToString(),
-                        Pass = dr["pass"].ToString(),
-                        Privilegios = int.Parse(dr["privilegios"].ToString()),
-                        Bloqueado = dr["Bloqueado"] != DBNull.Value && (bool)dr["Bloqueado"]
-                    };
+                    BE.Usuario usuario = new BE.Usuario();
+
+                        usuario.Id = int.Parse(dr["ID"].ToString());
+                        usuario.Nombre = dr["nombre"].ToString();
+                        usuario.Email = dr["email"].ToString();
+                        usuario.Privilegios = int.Parse(dr["privilegios"].ToString());
+                        usuario.Bloqueado = dr["Bloqueado"] != DBNull.Value && (bool)dr["Bloqueado"];
 
                     usuarios.Add(usuario);
                 }
 
-                acc.ConfirmarTransaccion();
 
                 return usuarios;
             }
             catch (Exception ex)
             {
-                acc.CancelarTransaccion();
                 MessageBox.Show(ex.Message.ToString());
                 return null;
             }
@@ -170,8 +166,8 @@ namespace DAL
                 {
                     DataRow dr = tabla.Rows[0];
 
-                    BE.Usuario usuario = new BE.Usuario
-                    {
+                    BE.Usuario usuario = new BE.Usuario() {
+
                         Id = int.Parse(dr["ID"].ToString()),
                         Nombre = dr["nombre"].ToString(),
                         Email = dr["email"].ToString(),

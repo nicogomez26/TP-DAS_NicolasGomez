@@ -8,10 +8,18 @@ namespace TP_DAS
     {
         private DataGridView dgv;
 
+        public event DataGridViewCellEventHandler CellClick;
+        private void Dgv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CellClick?.Invoke(sender, e);
+        }
+
         public CUDataGrid()
         {
             InitializeComponent();
             AplicarEstiloBase();
+
+            dgv.CellClick += Dgv_CellClick;
         }
 
         public DataGridView Grid => dgv;
@@ -61,7 +69,6 @@ namespace TP_DAS
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(600, 250);
             this.dgv.TabIndex = 0;
-            this.dgv.BorderStyle = BorderStyle.FixedSingle;
 
             // 
             // CUDataGrid
